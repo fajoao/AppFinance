@@ -1,6 +1,6 @@
 # Arquitetura da solução (diagramas Mermaid)
 
-Os diagramas abaixo são renderizados pelo próprio GitHub. O mesmo conteúdo, em um único diagrama editável, está em
+A arquitetura formal, no **modelo C4**, está em [`docs/arquitetura/`](arquitetura/README.md). Os diagramas abaixo complementam com visões que o C4 não cobre (modelo de dados, sincronização, fatura de cartão, pipeline de testes). O desenho editável está em
 [`docs/arquitetura/arquitetura-solucao.drawio`](arquitetura/arquitetura-solucao.drawio) (abra em [app.diagrams.net](https://app.diagrams.net)).
 
 **Legenda:** linha cheia = existe e foi testado; linha tracejada = planejado ou ainda não ligado.

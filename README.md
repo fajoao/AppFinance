@@ -62,7 +62,7 @@ flowchart LR
   iOS -. "sync (ainda não ligado)" .-> Tunnel
 ```
 
-Os demais diagramas (camadas do app, modelo de dados, sincronização, fatura de cartão, implantação, pipeline de testes) estão em [`docs/arquitetura.md`](docs/arquitetura.md). O diagrama completo e editável está em [`docs/arquitetura/arquitetura-solucao.drawio`](docs/arquitetura/arquitetura-solucao.drawio).
+A arquitetura está documentada no **modelo C4** (contexto, contêineres, componentes, implantação e fluxo dinâmico) em [`docs/arquitetura/`](docs/arquitetura/README.md), com imagens e o arquivo editável [`arquitetura-solucao.drawio`](docs/arquitetura/arquitetura-solucao.drawio) (uma página por nível). Outros diagramas (modelo de dados, sincronização, fatura de cartão, pipeline de testes) estão em [`docs/arquitetura.md`](docs/arquitetura.md).
 
 **Decisões principais**
 
@@ -238,8 +238,9 @@ Modelo de dados e racional do JSONB em [`docs/backend.md`](docs/backend.md) e [`
 | Documento | Conteúdo |
 |---|---|
 | [`docs/DOCUMENTACAO.docx`](docs/DOCUMENTACAO.docx) | Documentação detalhada (Word) |
-| [`docs/arquitetura.md`](docs/arquitetura.md) | Diagramas Mermaid |
-| [`docs/arquitetura/arquitetura-solucao.drawio`](docs/arquitetura/arquitetura-solucao.drawio) | Arquitetura completa (draw.io) |
+| [`docs/arquitetura/`](docs/arquitetura/README.md) | Arquitetura no modelo C4 (Mermaid, imagens e draw.io) |
+| [`docs/arquitetura.md`](docs/arquitetura.md) | Outros diagramas Mermaid |
+| [`docs/arquitetura/arquitetura-solucao.drawio`](docs/arquitetura/arquitetura-solucao.drawio) | Arquitetura em draw.io, uma página por nível C4 |
 | [`docs/backend.md`](docs/backend.md) | Banco, API, túnel, segurança |
 | [`docs/web.md`](docs/web.md) | Versão web |
 | [`docs/er-diagram.md`](docs/er-diagram.md) | Modelo de dados do Core |

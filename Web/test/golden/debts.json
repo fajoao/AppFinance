@@ -1,0 +1,598 @@
+{
+  "cases" : [
+    {
+      "expected" : {
+        "avalanche" : {
+          "feasible" : true,
+          "monthlyBalances" : [
+            "16719.77",
+            "15399.78",
+            "13922.85",
+            "12269.03",
+            "10441.81",
+            "8550",
+            "6602.04",
+            "4596.27",
+            "2530.96",
+            "404.34",
+            "0"
+          ],
+          "months" : 11,
+          "order" : [
+            "00000000-0000-0000-0000-000000000001",
+            "00000000-0000-0000-0000-000000000003",
+            "00000000-0000-0000-0000-000000000002",
+            "00000000-0000-0000-0000-000000000004"
+          ],
+          "payoffMonth" : {
+            "00000000-0000-0000-0000-000000000001" : 4,
+            "00000000-0000-0000-0000-000000000002" : 11,
+            "00000000-0000-0000-0000-000000000003" : 5,
+            "00000000-0000-0000-0000-000000000004" : 11
+          },
+          "totalInterest" : "4514.1",
+          "totalPaid" : "22414.6"
+        },
+        "ok" : true,
+        "saved" : "529.68",
+        "snowball" : {
+          "feasible" : true,
+          "monthlyBalances" : [
+            "16719.77",
+            "15499.5",
+            "14131.39",
+            "12595.24",
+            "10869.51",
+            "8994.51",
+            "7063.45",
+            "5074.65",
+            "3026.38",
+            "916.87",
+            "0"
+          ],
+          "months" : 11,
+          "order" : [
+            "00000000-0000-0000-0000-000000000004",
+            "00000000-0000-0000-0000-000000000003",
+            "00000000-0000-0000-0000-000000000001",
+            "00000000-0000-0000-0000-000000000002"
+          ],
+          "payoffMonth" : {
+            "00000000-0000-0000-0000-000000000001" : 5,
+            "00000000-0000-0000-0000-000000000002" : 11,
+            "00000000-0000-0000-0000-000000000003" : 2,
+            "00000000-0000-0000-0000-000000000004" : 1
+          },
+          "totalInterest" : "5043.78",
+          "totalPaid" : "22944.28"
+        }
+      },
+      "input" : {
+        "budget" : "2200",
+        "debts" : [
+          {
+            "balance" : 4500.5,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "minimumPayment" : 300,
+            "monthlyInterestRate" : 0.12989999999999999,
+            "name" : "Cartão",
+            "updatedAt" : 800000000
+          },
+          {
+            "balance" : 12000,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "minimumPayment" : 450,
+            "monthlyInterestRate" : 0.029899999999999999,
+            "name" : "Empréstimo",
+            "updatedAt" : 800000000
+          },
+          {
+            "balance" : 800,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "minimumPayment" : 80,
+            "monthlyInterestRate" : 0.079899999999999999,
+            "name" : "Cheque especial",
+            "updatedAt" : 800000000
+          },
+          {
+            "balance" : 600,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "minimumPayment" : 50,
+            "monthlyInterestRate" : 0.019900000000000001,
+            "name" : "Loja",
+            "updatedAt" : 800000000
+          }
+        ]
+      },
+      "kind" : "debts.compare",
+      "name" : "tres dividas"
+    },
+    {
+      "expected" : {
+        "avalanche" : {
+          "feasible" : true,
+          "monthlyBalances" : [
+            "0"
+          ],
+          "months" : 1,
+          "order" : [
+            "00000000-0000-0000-0000-000000000001",
+            "00000000-0000-0000-0000-000000000002"
+          ],
+          "payoffMonth" : {
+            "00000000-0000-0000-0000-000000000001" : 1,
+            "00000000-0000-0000-0000-000000000002" : 1
+          },
+          "totalInterest" : "50",
+          "totalPaid" : "4050"
+        },
+        "ok" : true,
+        "saved" : "0",
+        "snowball" : {
+          "feasible" : true,
+          "monthlyBalances" : [
+            "0"
+          ],
+          "months" : 1,
+          "order" : [
+            "00000000-0000-0000-0000-000000000001",
+            "00000000-0000-0000-0000-000000000002"
+          ],
+          "payoffMonth" : {
+            "00000000-0000-0000-0000-000000000001" : 1,
+            "00000000-0000-0000-0000-000000000002" : 1
+          },
+          "totalInterest" : "50",
+          "totalPaid" : "4050"
+        }
+      },
+      "input" : {
+        "budget" : "5000",
+        "debts" : [
+          {
+            "balance" : 1000,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "minimumPayment" : 50,
+            "monthlyInterestRate" : 0.02,
+            "name" : "A",
+            "updatedAt" : 800000000
+          },
+          {
+            "balance" : 3000,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "minimumPayment" : 100,
+            "monthlyInterestRate" : 0.01,
+            "name" : "B",
+            "updatedAt" : 800000000
+          }
+        ]
+      },
+      "kind" : "debts.compare",
+      "name" : "orcamento folgado"
+    },
+    {
+      "expected" : {
+        "avalanche" : {
+          "feasible" : true,
+          "monthlyBalances" : [
+            "1255",
+            "1208.65",
+            "1160.9",
+            "1111.7",
+            "1061",
+            "1008.74",
+            "954.86",
+            "899.29",
+            "841.98",
+            "782.86",
+            "721.86",
+            "658.91",
+            "593.92",
+            "526.83",
+            "457.55",
+            "386.7",
+            "314.43",
+            "240.72",
+            "165.53",
+            "88.84",
+            "10.62",
+            "0"
+          ],
+          "months" : 22,
+          "order" : [
+            "00000000-0000-0000-0000-000000000002",
+            "00000000-0000-0000-0000-000000000001"
+          ],
+          "payoffMonth" : {
+            "00000000-0000-0000-0000-000000000001" : 22,
+            "00000000-0000-0000-0000-000000000002" : 15
+          },
+          "totalInterest" : "390.83",
+          "totalPaid" : "1690.83"
+        },
+        "ok" : true,
+        "saved" : "0",
+        "snowball" : {
+          "feasible" : true,
+          "monthlyBalances" : [
+            "1255",
+            "1208.65",
+            "1160.9",
+            "1111.7",
+            "1061",
+            "1008.74",
+            "954.86",
+            "899.29",
+            "841.98",
+            "782.86",
+            "721.86",
+            "658.91",
+            "593.92",
+            "526.83",
+            "457.55",
+            "386.7",
+            "314.43",
+            "240.72",
+            "165.53",
+            "88.84",
+            "10.62",
+            "0"
+          ],
+          "months" : 22,
+          "order" : [
+            "00000000-0000-0000-0000-000000000002",
+            "00000000-0000-0000-0000-000000000001"
+          ],
+          "payoffMonth" : {
+            "00000000-0000-0000-0000-000000000001" : 22,
+            "00000000-0000-0000-0000-000000000002" : 15
+          },
+          "totalInterest" : "390.83",
+          "totalPaid" : "1690.83"
+        }
+      },
+      "input" : {
+        "budget" : "80",
+        "debts" : [
+          {
+            "balance" : 1000,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "minimumPayment" : 50,
+            "monthlyInterestRate" : 0.02,
+            "name" : "A",
+            "updatedAt" : 800000000
+          },
+          {
+            "balance" : 300,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "minimumPayment" : 30,
+            "monthlyInterestRate" : 0.050000000000000003,
+            "name" : "B",
+            "updatedAt" : 800000000
+          }
+        ]
+      },
+      "kind" : "debts.compare",
+      "name" : "so minimos"
+    },
+    {
+      "expected" : {
+        "avalanche" : {
+          "feasible" : false,
+          "monthlyBalances" : [
+            "11900"
+          ],
+          "months" : 1,
+          "order" : [
+
+          ],
+          "payoffMonth" : {
+
+          },
+          "totalInterest" : "2000",
+          "totalPaid" : "100"
+        },
+        "ok" : true,
+        "saved" : "0",
+        "snowball" : {
+          "feasible" : false,
+          "monthlyBalances" : [
+            "11900"
+          ],
+          "months" : 1,
+          "order" : [
+
+          ],
+          "payoffMonth" : {
+
+          },
+          "totalInterest" : "2000",
+          "totalPaid" : "100"
+        }
+      },
+      "input" : {
+        "budget" : "100",
+        "debts" : [
+          {
+            "balance" : 10000,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "minimumPayment" : 100,
+            "monthlyInterestRate" : 0.20000000000000001,
+            "name" : "Agiota",
+            "updatedAt" : 800000000
+          }
+        ]
+      },
+      "kind" : "debts.compare",
+      "name" : "inviavel"
+    },
+    {
+      "expected" : {
+        "avalanche" : {
+          "feasible" : true,
+          "monthlyBalances" : [
+            "2188.27",
+            "1864.64",
+            "1529.72",
+            "1183.11",
+            "824.4",
+            "453.17",
+            "68.99",
+            "0"
+          ],
+          "months" : 8,
+          "order" : [
+            "00000000-0000-0000-0000-000000000001"
+          ],
+          "payoffMonth" : {
+            "00000000-0000-0000-0000-000000000001" : 8
+          },
+          "totalInterest" : "370.41",
+          "totalPaid" : "2871.4"
+        },
+        "ok" : true,
+        "saved" : "0",
+        "snowball" : {
+          "feasible" : true,
+          "monthlyBalances" : [
+            "2188.27",
+            "1864.64",
+            "1529.72",
+            "1183.11",
+            "824.4",
+            "453.17",
+            "68.99",
+            "0"
+          ],
+          "months" : 8,
+          "order" : [
+            "00000000-0000-0000-0000-000000000001"
+          ],
+          "payoffMonth" : {
+            "00000000-0000-0000-0000-000000000001" : 8
+          },
+          "totalInterest" : "370.41",
+          "totalPaid" : "2871.4"
+        }
+      },
+      "input" : {
+        "budget" : "400",
+        "debts" : [
+          {
+            "balance" : 2500.9899999999998,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "minimumPayment" : 200,
+            "monthlyInterestRate" : 0.0349,
+            "name" : "Única",
+            "updatedAt" : 800000000
+          }
+        ]
+      },
+      "kind" : "debts.compare",
+      "name" : "uma so"
+    },
+    {
+      "expected" : {
+        "avalanche" : {
+          "feasible" : true,
+          "monthlyBalances" : [
+            "1740",
+            "1474.8",
+            "1204.3",
+            "928.38",
+            "646.95",
+            "359.89",
+            "67.09",
+            "0"
+          ],
+          "months" : 8,
+          "order" : [
+            "00000000-0000-0000-0000-000000000001",
+            "00000000-0000-0000-0000-000000000002"
+          ],
+          "payoffMonth" : {
+            "00000000-0000-0000-0000-000000000001" : 5,
+            "00000000-0000-0000-0000-000000000002" : 8
+          },
+          "totalInterest" : "168.43",
+          "totalPaid" : "2168.43"
+        },
+        "ok" : true,
+        "saved" : "0",
+        "snowball" : {
+          "feasible" : true,
+          "monthlyBalances" : [
+            "1740",
+            "1474.8",
+            "1204.3",
+            "928.38",
+            "646.95",
+            "359.89",
+            "67.09",
+            "0"
+          ],
+          "months" : 8,
+          "order" : [
+            "00000000-0000-0000-0000-000000000001",
+            "00000000-0000-0000-0000-000000000002"
+          ],
+          "payoffMonth" : {
+            "00000000-0000-0000-0000-000000000001" : 5,
+            "00000000-0000-0000-0000-000000000002" : 8
+          },
+          "totalInterest" : "168.43",
+          "totalPaid" : "2168.43"
+        }
+      },
+      "input" : {
+        "budget" : "300",
+        "debts" : [
+          {
+            "balance" : 1000,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "minimumPayment" : 50,
+            "monthlyInterestRate" : 0.02,
+            "name" : "X",
+            "updatedAt" : 800000000
+          },
+          {
+            "balance" : 1000,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "minimumPayment" : 50,
+            "monthlyInterestRate" : 0.02,
+            "name" : "Y",
+            "updatedAt" : 800000000
+          }
+        ]
+      },
+      "kind" : "debts.compare",
+      "name" : "empate taxa e saldo"
+    },
+    {
+      "expected" : {
+        "avalanche" : {
+          "feasible" : true,
+          "monthlyBalances" : [
+            "42",
+            "0"
+          ],
+          "months" : 2,
+          "order" : [
+            "00000000-0000-0000-0000-000000000002"
+          ],
+          "payoffMonth" : {
+            "00000000-0000-0000-0000-000000000002" : 2
+          },
+          "totalInterest" : "2.84",
+          "totalPaid" : "102.84"
+        },
+        "ok" : true,
+        "saved" : "0",
+        "snowball" : {
+          "feasible" : true,
+          "monthlyBalances" : [
+            "42",
+            "0"
+          ],
+          "months" : 2,
+          "order" : [
+            "00000000-0000-0000-0000-000000000002"
+          ],
+          "payoffMonth" : {
+            "00000000-0000-0000-0000-000000000002" : 2
+          },
+          "totalInterest" : "2.84",
+          "totalPaid" : "102.84"
+        }
+      },
+      "input" : {
+        "budget" : "60",
+        "debts" : [
+          {
+            "balance" : 0,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "minimumPayment" : 50,
+            "monthlyInterestRate" : 0.02,
+            "name" : "Z",
+            "updatedAt" : 800000000
+          },
+          {
+            "balance" : 100,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "minimumPayment" : 10,
+            "monthlyInterestRate" : 0.02,
+            "name" : "W",
+            "updatedAt" : 800000000
+          }
+        ]
+      },
+      "kind" : "debts.compare",
+      "name" : "saldo zero ignorado"
+    },
+    {
+      "expected" : {
+        "message" : "Orçamento abaixo dos pagamentos mínimos (R$ 880,00)",
+        "ok" : false,
+        "required" : "880"
+      },
+      "input" : {
+        "budget" : "100",
+        "debts" : [
+          {
+            "balance" : 4500.5,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "minimumPayment" : 300,
+            "monthlyInterestRate" : 0.12989999999999999,
+            "name" : "Cartão",
+            "updatedAt" : 800000000
+          },
+          {
+            "balance" : 12000,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "minimumPayment" : 450,
+            "monthlyInterestRate" : 0.029899999999999999,
+            "name" : "Empréstimo",
+            "updatedAt" : 800000000
+          },
+          {
+            "balance" : 800,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "minimumPayment" : 80,
+            "monthlyInterestRate" : 0.079899999999999999,
+            "name" : "Cheque especial",
+            "updatedAt" : 800000000
+          },
+          {
+            "balance" : 600,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "minimumPayment" : 50,
+            "monthlyInterestRate" : 0.019900000000000001,
+            "name" : "Loja",
+            "updatedAt" : 800000000
+          }
+        ]
+      },
+      "kind" : "debts.compare",
+      "name" : "orçamento abaixo dos mínimos"
+    }
+  ],
+  "suite" : "debts"
+}

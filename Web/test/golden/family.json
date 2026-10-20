@@ -1,0 +1,2214 @@
+{
+  "cases" : [
+    {
+      "expected" : {
+        "addTransactions" : true,
+        "approveSpending" : true,
+        "manageAllowances" : true,
+        "manageMembers" : true,
+        "manageSharedData" : true,
+        "splitExpenses" : true,
+        "viewFamilyView" : true
+      },
+      "input" : {
+        "role" : "admin"
+      },
+      "kind" : "family.can",
+      "name" : "can admin"
+    },
+    {
+      "expected" : {
+        "addTransactions" : true,
+        "approveSpending" : true,
+        "manageAllowances" : false,
+        "manageMembers" : false,
+        "manageSharedData" : true,
+        "splitExpenses" : true,
+        "viewFamilyView" : true
+      },
+      "input" : {
+        "role" : "member"
+      },
+      "kind" : "family.can",
+      "name" : "can member"
+    },
+    {
+      "expected" : {
+        "addTransactions" : true,
+        "approveSpending" : false,
+        "manageAllowances" : false,
+        "manageMembers" : false,
+        "manageSharedData" : false,
+        "splitExpenses" : false,
+        "viewFamilyView" : false
+      },
+      "input" : {
+        "role" : "dependent"
+      },
+      "kind" : "family.can",
+      "name" : "can dependent"
+    },
+    {
+      "expected" : {
+        "accounts" : [
+          "00000000-0000-0000-0000-000000000001",
+          "00000000-0000-0000-0000-000000000004"
+        ],
+        "categories" : [
+          "00000000-0000-0000-0000-000000000001",
+          "00000000-0000-0000-0000-000000000002"
+        ],
+        "transactions" : [
+          "00000000-0000-0000-0000-000000000001",
+          "00000000-0000-0000-0000-000000000005",
+          "00000000-0000-0000-0000-000000000007",
+          "00000000-0000-0000-0000-000000000008"
+        ]
+      },
+      "input" : {
+        "accounts" : [
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Conjunta",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Privada Ana",
+            "ownerId" : "00000000-0000-0000-0000-000000000001",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "private"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Privada Bia",
+            "ownerId" : "00000000-0000-0000-0000-000000000002",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "private"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Caio",
+            "ownerId" : "00000000-0000-0000-0000-000000000003",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "categories" : [
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "kind" : "expense",
+            "name" : "Mercado",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "kind" : "expense",
+            "name" : "Presentes",
+            "ownerId" : "00000000-0000-0000-0000-000000000001",
+            "updatedAt" : 800000000,
+            "visibility" : "private"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "kind" : "expense",
+            "name" : "Segredo Bia",
+            "ownerId" : "00000000-0000-0000-0000-000000000002",
+            "updatedAt" : 800000000,
+            "visibility" : "private"
+          }
+        ],
+        "scope" : {
+          "kind" : "family"
+        },
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000001,
+            "date" : 812548800,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "a",
+            "type" : "expense",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : 20,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000002,
+            "date" : 812635200,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "b",
+            "type" : "expense",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000003",
+            "amount" : 30,
+            "createdAt" : 800000003,
+            "date" : 812721600,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "c",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 40,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000004,
+            "date" : 812808000,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "d",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000004",
+            "amount" : 50,
+            "createdAt" : 800000005,
+            "date" : 812894400,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "e",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 60,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000006,
+            "date" : 812980800,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "memberId" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "f",
+            "type" : "expense",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 70,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000007,
+            "date" : 813067200,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "g",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          },
+          {
+            "amount" : 80,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000008,
+            "date" : 813153600,
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "h",
+            "type" : "expense",
+            "updatedAt" : 800000008
+          }
+        ],
+        "viewer" : "00000000-0000-0000-0000-000000000001"
+      },
+      "kind" : "family.visibility",
+      "name" : "família viewer Ana"
+    },
+    {
+      "expected" : {
+        "accounts" : [
+          "00000000-0000-0000-0000-000000000001",
+          "00000000-0000-0000-0000-000000000004"
+        ],
+        "categories" : [
+          "00000000-0000-0000-0000-000000000001",
+          "00000000-0000-0000-0000-000000000003"
+        ],
+        "transactions" : [
+          "00000000-0000-0000-0000-000000000001",
+          "00000000-0000-0000-0000-000000000005",
+          "00000000-0000-0000-0000-000000000007",
+          "00000000-0000-0000-0000-000000000008"
+        ]
+      },
+      "input" : {
+        "accounts" : [
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Conjunta",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Privada Ana",
+            "ownerId" : "00000000-0000-0000-0000-000000000001",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "private"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Privada Bia",
+            "ownerId" : "00000000-0000-0000-0000-000000000002",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "private"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Caio",
+            "ownerId" : "00000000-0000-0000-0000-000000000003",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "categories" : [
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "kind" : "expense",
+            "name" : "Mercado",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "kind" : "expense",
+            "name" : "Presentes",
+            "ownerId" : "00000000-0000-0000-0000-000000000001",
+            "updatedAt" : 800000000,
+            "visibility" : "private"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "kind" : "expense",
+            "name" : "Segredo Bia",
+            "ownerId" : "00000000-0000-0000-0000-000000000002",
+            "updatedAt" : 800000000,
+            "visibility" : "private"
+          }
+        ],
+        "scope" : {
+          "kind" : "family"
+        },
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000001,
+            "date" : 812548800,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "a",
+            "type" : "expense",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : 20,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000002,
+            "date" : 812635200,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "b",
+            "type" : "expense",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000003",
+            "amount" : 30,
+            "createdAt" : 800000003,
+            "date" : 812721600,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "c",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 40,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000004,
+            "date" : 812808000,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "d",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000004",
+            "amount" : 50,
+            "createdAt" : 800000005,
+            "date" : 812894400,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "e",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 60,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000006,
+            "date" : 812980800,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "memberId" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "f",
+            "type" : "expense",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 70,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000007,
+            "date" : 813067200,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "g",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          },
+          {
+            "amount" : 80,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000008,
+            "date" : 813153600,
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "h",
+            "type" : "expense",
+            "updatedAt" : 800000008
+          }
+        ],
+        "viewer" : "00000000-0000-0000-0000-000000000002"
+      },
+      "kind" : "family.visibility",
+      "name" : "família viewer Bia"
+    },
+    {
+      "expected" : {
+        "accounts" : [
+          "00000000-0000-0000-0000-000000000001",
+          "00000000-0000-0000-0000-000000000002",
+          "00000000-0000-0000-0000-000000000004"
+        ],
+        "categories" : [
+          "00000000-0000-0000-0000-000000000001",
+          "00000000-0000-0000-0000-000000000002"
+        ],
+        "transactions" : [
+          "00000000-0000-0000-0000-000000000002"
+        ]
+      },
+      "input" : {
+        "accounts" : [
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Conjunta",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Privada Ana",
+            "ownerId" : "00000000-0000-0000-0000-000000000001",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "private"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Privada Bia",
+            "ownerId" : "00000000-0000-0000-0000-000000000002",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "private"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Caio",
+            "ownerId" : "00000000-0000-0000-0000-000000000003",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "categories" : [
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "kind" : "expense",
+            "name" : "Mercado",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "kind" : "expense",
+            "name" : "Presentes",
+            "ownerId" : "00000000-0000-0000-0000-000000000001",
+            "updatedAt" : 800000000,
+            "visibility" : "private"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "kind" : "expense",
+            "name" : "Segredo Bia",
+            "ownerId" : "00000000-0000-0000-0000-000000000002",
+            "updatedAt" : 800000000,
+            "visibility" : "private"
+          }
+        ],
+        "scope" : {
+          "id" : "00000000-0000-0000-0000-000000000001",
+          "kind" : "member"
+        },
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000001,
+            "date" : 812548800,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "a",
+            "type" : "expense",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : 20,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000002,
+            "date" : 812635200,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "b",
+            "type" : "expense",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000003",
+            "amount" : 30,
+            "createdAt" : 800000003,
+            "date" : 812721600,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "c",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 40,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000004,
+            "date" : 812808000,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "d",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000004",
+            "amount" : 50,
+            "createdAt" : 800000005,
+            "date" : 812894400,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "e",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 60,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000006,
+            "date" : 812980800,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "memberId" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "f",
+            "type" : "expense",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 70,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000007,
+            "date" : 813067200,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "g",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          },
+          {
+            "amount" : 80,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000008,
+            "date" : 813153600,
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "h",
+            "type" : "expense",
+            "updatedAt" : 800000008
+          }
+        ],
+        "viewer" : "00000000-0000-0000-0000-000000000001"
+      },
+      "kind" : "family.visibility",
+      "name" : "individual Ana por Ana"
+    },
+    {
+      "expected" : {
+        "accounts" : [
+          "00000000-0000-0000-0000-000000000001",
+          "00000000-0000-0000-0000-000000000004"
+        ],
+        "categories" : [
+          "00000000-0000-0000-0000-000000000001",
+          "00000000-0000-0000-0000-000000000003"
+        ],
+        "transactions" : [
+
+        ]
+      },
+      "input" : {
+        "accounts" : [
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Conjunta",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Privada Ana",
+            "ownerId" : "00000000-0000-0000-0000-000000000001",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "private"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Privada Bia",
+            "ownerId" : "00000000-0000-0000-0000-000000000002",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "private"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Caio",
+            "ownerId" : "00000000-0000-0000-0000-000000000003",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "categories" : [
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "kind" : "expense",
+            "name" : "Mercado",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "kind" : "expense",
+            "name" : "Presentes",
+            "ownerId" : "00000000-0000-0000-0000-000000000001",
+            "updatedAt" : 800000000,
+            "visibility" : "private"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "kind" : "expense",
+            "name" : "Segredo Bia",
+            "ownerId" : "00000000-0000-0000-0000-000000000002",
+            "updatedAt" : 800000000,
+            "visibility" : "private"
+          }
+        ],
+        "scope" : {
+          "id" : "00000000-0000-0000-0000-000000000001",
+          "kind" : "member"
+        },
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000001,
+            "date" : 812548800,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "a",
+            "type" : "expense",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : 20,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000002,
+            "date" : 812635200,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "b",
+            "type" : "expense",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000003",
+            "amount" : 30,
+            "createdAt" : 800000003,
+            "date" : 812721600,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "c",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 40,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000004,
+            "date" : 812808000,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "d",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000004",
+            "amount" : 50,
+            "createdAt" : 800000005,
+            "date" : 812894400,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "e",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 60,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000006,
+            "date" : 812980800,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "memberId" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "f",
+            "type" : "expense",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 70,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000007,
+            "date" : 813067200,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "g",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          },
+          {
+            "amount" : 80,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000008,
+            "date" : 813153600,
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "h",
+            "type" : "expense",
+            "updatedAt" : 800000008
+          }
+        ],
+        "viewer" : "00000000-0000-0000-0000-000000000002"
+      },
+      "kind" : "family.visibility",
+      "name" : "individual Ana por Bia"
+    },
+    {
+      "expected" : {
+        "accounts" : [
+          "00000000-0000-0000-0000-000000000001",
+          "00000000-0000-0000-0000-000000000004"
+        ],
+        "categories" : [
+          "00000000-0000-0000-0000-000000000001",
+          "00000000-0000-0000-0000-000000000002"
+        ],
+        "transactions" : [
+          "00000000-0000-0000-0000-000000000005",
+          "00000000-0000-0000-0000-000000000007"
+        ]
+      },
+      "input" : {
+        "accounts" : [
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Conjunta",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Privada Ana",
+            "ownerId" : "00000000-0000-0000-0000-000000000001",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "private"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Privada Bia",
+            "ownerId" : "00000000-0000-0000-0000-000000000002",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "private"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Caio",
+            "ownerId" : "00000000-0000-0000-0000-000000000003",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "categories" : [
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "kind" : "expense",
+            "name" : "Mercado",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "kind" : "expense",
+            "name" : "Presentes",
+            "ownerId" : "00000000-0000-0000-0000-000000000001",
+            "updatedAt" : 800000000,
+            "visibility" : "private"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "kind" : "expense",
+            "name" : "Segredo Bia",
+            "ownerId" : "00000000-0000-0000-0000-000000000002",
+            "updatedAt" : 800000000,
+            "visibility" : "private"
+          }
+        ],
+        "scope" : {
+          "id" : "00000000-0000-0000-0000-000000000003",
+          "kind" : "member"
+        },
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000001,
+            "date" : 812548800,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "a",
+            "type" : "expense",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : 20,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000002,
+            "date" : 812635200,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "b",
+            "type" : "expense",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000003",
+            "amount" : 30,
+            "createdAt" : 800000003,
+            "date" : 812721600,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "c",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 40,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000004,
+            "date" : 812808000,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "d",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000004",
+            "amount" : 50,
+            "createdAt" : 800000005,
+            "date" : 812894400,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "e",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 60,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000006,
+            "date" : 812980800,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "memberId" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "f",
+            "type" : "expense",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 70,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000007,
+            "date" : 813067200,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "g",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          },
+          {
+            "amount" : 80,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000008,
+            "date" : 813153600,
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "h",
+            "type" : "expense",
+            "updatedAt" : 800000008
+          }
+        ],
+        "viewer" : "00000000-0000-0000-0000-000000000001"
+      },
+      "kind" : "family.visibility",
+      "name" : "individual Caio por Ana"
+    },
+    {
+      "expected" : {
+        "accounts" : [
+          "00000000-0000-0000-0000-000000000001",
+          "00000000-0000-0000-0000-000000000004"
+        ],
+        "categories" : [
+          "00000000-0000-0000-0000-000000000001"
+        ],
+        "transactions" : [
+          "00000000-0000-0000-0000-000000000001",
+          "00000000-0000-0000-0000-000000000005",
+          "00000000-0000-0000-0000-000000000007",
+          "00000000-0000-0000-0000-000000000008"
+        ]
+      },
+      "input" : {
+        "accounts" : [
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Conjunta",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Privada Ana",
+            "ownerId" : "00000000-0000-0000-0000-000000000001",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "private"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Privada Bia",
+            "ownerId" : "00000000-0000-0000-0000-000000000002",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "private"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Caio",
+            "ownerId" : "00000000-0000-0000-0000-000000000003",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "categories" : [
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "kind" : "expense",
+            "name" : "Mercado",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "kind" : "expense",
+            "name" : "Presentes",
+            "ownerId" : "00000000-0000-0000-0000-000000000001",
+            "updatedAt" : 800000000,
+            "visibility" : "private"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "kind" : "expense",
+            "name" : "Segredo Bia",
+            "ownerId" : "00000000-0000-0000-0000-000000000002",
+            "updatedAt" : 800000000,
+            "visibility" : "private"
+          }
+        ],
+        "scope" : {
+          "kind" : "family"
+        },
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000001,
+            "date" : 812548800,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "a",
+            "type" : "expense",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : 20,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000002,
+            "date" : 812635200,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "b",
+            "type" : "expense",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000003",
+            "amount" : 30,
+            "createdAt" : 800000003,
+            "date" : 812721600,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "c",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 40,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000004,
+            "date" : 812808000,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "d",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000004",
+            "amount" : 50,
+            "createdAt" : 800000005,
+            "date" : 812894400,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "e",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 60,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000006,
+            "date" : 812980800,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "memberId" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "f",
+            "type" : "expense",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 70,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000007,
+            "date" : 813067200,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "g",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          },
+          {
+            "amount" : 80,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000008,
+            "date" : 813153600,
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "h",
+            "type" : "expense",
+            "updatedAt" : 800000008
+          }
+        ],
+        "viewer" : null
+      },
+      "kind" : "family.visibility",
+      "name" : "família sem viewer"
+    },
+    {
+      "expected" : {
+        "kind" : "allowed"
+      },
+      "input" : {
+        "amount" : "39.99",
+        "date" : "2026-10-20",
+        "member" : {
+          "createdAt" : 800000000,
+          "householdId" : "00000000-0000-0000-0000-000000000070",
+          "id" : "00000000-0000-0000-0000-000000000003",
+          "monthlySpendingLimit" : 100,
+          "name" : "Caio",
+          "role" : "dependent",
+          "updatedAt" : 800000000
+        },
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 60,
+            "createdAt" : 800000001,
+            "date" : 812721600,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "gasto",
+            "type" : "expense",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 999,
+            "createdAt" : 800000002,
+            "date" : 810129600,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "mês passado",
+            "type" : "expense",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 999,
+            "createdAt" : 800000003,
+            "date" : 812721600,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "t",
+            "type" : "transfer",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 999,
+            "createdAt" : 800000004,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 812721600,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "invoiceId" : "00000000-0000-0000-0000-000000000005",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "p",
+            "type" : "transfer",
+            "updatedAt" : 800000004
+          }
+        ]
+      },
+      "kind" : "family.evaluate",
+      "name" : "evaluate 39.99"
+    },
+    {
+      "expected" : {
+        "kind" : "allowed"
+      },
+      "input" : {
+        "amount" : "40",
+        "date" : "2026-10-20",
+        "member" : {
+          "createdAt" : 800000000,
+          "householdId" : "00000000-0000-0000-0000-000000000070",
+          "id" : "00000000-0000-0000-0000-000000000003",
+          "monthlySpendingLimit" : 100,
+          "name" : "Caio",
+          "role" : "dependent",
+          "updatedAt" : 800000000
+        },
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 60,
+            "createdAt" : 800000001,
+            "date" : 812721600,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "gasto",
+            "type" : "expense",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 999,
+            "createdAt" : 800000002,
+            "date" : 810129600,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "mês passado",
+            "type" : "expense",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 999,
+            "createdAt" : 800000003,
+            "date" : 812721600,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "t",
+            "type" : "transfer",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 999,
+            "createdAt" : 800000004,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 812721600,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "invoiceId" : "00000000-0000-0000-0000-000000000005",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "p",
+            "type" : "transfer",
+            "updatedAt" : 800000004
+          }
+        ]
+      },
+      "kind" : "family.evaluate",
+      "name" : "evaluate 40"
+    },
+    {
+      "expected" : {
+        "kind" : "needsApproval",
+        "limit" : "100",
+        "spent" : "60"
+      },
+      "input" : {
+        "amount" : "40.01",
+        "date" : "2026-10-20",
+        "member" : {
+          "createdAt" : 800000000,
+          "householdId" : "00000000-0000-0000-0000-000000000070",
+          "id" : "00000000-0000-0000-0000-000000000003",
+          "monthlySpendingLimit" : 100,
+          "name" : "Caio",
+          "role" : "dependent",
+          "updatedAt" : 800000000
+        },
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 60,
+            "createdAt" : 800000001,
+            "date" : 812721600,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "gasto",
+            "type" : "expense",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 999,
+            "createdAt" : 800000002,
+            "date" : 810129600,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "mês passado",
+            "type" : "expense",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 999,
+            "createdAt" : 800000003,
+            "date" : 812721600,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "t",
+            "type" : "transfer",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 999,
+            "createdAt" : 800000004,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 812721600,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "invoiceId" : "00000000-0000-0000-0000-000000000005",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "p",
+            "type" : "transfer",
+            "updatedAt" : 800000004
+          }
+        ]
+      },
+      "kind" : "family.evaluate",
+      "name" : "evaluate 40.01"
+    },
+    {
+      "expected" : {
+        "kind" : "needsApproval",
+        "limit" : "100",
+        "spent" : "60"
+      },
+      "input" : {
+        "amount" : "500",
+        "date" : "2026-10-20",
+        "member" : {
+          "createdAt" : 800000000,
+          "householdId" : "00000000-0000-0000-0000-000000000070",
+          "id" : "00000000-0000-0000-0000-000000000003",
+          "monthlySpendingLimit" : 100,
+          "name" : "Caio",
+          "role" : "dependent",
+          "updatedAt" : 800000000
+        },
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 60,
+            "createdAt" : 800000001,
+            "date" : 812721600,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "gasto",
+            "type" : "expense",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 999,
+            "createdAt" : 800000002,
+            "date" : 810129600,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "mês passado",
+            "type" : "expense",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 999,
+            "createdAt" : 800000003,
+            "date" : 812721600,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "t",
+            "type" : "transfer",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 999,
+            "createdAt" : 800000004,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 812721600,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "invoiceId" : "00000000-0000-0000-0000-000000000005",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "p",
+            "type" : "transfer",
+            "updatedAt" : 800000004
+          }
+        ]
+      },
+      "kind" : "family.evaluate",
+      "name" : "evaluate 500"
+    },
+    {
+      "expected" : {
+        "kind" : "allowed"
+      },
+      "input" : {
+        "amount" : "9999",
+        "date" : "2026-10-20",
+        "member" : {
+          "createdAt" : 800000000,
+          "householdId" : "00000000-0000-0000-0000-000000000070",
+          "id" : "00000000-0000-0000-0000-000000000001",
+          "name" : "Ana",
+          "role" : "admin",
+          "updatedAt" : 800000000
+        },
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 60,
+            "createdAt" : 800000001,
+            "date" : 812721600,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "gasto",
+            "type" : "expense",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 999,
+            "createdAt" : 800000002,
+            "date" : 810129600,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "mês passado",
+            "type" : "expense",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 999,
+            "createdAt" : 800000003,
+            "date" : 812721600,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "t",
+            "type" : "transfer",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 999,
+            "createdAt" : 800000004,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 812721600,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "invoiceId" : "00000000-0000-0000-0000-000000000005",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "p",
+            "type" : "transfer",
+            "updatedAt" : 800000004
+          }
+        ]
+      },
+      "kind" : "family.evaluate",
+      "name" : "admin sempre permitido"
+    },
+    {
+      "expected" : {
+        "due" : [
+
+        ],
+        "last" : null,
+        "transactions" : [
+
+        ]
+      },
+      "input" : {
+        "allowance" : {
+          "amount" : 50.5,
+          "createdAt" : 800000000,
+          "dayOfMonth" : 10,
+          "fromAccountId" : "00000000-0000-0000-0000-000000000001",
+          "id" : "00000000-0000-0000-0000-000000000080",
+          "isActive" : true,
+          "memberId" : "00000000-0000-0000-0000-000000000003",
+          "startMonth" : {
+            "month" : 10,
+            "year" : 2026
+          },
+          "toAccountId" : "00000000-0000-0000-0000-000000000004",
+          "updatedAt" : 800000000
+        },
+        "asOf" : "2026-10-09"
+      },
+      "kind" : "family.allowance",
+      "name" : "primeira vez antes do dia"
+    },
+    {
+      "expected" : {
+        "due" : [
+          {
+            "month" : 10,
+            "year" : 2026
+          }
+        ],
+        "last" : {
+          "month" : 10,
+          "year" : 2026
+        },
+        "transactions" : [
+          {
+            "amount" : "50.5",
+            "date" : "2026-10-10",
+            "title" : "Mesada 10\/2026"
+          }
+        ]
+      },
+      "input" : {
+        "allowance" : {
+          "amount" : 50.5,
+          "createdAt" : 800000000,
+          "dayOfMonth" : 10,
+          "fromAccountId" : "00000000-0000-0000-0000-000000000001",
+          "id" : "00000000-0000-0000-0000-000000000080",
+          "isActive" : true,
+          "memberId" : "00000000-0000-0000-0000-000000000003",
+          "startMonth" : {
+            "month" : 10,
+            "year" : 2026
+          },
+          "toAccountId" : "00000000-0000-0000-0000-000000000004",
+          "updatedAt" : 800000000
+        },
+        "asOf" : "2026-10-10"
+      },
+      "kind" : "family.allowance",
+      "name" : "primeira vez no dia"
+    },
+    {
+      "expected" : {
+        "due" : [
+          {
+            "month" : 8,
+            "year" : 2026
+          },
+          {
+            "month" : 9,
+            "year" : 2026
+          },
+          {
+            "month" : 10,
+            "year" : 2026
+          }
+        ],
+        "last" : {
+          "month" : 10,
+          "year" : 2026
+        },
+        "transactions" : [
+          {
+            "amount" : "50.5",
+            "date" : "2026-08-05",
+            "title" : "Mesada 08\/2026"
+          },
+          {
+            "amount" : "50.5",
+            "date" : "2026-09-05",
+            "title" : "Mesada 09\/2026"
+          },
+          {
+            "amount" : "50.5",
+            "date" : "2026-10-05",
+            "title" : "Mesada 10\/2026"
+          }
+        ]
+      },
+      "input" : {
+        "allowance" : {
+          "amount" : 50.5,
+          "createdAt" : 800000000,
+          "dayOfMonth" : 5,
+          "fromAccountId" : "00000000-0000-0000-0000-000000000001",
+          "id" : "00000000-0000-0000-0000-000000000080",
+          "isActive" : true,
+          "lastPaidMonth" : {
+            "month" : 7,
+            "year" : 2026
+          },
+          "memberId" : "00000000-0000-0000-0000-000000000003",
+          "startMonth" : {
+            "month" : 7,
+            "year" : 2026
+          },
+          "toAccountId" : "00000000-0000-0000-0000-000000000004",
+          "updatedAt" : 800000000
+        },
+        "asOf" : "2026-10-20"
+      },
+      "kind" : "family.allowance",
+      "name" : "atrasada 3 meses"
+    },
+    {
+      "expected" : {
+        "due" : [
+          {
+            "month" : 11,
+            "year" : 2025
+          },
+          {
+            "month" : 12,
+            "year" : 2025
+          },
+          {
+            "month" : 1,
+            "year" : 2026
+          },
+          {
+            "month" : 2,
+            "year" : 2026
+          },
+          {
+            "month" : 3,
+            "year" : 2026
+          },
+          {
+            "month" : 4,
+            "year" : 2026
+          },
+          {
+            "month" : 5,
+            "year" : 2026
+          },
+          {
+            "month" : 6,
+            "year" : 2026
+          },
+          {
+            "month" : 7,
+            "year" : 2026
+          },
+          {
+            "month" : 8,
+            "year" : 2026
+          },
+          {
+            "month" : 9,
+            "year" : 2026
+          },
+          {
+            "month" : 10,
+            "year" : 2026
+          }
+        ],
+        "last" : {
+          "month" : 10,
+          "year" : 2026
+        },
+        "transactions" : [
+          {
+            "amount" : "50.5",
+            "date" : "2025-11-30",
+            "title" : "Mesada 11\/2025"
+          },
+          {
+            "amount" : "50.5",
+            "date" : "2025-12-31",
+            "title" : "Mesada 12\/2025"
+          },
+          {
+            "amount" : "50.5",
+            "date" : "2026-01-31",
+            "title" : "Mesada 01\/2026"
+          },
+          {
+            "amount" : "50.5",
+            "date" : "2026-02-28",
+            "title" : "Mesada 02\/2026"
+          },
+          {
+            "amount" : "50.5",
+            "date" : "2026-03-31",
+            "title" : "Mesada 03\/2026"
+          },
+          {
+            "amount" : "50.5",
+            "date" : "2026-04-30",
+            "title" : "Mesada 04\/2026"
+          },
+          {
+            "amount" : "50.5",
+            "date" : "2026-05-31",
+            "title" : "Mesada 05\/2026"
+          },
+          {
+            "amount" : "50.5",
+            "date" : "2026-06-30",
+            "title" : "Mesada 06\/2026"
+          },
+          {
+            "amount" : "50.5",
+            "date" : "2026-07-31",
+            "title" : "Mesada 07\/2026"
+          },
+          {
+            "amount" : "50.5",
+            "date" : "2026-08-31",
+            "title" : "Mesada 08\/2026"
+          },
+          {
+            "amount" : "50.5",
+            "date" : "2026-09-30",
+            "title" : "Mesada 09\/2026"
+          },
+          {
+            "amount" : "50.5",
+            "date" : "2026-10-31",
+            "title" : "Mesada 10\/2026"
+          }
+        ]
+      },
+      "input" : {
+        "allowance" : {
+          "amount" : 50.5,
+          "createdAt" : 800000000,
+          "dayOfMonth" : 31,
+          "fromAccountId" : "00000000-0000-0000-0000-000000000001",
+          "id" : "00000000-0000-0000-0000-000000000080",
+          "isActive" : true,
+          "memberId" : "00000000-0000-0000-0000-000000000003",
+          "startMonth" : {
+            "month" : 1,
+            "year" : 2024
+          },
+          "toAccountId" : "00000000-0000-0000-0000-000000000004",
+          "updatedAt" : 800000000
+        },
+        "asOf" : "2026-10-31"
+      },
+      "kind" : "family.allowance",
+      "name" : "recupera no máximo 12"
+    },
+    {
+      "expected" : {
+        "due" : [
+          {
+            "month" : 1,
+            "year" : 2026
+          },
+          {
+            "month" : 2,
+            "year" : 2026
+          }
+        ],
+        "last" : {
+          "month" : 2,
+          "year" : 2026
+        },
+        "transactions" : [
+          {
+            "amount" : "50.5",
+            "date" : "2026-01-31",
+            "title" : "Mesada 01\/2026"
+          },
+          {
+            "amount" : "50.5",
+            "date" : "2026-02-28",
+            "title" : "Mesada 02\/2026"
+          }
+        ]
+      },
+      "input" : {
+        "allowance" : {
+          "amount" : 50.5,
+          "createdAt" : 800000000,
+          "dayOfMonth" : 31,
+          "fromAccountId" : "00000000-0000-0000-0000-000000000001",
+          "id" : "00000000-0000-0000-0000-000000000080",
+          "isActive" : true,
+          "memberId" : "00000000-0000-0000-0000-000000000003",
+          "startMonth" : {
+            "month" : 1,
+            "year" : 2026
+          },
+          "toAccountId" : "00000000-0000-0000-0000-000000000004",
+          "updatedAt" : 800000000
+        },
+        "asOf" : "2026-03-01"
+      },
+      "kind" : "family.allowance",
+      "name" : "dia 31 em fev"
+    },
+    {
+      "expected" : {
+        "due" : [
+
+        ],
+        "last" : null,
+        "transactions" : [
+
+        ]
+      },
+      "input" : {
+        "allowance" : {
+          "amount" : 50.5,
+          "createdAt" : 800000000,
+          "dayOfMonth" : 5,
+          "fromAccountId" : "00000000-0000-0000-0000-000000000001",
+          "id" : "00000000-0000-0000-0000-000000000080",
+          "isActive" : false,
+          "memberId" : "00000000-0000-0000-0000-000000000003",
+          "startMonth" : {
+            "month" : 1,
+            "year" : 2026
+          },
+          "toAccountId" : "00000000-0000-0000-0000-000000000004",
+          "updatedAt" : 800000000
+        },
+        "asOf" : "2026-10-20"
+      },
+      "kind" : "family.allowance",
+      "name" : "inativa"
+    },
+    {
+      "expected" : {
+        "due" : [
+
+        ],
+        "last" : {
+          "month" : 10,
+          "year" : 2026
+        },
+        "transactions" : [
+
+        ]
+      },
+      "input" : {
+        "allowance" : {
+          "amount" : 50.5,
+          "createdAt" : 800000000,
+          "dayOfMonth" : 5,
+          "fromAccountId" : "00000000-0000-0000-0000-000000000001",
+          "id" : "00000000-0000-0000-0000-000000000080",
+          "isActive" : true,
+          "lastPaidMonth" : {
+            "month" : 10,
+            "year" : 2026
+          },
+          "memberId" : "00000000-0000-0000-0000-000000000003",
+          "startMonth" : {
+            "month" : 1,
+            "year" : 2026
+          },
+          "toAccountId" : "00000000-0000-0000-0000-000000000004",
+          "updatedAt" : 800000000
+        },
+        "asOf" : "2026-10-20"
+      },
+      "kind" : "family.allowance",
+      "name" : "em dia"
+    }
+  ],
+  "suite" : "family"
+}

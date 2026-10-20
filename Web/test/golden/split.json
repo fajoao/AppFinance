@@ -1,0 +1,254 @@
+{
+  "cases" : [
+    {
+      "expected" : {
+        "ok" : true,
+        "split" : {
+          "mode" : "equal",
+          "shares" : [
+            {
+              "amount" : "33.33",
+              "member" : "00000000-0000-0000-0000-000000000001",
+              "percent" : null
+            },
+            {
+              "amount" : "33.33",
+              "member" : "00000000-0000-0000-0000-000000000002",
+              "percent" : null
+            },
+            {
+              "amount" : "33.35",
+              "member" : "00000000-0000-0000-0000-000000000003",
+              "percent" : null
+            }
+          ],
+          "total" : "100.01"
+        }
+      },
+      "input" : {
+        "mode" : "equal",
+        "paidBy" : "00000000-0000-0000-0000-000000000001",
+        "participants" : [
+          "00000000-0000-0000-0000-000000000001",
+          "00000000-0000-0000-0000-000000000002",
+          "00000000-0000-0000-0000-000000000003"
+        ],
+        "percentages" : {
+
+        },
+        "title" : "Mercado",
+        "total" : "100.01"
+      },
+      "kind" : "split.make",
+      "name" : "split Mercado"
+    },
+    {
+      "expected" : {
+        "ok" : true,
+        "split" : {
+          "mode" : "percentage",
+          "shares" : [
+            {
+              "amount" : "1200",
+              "member" : "00000000-0000-0000-0000-000000000001",
+              "percent" : "60"
+            },
+            {
+              "amount" : "800",
+              "member" : "00000000-0000-0000-0000-000000000002",
+              "percent" : "40"
+            }
+          ],
+          "total" : "2000"
+        }
+      },
+      "input" : {
+        "mode" : "percentage",
+        "paidBy" : "00000000-0000-0000-0000-000000000002",
+        "participants" : [
+          "00000000-0000-0000-0000-000000000001",
+          "00000000-0000-0000-0000-000000000002"
+        ],
+        "percentages" : {
+          "00000000-0000-0000-0000-000000000001" : "60",
+          "00000000-0000-0000-0000-000000000002" : "40"
+        },
+        "title" : "Aluguel",
+        "total" : "2000"
+      },
+      "kind" : "split.make",
+      "name" : "split Aluguel"
+    },
+    {
+      "expected" : {
+        "ok" : true,
+        "split" : {
+          "mode" : "equal",
+          "shares" : [
+            {
+              "amount" : "249.99",
+              "member" : "00000000-0000-0000-0000-000000000001",
+              "percent" : null
+            },
+            {
+              "amount" : "249.99",
+              "member" : "00000000-0000-0000-0000-000000000002",
+              "percent" : null
+            },
+            {
+              "amount" : "249.99",
+              "member" : "00000000-0000-0000-0000-000000000003",
+              "percent" : null
+            },
+            {
+              "amount" : "250.02",
+              "member" : "00000000-0000-0000-0000-000000000004",
+              "percent" : null
+            }
+          ],
+          "total" : "999.99"
+        }
+      },
+      "input" : {
+        "mode" : "equal",
+        "paidBy" : "00000000-0000-0000-0000-000000000003",
+        "participants" : [
+          "00000000-0000-0000-0000-000000000001",
+          "00000000-0000-0000-0000-000000000002",
+          "00000000-0000-0000-0000-000000000003",
+          "00000000-0000-0000-0000-000000000004"
+        ],
+        "percentages" : {
+
+        },
+        "title" : "Viagem",
+        "total" : "999.99"
+      },
+      "kind" : "split.make",
+      "name" : "split Viagem"
+    },
+    {
+      "expected" : {
+        "ok" : true,
+        "split" : {
+          "mode" : "percentage",
+          "shares" : [
+            {
+              "amount" : "25.18",
+              "member" : "00000000-0000-0000-0000-000000000001",
+              "percent" : "33.33"
+            },
+            {
+              "amount" : "50.37",
+              "member" : "00000000-0000-0000-0000-000000000004",
+              "percent" : "66.67"
+            }
+          ],
+          "total" : "75.55"
+        }
+      },
+      "input" : {
+        "mode" : "percentage",
+        "paidBy" : "00000000-0000-0000-0000-000000000004",
+        "participants" : [
+          "00000000-0000-0000-0000-000000000001",
+          "00000000-0000-0000-0000-000000000004"
+        ],
+        "percentages" : {
+          "00000000-0000-0000-0000-000000000001" : "33.33",
+          "00000000-0000-0000-0000-000000000004" : "66.67"
+        },
+        "title" : "Pizza",
+        "total" : "75.55"
+      },
+      "kind" : "split.make",
+      "name" : "split Pizza"
+    },
+    {
+      "expected" : {
+        "error" : "Os percentuais devem somar 100%",
+        "ok" : false
+      },
+      "input" : {
+        "mode" : "percentage",
+        "paidBy" : "00000000-0000-0000-0000-000000000001",
+        "participants" : [
+          "00000000-0000-0000-0000-000000000001",
+          "00000000-0000-0000-0000-000000000002"
+        ],
+        "percentages" : {
+          "00000000-0000-0000-0000-000000000001" : "50",
+          "00000000-0000-0000-0000-000000000002" : "40"
+        },
+        "title" : "x",
+        "total" : "10"
+      },
+      "kind" : "split.make",
+      "name" : "pct não soma"
+    },
+    {
+      "expected" : {
+        "error" : "Os percentuais devem somar 100%",
+        "ok" : false
+      },
+      "input" : {
+        "mode" : "percentage",
+        "paidBy" : "00000000-0000-0000-0000-000000000001",
+        "participants" : [
+          "00000000-0000-0000-0000-000000000001",
+          "00000000-0000-0000-0000-000000000002"
+        ],
+        "percentages" : {
+          "00000000-0000-0000-0000-000000000001" : "120",
+          "00000000-0000-0000-0000-000000000002" : "-20"
+        },
+        "title" : "x",
+        "total" : "10"
+      },
+      "kind" : "split.make",
+      "name" : "pct negativo"
+    },
+    {
+      "expected" : {
+        "error" : "Os percentuais devem somar 100%",
+        "ok" : false
+      },
+      "input" : {
+        "mode" : "percentage",
+        "paidBy" : "00000000-0000-0000-0000-000000000001",
+        "participants" : [
+          "00000000-0000-0000-0000-000000000001",
+          "00000000-0000-0000-0000-000000000002"
+        ],
+        "percentages" : {
+          "00000000-0000-0000-0000-000000000001" : "100"
+        },
+        "title" : "x",
+        "total" : "10"
+      },
+      "kind" : "split.make",
+      "name" : "pct faltando"
+    },
+    {
+      "expected" : {
+        "error" : "Escolha ao menos um participante",
+        "ok" : false
+      },
+      "input" : {
+        "mode" : "percentage",
+        "paidBy" : "00000000-0000-0000-0000-000000000001",
+        "participants" : [
+
+        ],
+        "percentages" : {
+
+        },
+        "title" : "x",
+        "total" : "10"
+      },
+      "kind" : "split.make",
+      "name" : "sem participantes"
+    }
+  ],
+  "suite" : "split"
+}

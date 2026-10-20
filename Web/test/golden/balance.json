@@ -1,0 +1,895 @@
+{
+  "cases" : [
+    {
+      "expected" : {
+        "balances" : [
+          "3379.7",
+          "950.5",
+          "10"
+        ],
+        "savingsOnly" : "950.5",
+        "total" : "4330.2"
+      },
+      "input" : {
+        "accounts" : [
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "initialBalance" : 1000,
+            "isArchived" : false,
+            "name" : "Corrente",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "initialBalance" : 500.5,
+            "isArchived" : false,
+            "name" : "Poupança",
+            "type" : "savings",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "initialBalance" : 10,
+            "isArchived" : true,
+            "name" : "Antiga",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "asOf" : null,
+        "includePending" : false,
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 3000,
+            "createdAt" : 800000001,
+            "date" : 812894400,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 250.30000000000001,
+            "createdAt" : 800000002,
+            "date" : 812980800,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado",
+            "type" : "expense",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 400,
+            "createdAt" : 800000003,
+            "date" : 813067200,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "p\/ poupança",
+            "type" : "transfer",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 100,
+            "createdAt" : 800000004,
+            "date" : 814190400,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Futura",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "amount" : 80,
+            "createdAt" : 800000005,
+            "creditCardId" : "00000000-0000-0000-0000-000000000009",
+            "date" : 813153600,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Cartão",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : 50,
+            "createdAt" : 800000006,
+            "date" : 815227200,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Futuro pago",
+            "type" : "income",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : -30,
+            "createdAt" : 800000007,
+            "date" : 813240000,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Estorno",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          }
+        ]
+      },
+      "kind" : "balance.compute",
+      "name" : "balance asOf=nil pending=false"
+    },
+    {
+      "expected" : {
+        "balances" : [
+          "3349.7",
+          "900.5",
+          "10"
+        ],
+        "savingsOnly" : "900.5",
+        "total" : "4250.2"
+      },
+      "input" : {
+        "accounts" : [
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "initialBalance" : 1000,
+            "isArchived" : false,
+            "name" : "Corrente",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "initialBalance" : 500.5,
+            "isArchived" : false,
+            "name" : "Poupança",
+            "type" : "savings",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "initialBalance" : 10,
+            "isArchived" : true,
+            "name" : "Antiga",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "asOf" : "2026-10-07",
+        "includePending" : false,
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 3000,
+            "createdAt" : 800000001,
+            "date" : 812894400,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 250.30000000000001,
+            "createdAt" : 800000002,
+            "date" : 812980800,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado",
+            "type" : "expense",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 400,
+            "createdAt" : 800000003,
+            "date" : 813067200,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "p\/ poupança",
+            "type" : "transfer",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 100,
+            "createdAt" : 800000004,
+            "date" : 814190400,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Futura",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "amount" : 80,
+            "createdAt" : 800000005,
+            "creditCardId" : "00000000-0000-0000-0000-000000000009",
+            "date" : 813153600,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Cartão",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : 50,
+            "createdAt" : 800000006,
+            "date" : 815227200,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Futuro pago",
+            "type" : "income",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : -30,
+            "createdAt" : 800000007,
+            "date" : 813240000,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Estorno",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          }
+        ]
+      },
+      "kind" : "balance.compute",
+      "name" : "balance asOf=2026-10-07 pending=false"
+    },
+    {
+      "expected" : {
+        "balances" : [
+          "3279.7",
+          "950.5",
+          "10"
+        ],
+        "savingsOnly" : "950.5",
+        "total" : "4230.2"
+      },
+      "input" : {
+        "accounts" : [
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "initialBalance" : 1000,
+            "isArchived" : false,
+            "name" : "Corrente",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "initialBalance" : 500.5,
+            "isArchived" : false,
+            "name" : "Poupança",
+            "type" : "savings",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "initialBalance" : 10,
+            "isArchived" : true,
+            "name" : "Antiga",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "asOf" : null,
+        "includePending" : true,
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 3000,
+            "createdAt" : 800000001,
+            "date" : 812894400,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 250.30000000000001,
+            "createdAt" : 800000002,
+            "date" : 812980800,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado",
+            "type" : "expense",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 400,
+            "createdAt" : 800000003,
+            "date" : 813067200,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "p\/ poupança",
+            "type" : "transfer",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 100,
+            "createdAt" : 800000004,
+            "date" : 814190400,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Futura",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "amount" : 80,
+            "createdAt" : 800000005,
+            "creditCardId" : "00000000-0000-0000-0000-000000000009",
+            "date" : 813153600,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Cartão",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : 50,
+            "createdAt" : 800000006,
+            "date" : 815227200,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Futuro pago",
+            "type" : "income",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : -30,
+            "createdAt" : 800000007,
+            "date" : 813240000,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Estorno",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          }
+        ]
+      },
+      "kind" : "balance.compute",
+      "name" : "balance asOf=nil pending=true"
+    },
+    {
+      "expected" : {
+        "balances" : [
+          "3749.7",
+          "500.5",
+          "10"
+        ],
+        "savingsOnly" : "500.5",
+        "total" : "4250.2"
+      },
+      "input" : {
+        "accounts" : [
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "initialBalance" : 1000,
+            "isArchived" : false,
+            "name" : "Corrente",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "initialBalance" : 500.5,
+            "isArchived" : false,
+            "name" : "Poupança",
+            "type" : "savings",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "initialBalance" : 10,
+            "isArchived" : true,
+            "name" : "Antiga",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "asOf" : "2026-10-06",
+        "includePending" : true,
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 3000,
+            "createdAt" : 800000001,
+            "date" : 812894400,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 250.30000000000001,
+            "createdAt" : 800000002,
+            "date" : 812980800,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado",
+            "type" : "expense",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 400,
+            "createdAt" : 800000003,
+            "date" : 813067200,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "p\/ poupança",
+            "type" : "transfer",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 100,
+            "createdAt" : 800000004,
+            "date" : 814190400,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Futura",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "amount" : 80,
+            "createdAt" : 800000005,
+            "creditCardId" : "00000000-0000-0000-0000-000000000009",
+            "date" : 813153600,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Cartão",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : 50,
+            "createdAt" : 800000006,
+            "date" : 815227200,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Futuro pago",
+            "type" : "income",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : -30,
+            "createdAt" : 800000007,
+            "date" : 813240000,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Estorno",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          }
+        ]
+      },
+      "kind" : "balance.compute",
+      "name" : "balance asOf=2026-10-06 pending=true"
+    },
+    {
+      "expected" : {
+        "balances" : [
+          "3379.7",
+          "950.5",
+          "10"
+        ],
+        "savingsOnly" : "950.5",
+        "total" : "4330.2"
+      },
+      "input" : {
+        "accounts" : [
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "initialBalance" : 1000,
+            "isArchived" : false,
+            "name" : "Corrente",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "initialBalance" : 500.5,
+            "isArchived" : false,
+            "name" : "Poupança",
+            "type" : "savings",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "initialBalance" : 10,
+            "isArchived" : true,
+            "name" : "Antiga",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "asOf" : "2026-12-31",
+        "includePending" : false,
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 3000,
+            "createdAt" : 800000001,
+            "date" : 812894400,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 250.30000000000001,
+            "createdAt" : 800000002,
+            "date" : 812980800,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado",
+            "type" : "expense",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 400,
+            "createdAt" : 800000003,
+            "date" : 813067200,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "p\/ poupança",
+            "type" : "transfer",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 100,
+            "createdAt" : 800000004,
+            "date" : 814190400,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Futura",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "amount" : 80,
+            "createdAt" : 800000005,
+            "creditCardId" : "00000000-0000-0000-0000-000000000009",
+            "date" : 813153600,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Cartão",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : 50,
+            "createdAt" : 800000006,
+            "date" : 815227200,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Futuro pago",
+            "type" : "income",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : -30,
+            "createdAt" : 800000007,
+            "date" : 813240000,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Estorno",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          }
+        ]
+      },
+      "kind" : "balance.compute",
+      "name" : "balance asOf=2026-12-31 pending=false"
+    },
+    {
+      "expected" : {
+        "amount" : "620.3",
+        "diff" : "620.3",
+        "type" : "income"
+      },
+      "input" : {
+        "account" : {
+          "createdAt" : 800000000,
+          "currency" : "BRL",
+          "id" : "00000000-0000-0000-0000-000000000001",
+          "initialBalance" : 1000,
+          "isArchived" : false,
+          "name" : "Corrente",
+          "type" : "checking",
+          "updatedAt" : 800000000,
+          "visibility" : "shared"
+        },
+        "date" : "2026-10-31",
+        "statement" : "4000",
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 3000,
+            "createdAt" : 800000001,
+            "date" : 812894400,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 250.30000000000001,
+            "createdAt" : 800000002,
+            "date" : 812980800,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado",
+            "type" : "expense",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 400,
+            "createdAt" : 800000003,
+            "date" : 813067200,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "p\/ poupança",
+            "type" : "transfer",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 100,
+            "createdAt" : 800000004,
+            "date" : 814190400,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Futura",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "amount" : 80,
+            "createdAt" : 800000005,
+            "creditCardId" : "00000000-0000-0000-0000-000000000009",
+            "date" : 813153600,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Cartão",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : 50,
+            "createdAt" : 800000006,
+            "date" : 815227200,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Futuro pago",
+            "type" : "income",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : -30,
+            "createdAt" : 800000007,
+            "date" : 813240000,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Estorno",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          }
+        ]
+      },
+      "kind" : "balance.reconcile",
+      "name" : "reconciliation adjustment"
+    }
+  ],
+  "suite" : "balance"
+}

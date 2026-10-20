@@ -1,0 +1,2854 @@
+{
+  "cases" : [
+    {
+      "expected" : {
+        "byAccount" : [
+          {
+            "count" : 9,
+            "expense" : "6549",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "income" : "6300.55",
+            "percent" : "94.99"
+          },
+          {
+            "count" : 1,
+            "expense" : "300.75",
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "income" : "0",
+            "percent" : "4.36"
+          },
+          {
+            "count" : 1,
+            "expense" : "45",
+            "id" : null,
+            "income" : "0",
+            "percent" : "0.65"
+          }
+        ],
+        "byCategory" : [
+          {
+            "count" : 3,
+            "expense" : "4700",
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "income" : "0",
+            "percent" : "68.17"
+          },
+          {
+            "count" : 1,
+            "expense" : "1500",
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "income" : "0",
+            "percent" : "21.76"
+          },
+          {
+            "count" : 1,
+            "expense" : "300.75",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "income" : "0",
+            "percent" : "4.36"
+          },
+          {
+            "count" : 1,
+            "expense" : "250",
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "income" : "0",
+            "percent" : "3.63"
+          },
+          {
+            "count" : 1,
+            "expense" : "99",
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "income" : "0",
+            "percent" : "1.44"
+          },
+          {
+            "count" : 1,
+            "expense" : "45",
+            "id" : null,
+            "income" : "0",
+            "percent" : "0.65"
+          },
+          {
+            "count" : 2,
+            "expense" : "0",
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "income" : "5100",
+            "percent" : "0"
+          },
+          {
+            "count" : 1,
+            "expense" : "0",
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "income" : "1200.55",
+            "percent" : "0"
+          }
+        ],
+        "byMember" : [
+          {
+            "count" : 2,
+            "expense" : "3900",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "income" : "0",
+            "percent" : "56.56"
+          },
+          {
+            "count" : 5,
+            "expense" : "2550",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "income" : "6200.55",
+            "percent" : "36.98"
+          },
+          {
+            "count" : 1,
+            "expense" : "300.75",
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "income" : "0",
+            "percent" : "4.36"
+          },
+          {
+            "count" : 3,
+            "expense" : "144",
+            "id" : null,
+            "income" : "100",
+            "percent" : "2.09"
+          }
+        ],
+        "byMonth" : [
+          {
+            "expense" : "1800.75",
+            "income" : "5000",
+            "month" : {
+              "month" : 3,
+              "year" : 2026
+            }
+          },
+          {
+            "expense" : "650",
+            "income" : "1200.55",
+            "month" : {
+              "month" : 4,
+              "year" : 2026
+            }
+          },
+          {
+            "expense" : "4444",
+            "income" : "100",
+            "month" : {
+              "month" : 5,
+              "year" : 2026
+            }
+          }
+        ],
+        "count" : 11,
+        "csv" : "Seção;Item;Valor\nResumo;Receitas;6300,55\nResumo;Despesas;6894,75\nResumo;Saldo;-594,20\nResumo;Lançamentos;11\nPor categoria;Escola;4700,00\nPor categoria;Aluguel;1500,00\nPor categoria;Mercado;300,75\nPor categoria;Consulta;250,00\nPor categoria;Saúde;99,00\nPor categoria;Sem categoria;45,00\nPor categoria;Salário;5100,00\nPor categoria;Freela;1200,55\nPor membro;Caio;3900,00\nPor membro;Ana;2550,00\nPor membro;Bia;300,75\nPor membro;Sem membro;144,00\nPor conta;Corrente;6549,00\nPor conta;Poupança;300,75\nPor conta;Cartão ou sem conta;45,00\nPor mês;03\/2026;3199,25\nPor mês;04\/2026;550,55\nPor mês;05\/2026;-4344,00\n",
+        "expense" : "6894.75",
+        "generatedOn" : "Gerado em 20\/10\/2026",
+        "income" : "6300.55",
+        "net" : "-594.2",
+        "subtitle" : "Período: 01\/01\/2026 a 31\/12\/2026",
+        "transactionIds" : [
+          "00000000-0000-0000-0000-000000000001",
+          "00000000-0000-0000-0000-000000000003",
+          "00000000-0000-0000-0000-000000000004",
+          "00000000-0000-0000-0000-000000000002",
+          "00000000-0000-0000-0000-000000000005",
+          "00000000-0000-0000-0000-000000000006",
+          "00000000-0000-0000-0000-000000000007",
+          "00000000-0000-0000-0000-000000000008",
+          "00000000-0000-0000-0000-000000000009",
+          "00000000-0000-0000-0000-000000000012",
+          "00000000-0000-0000-0000-000000000014"
+        ]
+      },
+      "input" : {
+        "categories" : [
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "kind" : "expense",
+            "name" : "Moradia",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "kind" : "expense",
+            "name" : "Aluguel",
+            "parentId" : "00000000-0000-0000-0000-000000000001",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "kind" : "expense",
+            "name" : "Mercado",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "kind" : "expense",
+            "name" : "Saúde",
+            "taxKind" : "health",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "kind" : "expense",
+            "name" : "Consulta",
+            "parentId" : "00000000-0000-0000-0000-000000000004",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "kind" : "expense",
+            "name" : "Escola",
+            "taxKind" : "education",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "kind" : "income",
+            "name" : "Salário",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "kind" : "income",
+            "name" : "Freela",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "filter" : {
+          "from" : "2026-01-01",
+          "to" : "2026-12-31"
+        },
+        "generatedOn" : "2026-10-20",
+        "names" : {
+          "accounts" : {
+            "00000000-0000-0000-0000-000000000001" : "Corrente",
+            "00000000-0000-0000-0000-000000000002" : "Poupança"
+          },
+          "categories" : {
+            "00000000-0000-0000-0000-000000000001" : "Moradia",
+            "00000000-0000-0000-0000-000000000002" : "Aluguel",
+            "00000000-0000-0000-0000-000000000003" : "Mercado",
+            "00000000-0000-0000-0000-000000000004" : "Saúde",
+            "00000000-0000-0000-0000-000000000005" : "Consulta",
+            "00000000-0000-0000-0000-000000000006" : "Escola",
+            "00000000-0000-0000-0000-000000000007" : "Salário",
+            "00000000-0000-0000-0000-000000000008" : "Freela"
+          },
+          "members" : {
+            "00000000-0000-0000-0000-000000000001" : "Ana",
+            "00000000-0000-0000-0000-000000000002" : "Bia",
+            "00000000-0000-0000-0000-000000000003" : "Caio"
+          }
+        },
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 5000,
+            "categoryId" : "00000000-0000-0000-0000-000000000007",
+            "createdAt" : 800000001,
+            "date" : 794404800,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1200.55,
+            "categoryId" : "00000000-0000-0000-0000-000000000008",
+            "createdAt" : 800000002,
+            "date" : 797083200,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Freela",
+            "type" : "income",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1500,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000003,
+            "date" : 794491200,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : 300.75,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000004,
+            "date" : 794577600,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "memberId" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 250,
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "createdAt" : 800000005,
+            "date" : 797342400,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Consulta",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 400,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000006,
+            "date" : 797428800,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Escola Caio",
+            "type" : "expense",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 3500,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000007,
+            "date" : 800020800,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Escola Caio 2",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 800,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000008,
+            "date" : 800107200,
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Escola Ana",
+            "type" : "expense",
+            "updatedAt" : 800000008
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 99,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000009,
+            "date" : 800193600,
+            "id" : "00000000-0000-0000-0000-000000000009",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Pendente",
+            "type" : "expense",
+            "updatedAt" : 800000009
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1000,
+            "createdAt" : 800000010,
+            "date" : 800280000,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000010",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Transf",
+            "type" : "transfer",
+            "updatedAt" : 800000010
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 500,
+            "createdAt" : 800000011,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 800366400,
+            "id" : "00000000-0000-0000-0000-000000000011",
+            "invoiceId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Fatura",
+            "type" : "transfer",
+            "updatedAt" : 800000011
+          },
+          {
+            "amount" : 45,
+            "createdAt" : 800000012,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 800452800,
+            "id" : "00000000-0000-0000-0000-000000000012",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Sem cat",
+            "type" : "expense",
+            "updatedAt" : 800000012
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000013,
+            "date" : 788875200,
+            "id" : "00000000-0000-0000-0000-000000000013",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Ano passado",
+            "type" : "expense",
+            "updatedAt" : 800000013
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 100,
+            "categoryId" : "00000000-0000-0000-0000-000000000007",
+            "createdAt" : 800000014,
+            "date" : 800539200,
+            "id" : "00000000-0000-0000-0000-000000000014",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Sem membro",
+            "type" : "income",
+            "updatedAt" : 800000014
+          }
+        ]
+      },
+      "kind" : "report.run",
+      "name" : "tudo 2026"
+    },
+    {
+      "expected" : {
+        "byAccount" : [
+          {
+            "count" : 8,
+            "expense" : "6450",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "income" : "6300.55",
+            "percent" : "94.91"
+          },
+          {
+            "count" : 1,
+            "expense" : "300.75",
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "income" : "0",
+            "percent" : "4.43"
+          },
+          {
+            "count" : 1,
+            "expense" : "45",
+            "id" : null,
+            "income" : "0",
+            "percent" : "0.66"
+          }
+        ],
+        "byCategory" : [
+          {
+            "count" : 3,
+            "expense" : "4700",
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "income" : "0",
+            "percent" : "69.16"
+          },
+          {
+            "count" : 1,
+            "expense" : "1500",
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "income" : "0",
+            "percent" : "22.07"
+          },
+          {
+            "count" : 1,
+            "expense" : "300.75",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "income" : "0",
+            "percent" : "4.43"
+          },
+          {
+            "count" : 1,
+            "expense" : "250",
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "income" : "0",
+            "percent" : "3.68"
+          },
+          {
+            "count" : 1,
+            "expense" : "45",
+            "id" : null,
+            "income" : "0",
+            "percent" : "0.66"
+          },
+          {
+            "count" : 2,
+            "expense" : "0",
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "income" : "5100",
+            "percent" : "0"
+          },
+          {
+            "count" : 1,
+            "expense" : "0",
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "income" : "1200.55",
+            "percent" : "0"
+          }
+        ],
+        "byMember" : [
+          {
+            "count" : 2,
+            "expense" : "3900",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "income" : "0",
+            "percent" : "57.39"
+          },
+          {
+            "count" : 5,
+            "expense" : "2550",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "income" : "6200.55",
+            "percent" : "37.52"
+          },
+          {
+            "count" : 1,
+            "expense" : "300.75",
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "income" : "0",
+            "percent" : "4.43"
+          },
+          {
+            "count" : 2,
+            "expense" : "45",
+            "id" : null,
+            "income" : "100",
+            "percent" : "0.66"
+          }
+        ],
+        "byMonth" : [
+          {
+            "expense" : "1800.75",
+            "income" : "5000",
+            "month" : {
+              "month" : 3,
+              "year" : 2026
+            }
+          },
+          {
+            "expense" : "650",
+            "income" : "1200.55",
+            "month" : {
+              "month" : 4,
+              "year" : 2026
+            }
+          },
+          {
+            "expense" : "4345",
+            "income" : "100",
+            "month" : {
+              "month" : 5,
+              "year" : 2026
+            }
+          }
+        ],
+        "count" : 10,
+        "csv" : "Seção;Item;Valor\nResumo;Receitas;6300,55\nResumo;Despesas;6795,75\nResumo;Saldo;-495,20\nResumo;Lançamentos;10\nPor categoria;Escola;4700,00\nPor categoria;Aluguel;1500,00\nPor categoria;Mercado;300,75\nPor categoria;Consulta;250,00\nPor categoria;Sem categoria;45,00\nPor categoria;Salário;5100,00\nPor categoria;Freela;1200,55\nPor membro;Caio;3900,00\nPor membro;Ana;2550,00\nPor membro;Bia;300,75\nPor membro;Sem membro;45,00\nPor conta;Corrente;6450,00\nPor conta;Poupança;300,75\nPor conta;Cartão ou sem conta;45,00\nPor mês;03\/2026;3199,25\nPor mês;04\/2026;550,55\nPor mês;05\/2026;-4245,00\n",
+        "expense" : "6795.75",
+        "generatedOn" : "Gerado em 20\/10\/2026",
+        "income" : "6300.55",
+        "net" : "-495.2",
+        "subtitle" : "Período: 01\/01\/2026 a 31\/12\/2026",
+        "transactionIds" : [
+          "00000000-0000-0000-0000-000000000001",
+          "00000000-0000-0000-0000-000000000003",
+          "00000000-0000-0000-0000-000000000004",
+          "00000000-0000-0000-0000-000000000002",
+          "00000000-0000-0000-0000-000000000005",
+          "00000000-0000-0000-0000-000000000006",
+          "00000000-0000-0000-0000-000000000007",
+          "00000000-0000-0000-0000-000000000008",
+          "00000000-0000-0000-0000-000000000012",
+          "00000000-0000-0000-0000-000000000014"
+        ]
+      },
+      "input" : {
+        "categories" : [
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "kind" : "expense",
+            "name" : "Moradia",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "kind" : "expense",
+            "name" : "Aluguel",
+            "parentId" : "00000000-0000-0000-0000-000000000001",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "kind" : "expense",
+            "name" : "Mercado",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "kind" : "expense",
+            "name" : "Saúde",
+            "taxKind" : "health",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "kind" : "expense",
+            "name" : "Consulta",
+            "parentId" : "00000000-0000-0000-0000-000000000004",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "kind" : "expense",
+            "name" : "Escola",
+            "taxKind" : "education",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "kind" : "income",
+            "name" : "Salário",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "kind" : "income",
+            "name" : "Freela",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "filter" : {
+          "from" : "2026-01-01",
+          "onlyPaid" : true,
+          "to" : "2026-12-31"
+        },
+        "generatedOn" : "2026-10-20",
+        "names" : {
+          "accounts" : {
+            "00000000-0000-0000-0000-000000000001" : "Corrente",
+            "00000000-0000-0000-0000-000000000002" : "Poupança"
+          },
+          "categories" : {
+            "00000000-0000-0000-0000-000000000001" : "Moradia",
+            "00000000-0000-0000-0000-000000000002" : "Aluguel",
+            "00000000-0000-0000-0000-000000000003" : "Mercado",
+            "00000000-0000-0000-0000-000000000004" : "Saúde",
+            "00000000-0000-0000-0000-000000000005" : "Consulta",
+            "00000000-0000-0000-0000-000000000006" : "Escola",
+            "00000000-0000-0000-0000-000000000007" : "Salário",
+            "00000000-0000-0000-0000-000000000008" : "Freela"
+          },
+          "members" : {
+            "00000000-0000-0000-0000-000000000001" : "Ana",
+            "00000000-0000-0000-0000-000000000002" : "Bia",
+            "00000000-0000-0000-0000-000000000003" : "Caio"
+          }
+        },
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 5000,
+            "categoryId" : "00000000-0000-0000-0000-000000000007",
+            "createdAt" : 800000001,
+            "date" : 794404800,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1200.55,
+            "categoryId" : "00000000-0000-0000-0000-000000000008",
+            "createdAt" : 800000002,
+            "date" : 797083200,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Freela",
+            "type" : "income",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1500,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000003,
+            "date" : 794491200,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : 300.75,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000004,
+            "date" : 794577600,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "memberId" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 250,
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "createdAt" : 800000005,
+            "date" : 797342400,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Consulta",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 400,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000006,
+            "date" : 797428800,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Escola Caio",
+            "type" : "expense",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 3500,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000007,
+            "date" : 800020800,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Escola Caio 2",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 800,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000008,
+            "date" : 800107200,
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Escola Ana",
+            "type" : "expense",
+            "updatedAt" : 800000008
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 99,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000009,
+            "date" : 800193600,
+            "id" : "00000000-0000-0000-0000-000000000009",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Pendente",
+            "type" : "expense",
+            "updatedAt" : 800000009
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1000,
+            "createdAt" : 800000010,
+            "date" : 800280000,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000010",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Transf",
+            "type" : "transfer",
+            "updatedAt" : 800000010
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 500,
+            "createdAt" : 800000011,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 800366400,
+            "id" : "00000000-0000-0000-0000-000000000011",
+            "invoiceId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Fatura",
+            "type" : "transfer",
+            "updatedAt" : 800000011
+          },
+          {
+            "amount" : 45,
+            "createdAt" : 800000012,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 800452800,
+            "id" : "00000000-0000-0000-0000-000000000012",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Sem cat",
+            "type" : "expense",
+            "updatedAt" : 800000012
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000013,
+            "date" : 788875200,
+            "id" : "00000000-0000-0000-0000-000000000013",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Ano passado",
+            "type" : "expense",
+            "updatedAt" : 800000013
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 100,
+            "categoryId" : "00000000-0000-0000-0000-000000000007",
+            "createdAt" : 800000014,
+            "date" : 800539200,
+            "id" : "00000000-0000-0000-0000-000000000014",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Sem membro",
+            "type" : "income",
+            "updatedAt" : 800000014
+          }
+        ]
+      },
+      "kind" : "report.run",
+      "name" : "só pagos"
+    },
+    {
+      "expected" : {
+        "byAccount" : [
+          {
+            "count" : 2,
+            "expense" : "349",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "income" : "0",
+            "percent" : "100"
+          }
+        ],
+        "byCategory" : [
+          {
+            "count" : 1,
+            "expense" : "250",
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "income" : "0",
+            "percent" : "71.63"
+          },
+          {
+            "count" : 1,
+            "expense" : "99",
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "income" : "0",
+            "percent" : "28.37"
+          }
+        ],
+        "byMember" : [
+          {
+            "count" : 1,
+            "expense" : "250",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "income" : "0",
+            "percent" : "71.63"
+          },
+          {
+            "count" : 1,
+            "expense" : "99",
+            "id" : null,
+            "income" : "0",
+            "percent" : "28.37"
+          }
+        ],
+        "byMonth" : [
+          {
+            "expense" : "250",
+            "income" : "0",
+            "month" : {
+              "month" : 4,
+              "year" : 2026
+            }
+          },
+          {
+            "expense" : "99",
+            "income" : "0",
+            "month" : {
+              "month" : 5,
+              "year" : 2026
+            }
+          }
+        ],
+        "count" : 2,
+        "csv" : "Seção;Item;Valor\nResumo;Receitas;0,00\nResumo;Despesas;349,00\nResumo;Saldo;-349,00\nResumo;Lançamentos;2\nPor categoria;Consulta;250,00\nPor categoria;Saúde;99,00\nPor membro;Ana;250,00\nPor membro;Sem membro;99,00\nPor conta;Corrente;349,00\nPor mês;04\/2026;-250,00\nPor mês;05\/2026;-99,00\n",
+        "expense" : "349",
+        "generatedOn" : "Gerado em 20\/10\/2026",
+        "income" : "0",
+        "net" : "-349",
+        "subtitle" : "Período: 01\/01\/2026 a 31\/12\/2026",
+        "transactionIds" : [
+          "00000000-0000-0000-0000-000000000005",
+          "00000000-0000-0000-0000-000000000009"
+        ]
+      },
+      "input" : {
+        "categories" : [
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "kind" : "expense",
+            "name" : "Moradia",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "kind" : "expense",
+            "name" : "Aluguel",
+            "parentId" : "00000000-0000-0000-0000-000000000001",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "kind" : "expense",
+            "name" : "Mercado",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "kind" : "expense",
+            "name" : "Saúde",
+            "taxKind" : "health",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "kind" : "expense",
+            "name" : "Consulta",
+            "parentId" : "00000000-0000-0000-0000-000000000004",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "kind" : "expense",
+            "name" : "Escola",
+            "taxKind" : "education",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "kind" : "income",
+            "name" : "Salário",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "kind" : "income",
+            "name" : "Freela",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "filter" : {
+          "categoryIds" : [
+            "00000000-0000-0000-0000-000000000004"
+          ],
+          "from" : "2026-01-01",
+          "to" : "2026-12-31"
+        },
+        "generatedOn" : "2026-10-20",
+        "names" : {
+          "accounts" : {
+            "00000000-0000-0000-0000-000000000001" : "Corrente",
+            "00000000-0000-0000-0000-000000000002" : "Poupança"
+          },
+          "categories" : {
+            "00000000-0000-0000-0000-000000000001" : "Moradia",
+            "00000000-0000-0000-0000-000000000002" : "Aluguel",
+            "00000000-0000-0000-0000-000000000003" : "Mercado",
+            "00000000-0000-0000-0000-000000000004" : "Saúde",
+            "00000000-0000-0000-0000-000000000005" : "Consulta",
+            "00000000-0000-0000-0000-000000000006" : "Escola",
+            "00000000-0000-0000-0000-000000000007" : "Salário",
+            "00000000-0000-0000-0000-000000000008" : "Freela"
+          },
+          "members" : {
+            "00000000-0000-0000-0000-000000000001" : "Ana",
+            "00000000-0000-0000-0000-000000000002" : "Bia",
+            "00000000-0000-0000-0000-000000000003" : "Caio"
+          }
+        },
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 5000,
+            "categoryId" : "00000000-0000-0000-0000-000000000007",
+            "createdAt" : 800000001,
+            "date" : 794404800,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1200.55,
+            "categoryId" : "00000000-0000-0000-0000-000000000008",
+            "createdAt" : 800000002,
+            "date" : 797083200,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Freela",
+            "type" : "income",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1500,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000003,
+            "date" : 794491200,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : 300.75,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000004,
+            "date" : 794577600,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "memberId" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 250,
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "createdAt" : 800000005,
+            "date" : 797342400,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Consulta",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 400,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000006,
+            "date" : 797428800,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Escola Caio",
+            "type" : "expense",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 3500,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000007,
+            "date" : 800020800,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Escola Caio 2",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 800,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000008,
+            "date" : 800107200,
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Escola Ana",
+            "type" : "expense",
+            "updatedAt" : 800000008
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 99,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000009,
+            "date" : 800193600,
+            "id" : "00000000-0000-0000-0000-000000000009",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Pendente",
+            "type" : "expense",
+            "updatedAt" : 800000009
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1000,
+            "createdAt" : 800000010,
+            "date" : 800280000,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000010",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Transf",
+            "type" : "transfer",
+            "updatedAt" : 800000010
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 500,
+            "createdAt" : 800000011,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 800366400,
+            "id" : "00000000-0000-0000-0000-000000000011",
+            "invoiceId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Fatura",
+            "type" : "transfer",
+            "updatedAt" : 800000011
+          },
+          {
+            "amount" : 45,
+            "createdAt" : 800000012,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 800452800,
+            "id" : "00000000-0000-0000-0000-000000000012",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Sem cat",
+            "type" : "expense",
+            "updatedAt" : 800000012
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000013,
+            "date" : 788875200,
+            "id" : "00000000-0000-0000-0000-000000000013",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Ano passado",
+            "type" : "expense",
+            "updatedAt" : 800000013
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 100,
+            "categoryId" : "00000000-0000-0000-0000-000000000007",
+            "createdAt" : 800000014,
+            "date" : 800539200,
+            "id" : "00000000-0000-0000-0000-000000000014",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Sem membro",
+            "type" : "income",
+            "updatedAt" : 800000014
+          }
+        ]
+      },
+      "kind" : "report.run",
+      "name" : "categoria pai"
+    },
+    {
+      "expected" : {
+        "byAccount" : [
+          {
+            "count" : 2,
+            "expense" : "3900",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "income" : "0",
+            "percent" : "100"
+          }
+        ],
+        "byCategory" : [
+          {
+            "count" : 2,
+            "expense" : "3900",
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "income" : "0",
+            "percent" : "100"
+          }
+        ],
+        "byMember" : [
+          {
+            "count" : 2,
+            "expense" : "3900",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "income" : "0",
+            "percent" : "100"
+          }
+        ],
+        "byMonth" : [
+          {
+            "expense" : "400",
+            "income" : "0",
+            "month" : {
+              "month" : 4,
+              "year" : 2026
+            }
+          },
+          {
+            "expense" : "3500",
+            "income" : "0",
+            "month" : {
+              "month" : 5,
+              "year" : 2026
+            }
+          }
+        ],
+        "count" : 2,
+        "csv" : "Seção;Item;Valor\nResumo;Receitas;0,00\nResumo;Despesas;3900,00\nResumo;Saldo;-3900,00\nResumo;Lançamentos;2\nPor categoria;Escola;3900,00\nPor membro;Caio;3900,00\nPor conta;Corrente;3900,00\nPor mês;04\/2026;-400,00\nPor mês;05\/2026;-3500,00\n",
+        "expense" : "3900",
+        "generatedOn" : "Gerado em 20\/10\/2026",
+        "income" : "0",
+        "net" : "-3900",
+        "subtitle" : "Período: 01\/01\/2026 a 31\/12\/2026",
+        "transactionIds" : [
+          "00000000-0000-0000-0000-000000000006",
+          "00000000-0000-0000-0000-000000000007"
+        ]
+      },
+      "input" : {
+        "categories" : [
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "kind" : "expense",
+            "name" : "Moradia",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "kind" : "expense",
+            "name" : "Aluguel",
+            "parentId" : "00000000-0000-0000-0000-000000000001",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "kind" : "expense",
+            "name" : "Mercado",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "kind" : "expense",
+            "name" : "Saúde",
+            "taxKind" : "health",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "kind" : "expense",
+            "name" : "Consulta",
+            "parentId" : "00000000-0000-0000-0000-000000000004",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "kind" : "expense",
+            "name" : "Escola",
+            "taxKind" : "education",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "kind" : "income",
+            "name" : "Salário",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "kind" : "income",
+            "name" : "Freela",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "filter" : {
+          "from" : "2026-01-01",
+          "memberIds" : [
+            "00000000-0000-0000-0000-000000000003"
+          ],
+          "to" : "2026-12-31"
+        },
+        "generatedOn" : "2026-10-20",
+        "names" : {
+          "accounts" : {
+            "00000000-0000-0000-0000-000000000001" : "Corrente",
+            "00000000-0000-0000-0000-000000000002" : "Poupança"
+          },
+          "categories" : {
+            "00000000-0000-0000-0000-000000000001" : "Moradia",
+            "00000000-0000-0000-0000-000000000002" : "Aluguel",
+            "00000000-0000-0000-0000-000000000003" : "Mercado",
+            "00000000-0000-0000-0000-000000000004" : "Saúde",
+            "00000000-0000-0000-0000-000000000005" : "Consulta",
+            "00000000-0000-0000-0000-000000000006" : "Escola",
+            "00000000-0000-0000-0000-000000000007" : "Salário",
+            "00000000-0000-0000-0000-000000000008" : "Freela"
+          },
+          "members" : {
+            "00000000-0000-0000-0000-000000000001" : "Ana",
+            "00000000-0000-0000-0000-000000000002" : "Bia",
+            "00000000-0000-0000-0000-000000000003" : "Caio"
+          }
+        },
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 5000,
+            "categoryId" : "00000000-0000-0000-0000-000000000007",
+            "createdAt" : 800000001,
+            "date" : 794404800,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1200.55,
+            "categoryId" : "00000000-0000-0000-0000-000000000008",
+            "createdAt" : 800000002,
+            "date" : 797083200,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Freela",
+            "type" : "income",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1500,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000003,
+            "date" : 794491200,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : 300.75,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000004,
+            "date" : 794577600,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "memberId" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 250,
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "createdAt" : 800000005,
+            "date" : 797342400,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Consulta",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 400,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000006,
+            "date" : 797428800,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Escola Caio",
+            "type" : "expense",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 3500,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000007,
+            "date" : 800020800,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Escola Caio 2",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 800,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000008,
+            "date" : 800107200,
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Escola Ana",
+            "type" : "expense",
+            "updatedAt" : 800000008
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 99,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000009,
+            "date" : 800193600,
+            "id" : "00000000-0000-0000-0000-000000000009",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Pendente",
+            "type" : "expense",
+            "updatedAt" : 800000009
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1000,
+            "createdAt" : 800000010,
+            "date" : 800280000,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000010",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Transf",
+            "type" : "transfer",
+            "updatedAt" : 800000010
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 500,
+            "createdAt" : 800000011,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 800366400,
+            "id" : "00000000-0000-0000-0000-000000000011",
+            "invoiceId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Fatura",
+            "type" : "transfer",
+            "updatedAt" : 800000011
+          },
+          {
+            "amount" : 45,
+            "createdAt" : 800000012,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 800452800,
+            "id" : "00000000-0000-0000-0000-000000000012",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Sem cat",
+            "type" : "expense",
+            "updatedAt" : 800000012
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000013,
+            "date" : 788875200,
+            "id" : "00000000-0000-0000-0000-000000000013",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Ano passado",
+            "type" : "expense",
+            "updatedAt" : 800000013
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 100,
+            "categoryId" : "00000000-0000-0000-0000-000000000007",
+            "createdAt" : 800000014,
+            "date" : 800539200,
+            "id" : "00000000-0000-0000-0000-000000000014",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Sem membro",
+            "type" : "income",
+            "updatedAt" : 800000014
+          }
+        ]
+      },
+      "kind" : "report.run",
+      "name" : "membro 3"
+    },
+    {
+      "expected" : {
+        "byAccount" : [
+          {
+            "count" : 1,
+            "expense" : "300.75",
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "income" : "0",
+            "percent" : "100"
+          }
+        ],
+        "byCategory" : [
+          {
+            "count" : 1,
+            "expense" : "300.75",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "income" : "0",
+            "percent" : "100"
+          }
+        ],
+        "byMember" : [
+          {
+            "count" : 1,
+            "expense" : "300.75",
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "income" : "0",
+            "percent" : "100"
+          }
+        ],
+        "byMonth" : [
+          {
+            "expense" : "300.75",
+            "income" : "0",
+            "month" : {
+              "month" : 3,
+              "year" : 2026
+            }
+          }
+        ],
+        "count" : 1,
+        "csv" : "Seção;Item;Valor\nResumo;Receitas;0,00\nResumo;Despesas;300,75\nResumo;Saldo;-300,75\nResumo;Lançamentos;1\nPor categoria;Mercado;300,75\nPor membro;Bia;300,75\nPor conta;Poupança;300,75\nPor mês;03\/2026;-300,75\n",
+        "expense" : "300.75",
+        "generatedOn" : "Gerado em 20\/10\/2026",
+        "income" : "0",
+        "net" : "-300.75",
+        "subtitle" : "Período: 01\/01\/2026 a 31\/12\/2026",
+        "transactionIds" : [
+          "00000000-0000-0000-0000-000000000004"
+        ]
+      },
+      "input" : {
+        "categories" : [
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "kind" : "expense",
+            "name" : "Moradia",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "kind" : "expense",
+            "name" : "Aluguel",
+            "parentId" : "00000000-0000-0000-0000-000000000001",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "kind" : "expense",
+            "name" : "Mercado",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "kind" : "expense",
+            "name" : "Saúde",
+            "taxKind" : "health",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "kind" : "expense",
+            "name" : "Consulta",
+            "parentId" : "00000000-0000-0000-0000-000000000004",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "kind" : "expense",
+            "name" : "Escola",
+            "taxKind" : "education",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "kind" : "income",
+            "name" : "Salário",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "kind" : "income",
+            "name" : "Freela",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "filter" : {
+          "accountIds" : [
+            "00000000-0000-0000-0000-000000000002"
+          ],
+          "from" : "2026-01-01",
+          "to" : "2026-12-31"
+        },
+        "generatedOn" : "2026-10-20",
+        "names" : {
+          "accounts" : {
+            "00000000-0000-0000-0000-000000000001" : "Corrente",
+            "00000000-0000-0000-0000-000000000002" : "Poupança"
+          },
+          "categories" : {
+            "00000000-0000-0000-0000-000000000001" : "Moradia",
+            "00000000-0000-0000-0000-000000000002" : "Aluguel",
+            "00000000-0000-0000-0000-000000000003" : "Mercado",
+            "00000000-0000-0000-0000-000000000004" : "Saúde",
+            "00000000-0000-0000-0000-000000000005" : "Consulta",
+            "00000000-0000-0000-0000-000000000006" : "Escola",
+            "00000000-0000-0000-0000-000000000007" : "Salário",
+            "00000000-0000-0000-0000-000000000008" : "Freela"
+          },
+          "members" : {
+            "00000000-0000-0000-0000-000000000001" : "Ana",
+            "00000000-0000-0000-0000-000000000002" : "Bia",
+            "00000000-0000-0000-0000-000000000003" : "Caio"
+          }
+        },
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 5000,
+            "categoryId" : "00000000-0000-0000-0000-000000000007",
+            "createdAt" : 800000001,
+            "date" : 794404800,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1200.55,
+            "categoryId" : "00000000-0000-0000-0000-000000000008",
+            "createdAt" : 800000002,
+            "date" : 797083200,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Freela",
+            "type" : "income",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1500,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000003,
+            "date" : 794491200,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : 300.75,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000004,
+            "date" : 794577600,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "memberId" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 250,
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "createdAt" : 800000005,
+            "date" : 797342400,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Consulta",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 400,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000006,
+            "date" : 797428800,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Escola Caio",
+            "type" : "expense",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 3500,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000007,
+            "date" : 800020800,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Escola Caio 2",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 800,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000008,
+            "date" : 800107200,
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Escola Ana",
+            "type" : "expense",
+            "updatedAt" : 800000008
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 99,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000009,
+            "date" : 800193600,
+            "id" : "00000000-0000-0000-0000-000000000009",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Pendente",
+            "type" : "expense",
+            "updatedAt" : 800000009
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1000,
+            "createdAt" : 800000010,
+            "date" : 800280000,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000010",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Transf",
+            "type" : "transfer",
+            "updatedAt" : 800000010
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 500,
+            "createdAt" : 800000011,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 800366400,
+            "id" : "00000000-0000-0000-0000-000000000011",
+            "invoiceId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Fatura",
+            "type" : "transfer",
+            "updatedAt" : 800000011
+          },
+          {
+            "amount" : 45,
+            "createdAt" : 800000012,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 800452800,
+            "id" : "00000000-0000-0000-0000-000000000012",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Sem cat",
+            "type" : "expense",
+            "updatedAt" : 800000012
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000013,
+            "date" : 788875200,
+            "id" : "00000000-0000-0000-0000-000000000013",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Ano passado",
+            "type" : "expense",
+            "updatedAt" : 800000013
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 100,
+            "categoryId" : "00000000-0000-0000-0000-000000000007",
+            "createdAt" : 800000014,
+            "date" : 800539200,
+            "id" : "00000000-0000-0000-0000-000000000014",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Sem membro",
+            "type" : "income",
+            "updatedAt" : 800000014
+          }
+        ]
+      },
+      "kind" : "report.run",
+      "name" : "conta 2"
+    },
+    {
+      "expected" : {
+        "byAccount" : [
+          {
+            "count" : 3,
+            "expense" : "650",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "income" : "1200.55",
+            "percent" : "100"
+          }
+        ],
+        "byCategory" : [
+          {
+            "count" : 1,
+            "expense" : "400",
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "income" : "0",
+            "percent" : "61.54"
+          },
+          {
+            "count" : 1,
+            "expense" : "250",
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "income" : "0",
+            "percent" : "38.46"
+          },
+          {
+            "count" : 1,
+            "expense" : "0",
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "income" : "1200.55",
+            "percent" : "0"
+          }
+        ],
+        "byMember" : [
+          {
+            "count" : 1,
+            "expense" : "400",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "income" : "0",
+            "percent" : "61.54"
+          },
+          {
+            "count" : 2,
+            "expense" : "250",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "income" : "1200.55",
+            "percent" : "38.46"
+          }
+        ],
+        "byMonth" : [
+          {
+            "expense" : "650",
+            "income" : "1200.55",
+            "month" : {
+              "month" : 4,
+              "year" : 2026
+            }
+          }
+        ],
+        "count" : 3,
+        "csv" : "Seção;Item;Valor\nResumo;Receitas;1200,55\nResumo;Despesas;650,00\nResumo;Saldo;550,55\nResumo;Lançamentos;3\nPor categoria;Escola;400,00\nPor categoria;Consulta;250,00\nPor categoria;Freela;1200,55\nPor membro;Caio;400,00\nPor membro;Ana;250,00\nPor conta;Corrente;650,00\nPor mês;04\/2026;550,55\n",
+        "expense" : "650",
+        "generatedOn" : "Gerado em 20\/10\/2026",
+        "income" : "1200.55",
+        "net" : "550.55",
+        "subtitle" : "Período: 01\/04\/2026 a 30\/04\/2026",
+        "transactionIds" : [
+          "00000000-0000-0000-0000-000000000002",
+          "00000000-0000-0000-0000-000000000005",
+          "00000000-0000-0000-0000-000000000006"
+        ]
+      },
+      "input" : {
+        "categories" : [
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "kind" : "expense",
+            "name" : "Moradia",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "kind" : "expense",
+            "name" : "Aluguel",
+            "parentId" : "00000000-0000-0000-0000-000000000001",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "kind" : "expense",
+            "name" : "Mercado",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "kind" : "expense",
+            "name" : "Saúde",
+            "taxKind" : "health",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "kind" : "expense",
+            "name" : "Consulta",
+            "parentId" : "00000000-0000-0000-0000-000000000004",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "kind" : "expense",
+            "name" : "Escola",
+            "taxKind" : "education",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "kind" : "income",
+            "name" : "Salário",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "kind" : "income",
+            "name" : "Freela",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "filter" : {
+          "from" : "2026-04-01",
+          "to" : "2026-04-30"
+        },
+        "generatedOn" : "2026-10-20",
+        "names" : {
+          "accounts" : {
+            "00000000-0000-0000-0000-000000000001" : "Corrente",
+            "00000000-0000-0000-0000-000000000002" : "Poupança"
+          },
+          "categories" : {
+            "00000000-0000-0000-0000-000000000001" : "Moradia",
+            "00000000-0000-0000-0000-000000000002" : "Aluguel",
+            "00000000-0000-0000-0000-000000000003" : "Mercado",
+            "00000000-0000-0000-0000-000000000004" : "Saúde",
+            "00000000-0000-0000-0000-000000000005" : "Consulta",
+            "00000000-0000-0000-0000-000000000006" : "Escola",
+            "00000000-0000-0000-0000-000000000007" : "Salário",
+            "00000000-0000-0000-0000-000000000008" : "Freela"
+          },
+          "members" : {
+            "00000000-0000-0000-0000-000000000001" : "Ana",
+            "00000000-0000-0000-0000-000000000002" : "Bia",
+            "00000000-0000-0000-0000-000000000003" : "Caio"
+          }
+        },
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 5000,
+            "categoryId" : "00000000-0000-0000-0000-000000000007",
+            "createdAt" : 800000001,
+            "date" : 794404800,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1200.55,
+            "categoryId" : "00000000-0000-0000-0000-000000000008",
+            "createdAt" : 800000002,
+            "date" : 797083200,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Freela",
+            "type" : "income",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1500,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000003,
+            "date" : 794491200,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : 300.75,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000004,
+            "date" : 794577600,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "memberId" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 250,
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "createdAt" : 800000005,
+            "date" : 797342400,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Consulta",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 400,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000006,
+            "date" : 797428800,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Escola Caio",
+            "type" : "expense",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 3500,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000007,
+            "date" : 800020800,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Escola Caio 2",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 800,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000008,
+            "date" : 800107200,
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Escola Ana",
+            "type" : "expense",
+            "updatedAt" : 800000008
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 99,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000009,
+            "date" : 800193600,
+            "id" : "00000000-0000-0000-0000-000000000009",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Pendente",
+            "type" : "expense",
+            "updatedAt" : 800000009
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1000,
+            "createdAt" : 800000010,
+            "date" : 800280000,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000010",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Transf",
+            "type" : "transfer",
+            "updatedAt" : 800000010
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 500,
+            "createdAt" : 800000011,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 800366400,
+            "id" : "00000000-0000-0000-0000-000000000011",
+            "invoiceId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Fatura",
+            "type" : "transfer",
+            "updatedAt" : 800000011
+          },
+          {
+            "amount" : 45,
+            "createdAt" : 800000012,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 800452800,
+            "id" : "00000000-0000-0000-0000-000000000012",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Sem cat",
+            "type" : "expense",
+            "updatedAt" : 800000012
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000013,
+            "date" : 788875200,
+            "id" : "00000000-0000-0000-0000-000000000013",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Ano passado",
+            "type" : "expense",
+            "updatedAt" : 800000013
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 100,
+            "categoryId" : "00000000-0000-0000-0000-000000000007",
+            "createdAt" : 800000014,
+            "date" : 800539200,
+            "id" : "00000000-0000-0000-0000-000000000014",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Sem membro",
+            "type" : "income",
+            "updatedAt" : 800000014
+          }
+        ]
+      },
+      "kind" : "report.run",
+      "name" : "abril"
+    },
+    {
+      "expected" : {
+        "byAccount" : [
+
+        ],
+        "byCategory" : [
+
+        ],
+        "byMember" : [
+
+        ],
+        "byMonth" : [
+
+        ],
+        "count" : 0,
+        "csv" : "Seção;Item;Valor\nResumo;Receitas;0,00\nResumo;Despesas;0,00\nResumo;Saldo;0,00\nResumo;Lançamentos;0\n",
+        "expense" : "0",
+        "generatedOn" : "Gerado em 20\/10\/2026",
+        "income" : "0",
+        "net" : "0",
+        "subtitle" : "Período: 01\/01\/2030 a 31\/12\/2030",
+        "transactionIds" : [
+
+        ]
+      },
+      "input" : {
+        "categories" : [
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "kind" : "expense",
+            "name" : "Moradia",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "kind" : "expense",
+            "name" : "Aluguel",
+            "parentId" : "00000000-0000-0000-0000-000000000001",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "kind" : "expense",
+            "name" : "Mercado",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "kind" : "expense",
+            "name" : "Saúde",
+            "taxKind" : "health",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "kind" : "expense",
+            "name" : "Consulta",
+            "parentId" : "00000000-0000-0000-0000-000000000004",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "kind" : "expense",
+            "name" : "Escola",
+            "taxKind" : "education",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "kind" : "income",
+            "name" : "Salário",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "kind" : "income",
+            "name" : "Freela",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "filter" : {
+          "from" : "2030-01-01",
+          "to" : "2030-12-31"
+        },
+        "generatedOn" : "2026-10-20",
+        "names" : {
+          "accounts" : {
+            "00000000-0000-0000-0000-000000000001" : "Corrente",
+            "00000000-0000-0000-0000-000000000002" : "Poupança"
+          },
+          "categories" : {
+            "00000000-0000-0000-0000-000000000001" : "Moradia",
+            "00000000-0000-0000-0000-000000000002" : "Aluguel",
+            "00000000-0000-0000-0000-000000000003" : "Mercado",
+            "00000000-0000-0000-0000-000000000004" : "Saúde",
+            "00000000-0000-0000-0000-000000000005" : "Consulta",
+            "00000000-0000-0000-0000-000000000006" : "Escola",
+            "00000000-0000-0000-0000-000000000007" : "Salário",
+            "00000000-0000-0000-0000-000000000008" : "Freela"
+          },
+          "members" : {
+            "00000000-0000-0000-0000-000000000001" : "Ana",
+            "00000000-0000-0000-0000-000000000002" : "Bia",
+            "00000000-0000-0000-0000-000000000003" : "Caio"
+          }
+        },
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 5000,
+            "categoryId" : "00000000-0000-0000-0000-000000000007",
+            "createdAt" : 800000001,
+            "date" : 794404800,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1200.55,
+            "categoryId" : "00000000-0000-0000-0000-000000000008",
+            "createdAt" : 800000002,
+            "date" : 797083200,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Freela",
+            "type" : "income",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1500,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000003,
+            "date" : 794491200,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : 300.75,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000004,
+            "date" : 794577600,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "memberId" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 250,
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "createdAt" : 800000005,
+            "date" : 797342400,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Consulta",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 400,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000006,
+            "date" : 797428800,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Escola Caio",
+            "type" : "expense",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 3500,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000007,
+            "date" : 800020800,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "memberId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Escola Caio 2",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 800,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000008,
+            "date" : 800107200,
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "memberId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Escola Ana",
+            "type" : "expense",
+            "updatedAt" : 800000008
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 99,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000009,
+            "date" : 800193600,
+            "id" : "00000000-0000-0000-0000-000000000009",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Pendente",
+            "type" : "expense",
+            "updatedAt" : 800000009
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1000,
+            "createdAt" : 800000010,
+            "date" : 800280000,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000010",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Transf",
+            "type" : "transfer",
+            "updatedAt" : 800000010
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 500,
+            "createdAt" : 800000011,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 800366400,
+            "id" : "00000000-0000-0000-0000-000000000011",
+            "invoiceId" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Fatura",
+            "type" : "transfer",
+            "updatedAt" : 800000011
+          },
+          {
+            "amount" : 45,
+            "createdAt" : 800000012,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 800452800,
+            "id" : "00000000-0000-0000-0000-000000000012",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Sem cat",
+            "type" : "expense",
+            "updatedAt" : 800000012
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000013,
+            "date" : 788875200,
+            "id" : "00000000-0000-0000-0000-000000000013",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Ano passado",
+            "type" : "expense",
+            "updatedAt" : 800000013
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 100,
+            "categoryId" : "00000000-0000-0000-0000-000000000007",
+            "createdAt" : 800000014,
+            "date" : 800539200,
+            "id" : "00000000-0000-0000-0000-000000000014",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Sem membro",
+            "type" : "income",
+            "updatedAt" : 800000014
+          }
+        ]
+      },
+      "kind" : "report.run",
+      "name" : "vazio"
+    }
+  ],
+  "suite" : "report"
+}

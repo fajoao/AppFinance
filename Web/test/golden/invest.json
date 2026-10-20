@@ -1,0 +1,329 @@
+{
+  "cases" : [
+    {
+      "expected" : {
+        "allocation" : [
+          {
+            "class" : "fixedIncome",
+            "percent" : "49.27",
+            "value" : "10450.33"
+          },
+          {
+            "class" : "stock",
+            "percent" : "25.78",
+            "value" : "5468.7"
+          },
+          {
+            "class" : "crypto",
+            "percent" : "17.4",
+            "value" : "3690"
+          },
+          {
+            "class" : "reit",
+            "percent" : "7.55",
+            "value" : "1603.3"
+          }
+        ],
+        "cost" : "19745.359",
+        "gain" : "1466.971",
+        "positions" : [
+          {
+            "cost" : "3050",
+            "gain" : "475",
+            "return" : "15.57",
+            "value" : "3525"
+          },
+          {
+            "cost" : "10000",
+            "gain" : "450.33",
+            "return" : "4.5",
+            "value" : "10450.33"
+          },
+          {
+            "cost" : "1603.3",
+            "gain" : "0",
+            "return" : "0",
+            "value" : "1603.3"
+          },
+          {
+            "cost" : "3075",
+            "gain" : "615",
+            "return" : "20",
+            "value" : "3690"
+          },
+          {
+            "cost" : "2017.059",
+            "gain" : "-73.359",
+            "return" : "-3.64",
+            "value" : "1943.7"
+          },
+          {
+            "cost" : "0",
+            "gain" : "0",
+            "return" : null,
+            "value" : "0"
+          }
+        ],
+        "return" : "7.43",
+        "value" : "21212.33"
+      },
+      "input" : {
+        "investments" : [
+          {
+            "assetClass" : "stock",
+            "averagePrice" : 30.5,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "name" : "PETR4",
+            "quantity" : 100,
+            "quote" : 35.25,
+            "realizedProfit" : 0,
+            "updatedAt" : 800000000
+          },
+          {
+            "assetClass" : "fixedIncome",
+            "averagePrice" : 10000,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "name" : "CDB",
+            "quantity" : 1,
+            "quote" : 10450.33,
+            "realizedProfit" : 0,
+            "updatedAt" : 800000000
+          },
+          {
+            "assetClass" : "reit",
+            "averagePrice" : 160.33000000000001,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "name" : "HGLG11",
+            "quantity" : 10,
+            "realizedProfit" : 0,
+            "updatedAt" : 800000000
+          },
+          {
+            "assetClass" : "crypto",
+            "averagePrice" : 250000,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "name" : "BTC",
+            "quantity" : 0.0123,
+            "quote" : 300000,
+            "realizedProfit" : 0,
+            "updatedAt" : 800000000
+          },
+          {
+            "assetClass" : "stock",
+            "averagePrice" : 61.122999999999998,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "name" : "VALE3",
+            "quantity" : 33,
+            "quote" : 58.899999999999999,
+            "realizedProfit" : 0,
+            "updatedAt" : 800000000
+          },
+          {
+            "assetClass" : "stock",
+            "averagePrice" : 0,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "name" : "Zerado",
+            "quantity" : 0,
+            "realizedProfit" : 0,
+            "updatedAt" : 800000000
+          }
+        ]
+      },
+      "kind" : "invest.totals",
+      "name" : "totals"
+    },
+    {
+      "expected" : {
+        "allocation" : [
+
+        ],
+        "cost" : "0",
+        "gain" : "0",
+        "positions" : [
+
+        ],
+        "return" : null,
+        "value" : "0"
+      },
+      "input" : {
+        "investments" : [
+
+        ]
+      },
+      "kind" : "invest.totals",
+      "name" : "totals vazio"
+    },
+    {
+      "expected" : {
+        "averagePrice" : "33.6667",
+        "quantity" : "150"
+      },
+      "input" : {
+        "investment" : {
+          "assetClass" : "stock",
+          "averagePrice" : 30.5,
+          "createdAt" : 800000000,
+          "id" : "00000000-0000-0000-0000-000000000001",
+          "name" : "PETR4",
+          "quantity" : 100,
+          "quote" : 35.25,
+          "realizedProfit" : 0,
+          "updatedAt" : 800000000
+        },
+        "price" : "40",
+        "quantity" : "50"
+      },
+      "kind" : "invest.buy",
+      "name" : "buy 50@40"
+    },
+    {
+      "expected" : {
+        "averagePrice" : "30.8464",
+        "quantity" : "100.5"
+      },
+      "input" : {
+        "investment" : {
+          "assetClass" : "stock",
+          "averagePrice" : 30.5,
+          "createdAt" : 800000000,
+          "id" : "00000000-0000-0000-0000-000000000001",
+          "name" : "PETR4",
+          "quantity" : 100,
+          "quote" : 35.25,
+          "realizedProfit" : 0,
+          "updatedAt" : 800000000
+        },
+        "price" : "100.123",
+        "quantity" : "0.5"
+      },
+      "kind" : "invest.buy",
+      "name" : "buy 0.5@100.123"
+    },
+    {
+      "expected" : {
+        "averagePrice" : "30.198",
+        "quantity" : "101"
+      },
+      "input" : {
+        "investment" : {
+          "assetClass" : "stock",
+          "averagePrice" : 30.5,
+          "createdAt" : 800000000,
+          "id" : "00000000-0000-0000-0000-000000000001",
+          "name" : "PETR4",
+          "quantity" : 100,
+          "quote" : 35.25,
+          "realizedProfit" : 0,
+          "updatedAt" : 800000000
+        },
+        "price" : "0",
+        "quantity" : "1"
+      },
+      "kind" : "invest.buy",
+      "name" : "buy 1@0"
+    },
+    {
+      "expected" : {
+        "averagePrice" : "30.5",
+        "ok" : true,
+        "quantity" : "60",
+        "realized" : "780"
+      },
+      "input" : {
+        "investment" : {
+          "assetClass" : "stock",
+          "averagePrice" : 30.5,
+          "createdAt" : 800000000,
+          "id" : "00000000-0000-0000-0000-000000000001",
+          "name" : "PETR4",
+          "quantity" : 100,
+          "quote" : 35.25,
+          "realizedProfit" : 0,
+          "updatedAt" : 800000000
+        },
+        "price" : "50",
+        "quantity" : "40"
+      },
+      "kind" : "invest.sell",
+      "name" : "sell 40@50"
+    },
+    {
+      "expected" : {
+        "averagePrice" : "30.5",
+        "ok" : true,
+        "quantity" : "0",
+        "realized" : "-2050"
+      },
+      "input" : {
+        "investment" : {
+          "assetClass" : "stock",
+          "averagePrice" : 30.5,
+          "createdAt" : 800000000,
+          "id" : "00000000-0000-0000-0000-000000000001",
+          "name" : "PETR4",
+          "quantity" : 100,
+          "quote" : 35.25,
+          "realizedProfit" : 0,
+          "updatedAt" : 800000000
+        },
+        "price" : "10",
+        "quantity" : "100"
+      },
+      "kind" : "invest.sell",
+      "name" : "sell 100@10"
+    },
+    {
+      "expected" : {
+        "error" : "Quantidade maior que a posição",
+        "ok" : false
+      },
+      "input" : {
+        "investment" : {
+          "assetClass" : "stock",
+          "averagePrice" : 30.5,
+          "createdAt" : 800000000,
+          "id" : "00000000-0000-0000-0000-000000000001",
+          "name" : "PETR4",
+          "quantity" : 100,
+          "quote" : 35.25,
+          "realizedProfit" : 0,
+          "updatedAt" : 800000000
+        },
+        "price" : "10",
+        "quantity" : "101"
+      },
+      "kind" : "invest.sell",
+      "name" : "sell 101@10"
+    },
+    {
+      "expected" : {
+        "error" : "Quantidade inválida",
+        "ok" : false
+      },
+      "input" : {
+        "investment" : {
+          "assetClass" : "stock",
+          "averagePrice" : 30.5,
+          "createdAt" : 800000000,
+          "id" : "00000000-0000-0000-0000-000000000001",
+          "name" : "PETR4",
+          "quantity" : 100,
+          "quote" : 35.25,
+          "realizedProfit" : 0,
+          "updatedAt" : 800000000
+        },
+        "price" : "10",
+        "quantity" : "0"
+      },
+      "kind" : "invest.sell",
+      "name" : "sell 0@10"
+    }
+  ],
+  "suite" : "invest"
+}

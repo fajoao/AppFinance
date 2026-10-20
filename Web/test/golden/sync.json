@@ -1,0 +1,522 @@
+{
+  "cases" : [
+    {
+      "expected" : {
+        "applied" : 5,
+        "deleted" : 2,
+        "keptLocal" : 1,
+        "snapshot" : {
+          "accounts" : [
+            {
+              "id" : "00000000-0000-0000-0000-000000000001",
+              "name" : "Local novo"
+            },
+            {
+              "id" : "00000000-0000-0000-0000-000000000002",
+              "name" : "Só local"
+            },
+            {
+              "id" : "00000000-0000-0000-0000-000000000003",
+              "name" : "Remoto vence"
+            },
+            {
+              "id" : "00000000-0000-0000-0000-000000000004",
+              "name" : "Só remoto"
+            }
+          ],
+          "tombstones" : [
+            {
+              "entityId" : "00000000-0000-0000-0000-000000000007",
+              "entityType" : "Transaction"
+            },
+            {
+              "entityId" : "00000000-0000-0000-0000-000000000005",
+              "entityType" : "Transaction"
+            },
+            {
+              "entityId" : "00000000-0000-0000-0000-000000000003",
+              "entityType" : "Transaction"
+            },
+            {
+              "entityId" : "00000000-0000-0000-0000-000000000002",
+              "entityType" : "Transaction"
+            }
+          ],
+          "transactions" : [
+            {
+              "id" : "00000000-0000-0000-0000-000000000001",
+              "title" : "R1 mais novo"
+            },
+            {
+              "id" : "00000000-0000-0000-0000-000000000002",
+              "title" : "L2 editada depois da exclusão"
+            },
+            {
+              "id" : "00000000-0000-0000-0000-000000000004",
+              "title" : "R4 novo"
+            }
+          ]
+        }
+      },
+      "input" : {
+        "local" : {
+          "accounts" : [
+            {
+              "createdAt" : 800000000,
+              "currency" : "BRL",
+              "id" : "00000000-0000-0000-0000-000000000001",
+              "initialBalance" : 0,
+              "isArchived" : false,
+              "name" : "Local novo",
+              "type" : "checking",
+              "updatedAt" : 900,
+              "visibility" : "shared"
+            },
+            {
+              "createdAt" : 800000000,
+              "currency" : "BRL",
+              "id" : "00000000-0000-0000-0000-000000000002",
+              "initialBalance" : 0,
+              "isArchived" : false,
+              "name" : "Só local",
+              "type" : "checking",
+              "updatedAt" : 100,
+              "visibility" : "shared"
+            },
+            {
+              "createdAt" : 800000000,
+              "currency" : "BRL",
+              "id" : "00000000-0000-0000-0000-000000000003",
+              "initialBalance" : 0,
+              "isArchived" : false,
+              "name" : "Remoto mais novo",
+              "type" : "checking",
+              "updatedAt" : 100,
+              "visibility" : "shared"
+            }
+          ],
+          "allowances" : [
+
+          ],
+          "approvalRequests" : [
+
+          ],
+          "budgets" : [
+
+          ],
+          "categories" : [
+
+          ],
+          "creditCards" : [
+
+          ],
+          "debts" : [
+
+          ],
+          "expenseSplits" : [
+
+          ],
+          "familyMembers" : [
+
+          ],
+          "goalContributions" : [
+
+          ],
+          "goals" : [
+
+          ],
+          "households" : [
+
+          ],
+          "investments" : [
+
+          ],
+          "invoices" : [
+
+          ],
+          "netWorthSnapshots" : [
+
+          ],
+          "splitSettlements" : [
+
+          ],
+          "tags" : [
+
+          ],
+          "tombstones" : [
+            {
+              "createdAt" : 50,
+              "deletedAt" : 50,
+              "entityId" : "00000000-0000-0000-0000-000000000007",
+              "entityType" : "Transaction",
+              "id" : "00000000-0000-0000-0000-000000001007",
+              "updatedAt" : 50
+            }
+          ],
+          "transactions" : [
+            {
+              "accountId" : "00000000-0000-0000-0000-000000000001",
+              "amount" : 10,
+              "createdAt" : 800000001,
+              "date" : 812548800,
+              "id" : "00000000-0000-0000-0000-000000000001",
+              "status" : "paid",
+              "tagIds" : [
+
+              ],
+              "title" : "L1",
+              "type" : "expense",
+              "updatedAt" : 100
+            },
+            {
+              "accountId" : "00000000-0000-0000-0000-000000000001",
+              "amount" : 10,
+              "createdAt" : 800000002,
+              "date" : 812548800,
+              "id" : "00000000-0000-0000-0000-000000000002",
+              "status" : "paid",
+              "tagIds" : [
+
+              ],
+              "title" : "L2 editada depois da exclusão",
+              "type" : "expense",
+              "updatedAt" : 700
+            },
+            {
+              "accountId" : "00000000-0000-0000-0000-000000000001",
+              "amount" : 10,
+              "createdAt" : 800000003,
+              "date" : 812548800,
+              "id" : "00000000-0000-0000-0000-000000000003",
+              "status" : "paid",
+              "tagIds" : [
+
+              ],
+              "title" : "L3 será excluída",
+              "type" : "expense",
+              "updatedAt" : 100
+            }
+          ],
+          "version" : 2
+        },
+        "remote" : {
+          "accounts" : [
+            {
+              "createdAt" : 800000000,
+              "currency" : "BRL",
+              "id" : "00000000-0000-0000-0000-000000000001",
+              "initialBalance" : 0,
+              "isArchived" : false,
+              "name" : "Remoto velho",
+              "type" : "checking",
+              "updatedAt" : 800,
+              "visibility" : "shared"
+            },
+            {
+              "createdAt" : 800000000,
+              "currency" : "BRL",
+              "id" : "00000000-0000-0000-0000-000000000003",
+              "initialBalance" : 0,
+              "isArchived" : false,
+              "name" : "Remoto vence",
+              "type" : "checking",
+              "updatedAt" : 500,
+              "visibility" : "shared"
+            },
+            {
+              "createdAt" : 800000000,
+              "currency" : "BRL",
+              "id" : "00000000-0000-0000-0000-000000000004",
+              "initialBalance" : 0,
+              "isArchived" : false,
+              "name" : "Só remoto",
+              "type" : "checking",
+              "updatedAt" : 50,
+              "visibility" : "shared"
+            }
+          ],
+          "allowances" : [
+
+          ],
+          "approvalRequests" : [
+
+          ],
+          "budgets" : [
+
+          ],
+          "categories" : [
+
+          ],
+          "creditCards" : [
+
+          ],
+          "debts" : [
+
+          ],
+          "expenseSplits" : [
+
+          ],
+          "familyMembers" : [
+
+          ],
+          "goalContributions" : [
+
+          ],
+          "goals" : [
+
+          ],
+          "households" : [
+
+          ],
+          "investments" : [
+
+          ],
+          "invoices" : [
+
+          ],
+          "netWorthSnapshots" : [
+
+          ],
+          "splitSettlements" : [
+
+          ],
+          "tags" : [
+
+          ],
+          "tombstones" : [
+            {
+              "createdAt" : 600,
+              "deletedAt" : 600,
+              "entityId" : "00000000-0000-0000-0000-000000000003",
+              "entityType" : "Transaction",
+              "id" : "00000000-0000-0000-0000-000000001003",
+              "updatedAt" : 600
+            },
+            {
+              "createdAt" : 400,
+              "deletedAt" : 400,
+              "entityId" : "00000000-0000-0000-0000-000000000005",
+              "entityType" : "Transaction",
+              "id" : "00000000-0000-0000-0000-000000001005",
+              "updatedAt" : 400
+            },
+            {
+              "createdAt" : 600,
+              "deletedAt" : 600,
+              "entityId" : "00000000-0000-0000-0000-000000000002",
+              "entityType" : "Transaction",
+              "id" : "00000000-0000-0000-0000-000000001002",
+              "updatedAt" : 600
+            }
+          ],
+          "transactions" : [
+            {
+              "accountId" : "00000000-0000-0000-0000-000000000001",
+              "amount" : 10,
+              "createdAt" : 800000001,
+              "date" : 812548800,
+              "id" : "00000000-0000-0000-0000-000000000001",
+              "status" : "paid",
+              "tagIds" : [
+
+              ],
+              "title" : "R1 mais novo",
+              "type" : "expense",
+              "updatedAt" : 200
+            },
+            {
+              "accountId" : "00000000-0000-0000-0000-000000000001",
+              "amount" : 10,
+              "createdAt" : 800000004,
+              "date" : 812548800,
+              "id" : "00000000-0000-0000-0000-000000000004",
+              "status" : "paid",
+              "tagIds" : [
+
+              ],
+              "title" : "R4 novo",
+              "type" : "expense",
+              "updatedAt" : 300
+            },
+            {
+              "accountId" : "00000000-0000-0000-0000-000000000001",
+              "amount" : 10,
+              "createdAt" : 800000005,
+              "date" : 812548800,
+              "id" : "00000000-0000-0000-0000-000000000005",
+              "status" : "paid",
+              "tagIds" : [
+
+              ],
+              "title" : "R5 excluída no remoto",
+              "type" : "expense",
+              "updatedAt" : 100
+            }
+          ],
+          "version" : 2
+        }
+      },
+      "kind" : "sync.merge",
+      "name" : "merge básico"
+    },
+    {
+      "expected" : {
+        "accounts" : [
+          "00000000-0000-0000-0000-000000000001"
+        ],
+        "tombstones" : [
+
+        ],
+        "transactions" : [
+          "00000000-0000-0000-0000-000000000002"
+        ]
+      },
+      "input" : {
+        "since" : 150,
+        "snapshot" : {
+          "accounts" : [
+            {
+              "createdAt" : 800000000,
+              "currency" : "BRL",
+              "id" : "00000000-0000-0000-0000-000000000001",
+              "initialBalance" : 0,
+              "isArchived" : false,
+              "name" : "Local novo",
+              "type" : "checking",
+              "updatedAt" : 900,
+              "visibility" : "shared"
+            },
+            {
+              "createdAt" : 800000000,
+              "currency" : "BRL",
+              "id" : "00000000-0000-0000-0000-000000000002",
+              "initialBalance" : 0,
+              "isArchived" : false,
+              "name" : "Só local",
+              "type" : "checking",
+              "updatedAt" : 100,
+              "visibility" : "shared"
+            },
+            {
+              "createdAt" : 800000000,
+              "currency" : "BRL",
+              "id" : "00000000-0000-0000-0000-000000000003",
+              "initialBalance" : 0,
+              "isArchived" : false,
+              "name" : "Remoto mais novo",
+              "type" : "checking",
+              "updatedAt" : 100,
+              "visibility" : "shared"
+            }
+          ],
+          "allowances" : [
+
+          ],
+          "approvalRequests" : [
+
+          ],
+          "budgets" : [
+
+          ],
+          "categories" : [
+
+          ],
+          "creditCards" : [
+
+          ],
+          "debts" : [
+
+          ],
+          "expenseSplits" : [
+
+          ],
+          "familyMembers" : [
+
+          ],
+          "goalContributions" : [
+
+          ],
+          "goals" : [
+
+          ],
+          "households" : [
+
+          ],
+          "investments" : [
+
+          ],
+          "invoices" : [
+
+          ],
+          "netWorthSnapshots" : [
+
+          ],
+          "splitSettlements" : [
+
+          ],
+          "tags" : [
+
+          ],
+          "tombstones" : [
+            {
+              "createdAt" : 50,
+              "deletedAt" : 50,
+              "entityId" : "00000000-0000-0000-0000-000000000007",
+              "entityType" : "Transaction",
+              "id" : "00000000-0000-0000-0000-000000001007",
+              "updatedAt" : 50
+            }
+          ],
+          "transactions" : [
+            {
+              "accountId" : "00000000-0000-0000-0000-000000000001",
+              "amount" : 10,
+              "createdAt" : 800000001,
+              "date" : 812548800,
+              "id" : "00000000-0000-0000-0000-000000000001",
+              "status" : "paid",
+              "tagIds" : [
+
+              ],
+              "title" : "L1",
+              "type" : "expense",
+              "updatedAt" : 100
+            },
+            {
+              "accountId" : "00000000-0000-0000-0000-000000000001",
+              "amount" : 10,
+              "createdAt" : 800000002,
+              "date" : 812548800,
+              "id" : "00000000-0000-0000-0000-000000000002",
+              "status" : "paid",
+              "tagIds" : [
+
+              ],
+              "title" : "L2 editada depois da exclusão",
+              "type" : "expense",
+              "updatedAt" : 700
+            },
+            {
+              "accountId" : "00000000-0000-0000-0000-000000000001",
+              "amount" : 10,
+              "createdAt" : 800000003,
+              "date" : 812548800,
+              "id" : "00000000-0000-0000-0000-000000000003",
+              "status" : "paid",
+              "tagIds" : [
+
+              ],
+              "title" : "L3 será excluída",
+              "type" : "expense",
+              "updatedAt" : 100
+            }
+          ],
+          "version" : 2
+        }
+      },
+      "kind" : "sync.changes",
+      "name" : "changes since"
+    }
+  ],
+  "suite" : "sync"
+}

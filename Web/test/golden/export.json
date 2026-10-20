@@ -1,0 +1,428 @@
+{
+  "cases" : [
+    {
+      "expected" : "data;descricao;tipo;valor;status;conta;categoria;tags;observacao\n01\/10\/2026;\"Salário \"\"bruto\"\"\";receita;5000,00;pago;Corrente;Salário;;\n03\/10\/2026;\"Transf; ok\";transferencia;-300,00;pendente;Corrente;;;\n04\/10\/2026;'@estorno;despesa;10,00;pago;Poupança;;;\n04\/10\/2026;+55 11;despesa;-1234567,80;pago;;;;\n05\/10\/2026;'=SOMA(A1);despesa;-123,45;pago;Corrente;Mercado;\"casa|urgente;sim\";\"linha 1\nlinha 2\"\n",
+      "input" : {
+        "accounts" : [
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Corrente",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Poupança",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "categories" : [
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "kind" : "expense",
+            "name" : "Mercado",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "kind" : "income",
+            "name" : "Salário",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "decimalComma" : true,
+        "delimiter" : ";",
+        "tags" : [
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "name" : "casa",
+            "updatedAt" : 800000000
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "name" : "urgente;sim",
+            "updatedAt" : 800000000
+          }
+        ],
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 123.45,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000001,
+            "date" : 812894400,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "note" : "linha 1\nlinha 2",
+            "status" : "paid",
+            "tagIds" : [
+              "00000000-0000-0000-0000-000000000001",
+              "00000000-0000-0000-0000-000000000002"
+            ],
+            "title" : "=SOMA(A1)",
+            "type" : "expense",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 5000,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000002,
+            "date" : 812548800,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário \"bruto\"",
+            "type" : "income",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 300,
+            "createdAt" : 800000003,
+            "date" : 812721600,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Transf; ok",
+            "type" : "transfer",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : -10,
+            "createdAt" : 800000004,
+            "date" : 812808000,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "@estorno",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "amount" : 1234567.8,
+            "createdAt" : 800000005,
+            "date" : 812808000,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "+55 11",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          }
+        ]
+      },
+      "kind" : "export.csv",
+      "name" : "export padrão"
+    },
+    {
+      "expected" : "data,descricao,tipo,valor,status,conta,categoria,tags,observacao\n01\/10\/2026,\"Salário \"\"bruto\"\"\",receita,5000.00,pago,Corrente,Salário,,\n03\/10\/2026,Transf; ok,transferencia,-300.00,pendente,Corrente,,,\n04\/10\/2026,'@estorno,despesa,10.00,pago,Poupança,,,\n04\/10\/2026,+55 11,despesa,-1234567.80,pago,,,,\n05\/10\/2026,'=SOMA(A1),despesa,-123.45,pago,Corrente,Mercado,casa|urgente;sim,\"linha 1\nlinha 2\"\n",
+      "input" : {
+        "accounts" : [
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Corrente",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Poupança",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "categories" : [
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "kind" : "expense",
+            "name" : "Mercado",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "kind" : "income",
+            "name" : "Salário",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "decimalComma" : false,
+        "delimiter" : ",",
+        "tags" : [
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "name" : "casa",
+            "updatedAt" : 800000000
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "name" : "urgente;sim",
+            "updatedAt" : 800000000
+          }
+        ],
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 123.45,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000001,
+            "date" : 812894400,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "note" : "linha 1\nlinha 2",
+            "status" : "paid",
+            "tagIds" : [
+              "00000000-0000-0000-0000-000000000001",
+              "00000000-0000-0000-0000-000000000002"
+            ],
+            "title" : "=SOMA(A1)",
+            "type" : "expense",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 5000,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000002,
+            "date" : 812548800,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário \"bruto\"",
+            "type" : "income",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 300,
+            "createdAt" : 800000003,
+            "date" : 812721600,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Transf; ok",
+            "type" : "transfer",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : -10,
+            "createdAt" : 800000004,
+            "date" : 812808000,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "@estorno",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "amount" : 1234567.8,
+            "createdAt" : 800000005,
+            "date" : 812808000,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "+55 11",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          }
+        ]
+      },
+      "kind" : "export.csv",
+      "name" : "export ponto decimal"
+    },
+    {
+      "expected" : "data\tdescricao\ttipo\tvalor\tstatus\tconta\tcategoria\ttags\tobservacao\n01\/10\/2026\t\"Salário \"\"bruto\"\"\"\treceita\t5000,00\tpago\tCorrente\tSalário\t\t\n03\/10\/2026\tTransf; ok\ttransferencia\t-300,00\tpendente\tCorrente\t\t\t\n04\/10\/2026\t'@estorno\tdespesa\t10,00\tpago\tPoupança\t\t\t\n04\/10\/2026\t+55 11\tdespesa\t-1234567,80\tpago\t\t\t\t\n05\/10\/2026\t'=SOMA(A1)\tdespesa\t-123,45\tpago\tCorrente\tMercado\tcasa|urgente;sim\t\"linha 1\nlinha 2\"\n",
+      "input" : {
+        "accounts" : [
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Corrente",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "initialBalance" : 0,
+            "isArchived" : false,
+            "name" : "Poupança",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "categories" : [
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "kind" : "expense",
+            "name" : "Mercado",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "kind" : "income",
+            "name" : "Salário",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "decimalComma" : true,
+        "delimiter" : "\t",
+        "tags" : [
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "name" : "casa",
+            "updatedAt" : 800000000
+          },
+          {
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "name" : "urgente;sim",
+            "updatedAt" : 800000000
+          }
+        ],
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 123.45,
+            "categoryId" : "00000000-0000-0000-0000-000000000001",
+            "createdAt" : 800000001,
+            "date" : 812894400,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "note" : "linha 1\nlinha 2",
+            "status" : "paid",
+            "tagIds" : [
+              "00000000-0000-0000-0000-000000000001",
+              "00000000-0000-0000-0000-000000000002"
+            ],
+            "title" : "=SOMA(A1)",
+            "type" : "expense",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 5000,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000002,
+            "date" : 812548800,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário \"bruto\"",
+            "type" : "income",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 300,
+            "createdAt" : 800000003,
+            "date" : 812721600,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Transf; ok",
+            "type" : "transfer",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : -10,
+            "createdAt" : 800000004,
+            "date" : 812808000,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "@estorno",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "amount" : 1234567.8,
+            "createdAt" : 800000005,
+            "date" : 812808000,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "+55 11",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          }
+        ]
+      },
+      "kind" : "export.csv",
+      "name" : "export tab"
+    }
+  ],
+  "suite" : "export"
+}

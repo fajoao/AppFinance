@@ -1,0 +1,8 @@
+# Gerado pelo XcodeGen (rode `xcodegen` para recriar)
+*.xcodeproj
+*.xcworkspace
+# Build, resultados de teste e capturas temporárias
+build/
+DerivedData/
+*.xcresult
+.build/

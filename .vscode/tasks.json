@@ -1,0 +1,98 @@
+{
+  "version": "2.0.0",
+  "inputs": [
+    { "id": "simulator", "type": "promptString", "description": "Nome do simulador", "default": "iPhone 16" },
+    { "id": "appearance", "type": "pickString", "description": "Aparência", "options": ["light", "dark"], "default": "light" },
+    { "id": "contentSize", "type": "pickString", "description": "Tamanho do texto (Dynamic Type)",
+      "options": ["large", "extra-large", "accessibility-medium", "accessibility-extra-extra-extra-large"], "default": "large" },
+    { "id": "screen", "type": "pickString", "description": "Tela inicial do app",
+      "options": ["home", "transactions", "new", "plan.budget", "plan.bills", "plan.goals", "wallet.accounts", "wallet.cards"], "default": "home" }
+  ],
+  "tasks": [
+    {
+      "label": "Projeto: gerar .xcodeproj (XcodeGen)",
+      "type": "shell",
+      "command": "xcodegen",
+      "options": { "cwd": "${workspaceFolder}/FinanceApp" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Verificar: testes do Core (swiftc, sem Xcode)",
+      "type": "shell",
+      "command": "./FinanceApp/scripts/test-core.sh",
+      "group": "test",
+      "problemMatcher": ["$swiftc"]
+    },
+    {
+      "label": "Verificar: testes de lógica do App (swiftc, sem Xcode)",
+      "type": "shell",
+      "command": "./FinanceApp/scripts/test-app.sh",
+      "group": "test",
+      "problemMatcher": ["$swiftc"]
+    },
+    {
+      "label": "Verificar: typecheck do App (SDK macOS)",
+      "type": "shell",
+      "command": "./FinanceApp/scripts/typecheck-app.sh",
+      "group": "build",
+      "problemMatcher": ["$swiftc"]
+    },
+    {
+      "label": "iOS: build para o Simulador",
+      "type": "shell",
+      "command": "xcodebuild -project FinanceApp/FinanceApp.xcodeproj -scheme FinanceApp -destination 'platform=iOS Simulator,name=${input:simulator}' -derivedDataPath build build",
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": ["$swiftc"]
+    },
+    {
+      "label": "iOS: testes unitários e de UI (gera .xcresult)",
+      "type": "shell",
+      "command": "rm -rf build/Test.xcresult && xcodebuild test -project FinanceApp/FinanceApp.xcodeproj -scheme FinanceApp -destination 'platform=iOS Simulator,name=${input:simulator}' -derivedDataPath build -resultBundlePath build/Test.xcresult",
+      "group": "test",
+      "problemMatcher": ["$swiftc"]
+    },
+    {
+      "label": "Simulador: abrir",
+      "type": "shell",
+      "command": "xcrun simctl boot '${input:simulator}' 2>/dev/null; open -a Simulator",
+      "problemMatcher": []
+    },
+    {
+      "label": "Simulador: instalar e abrir o app com dados de demonstração",
+      "type": "shell",
+      "command": "xcrun simctl install booted build/Build/Products/Debug-iphonesimulator/FinanceApp.app && xcrun simctl launch --terminate-running-process booted com.example.financas -uiTesting -seedDemo -fixedToday 2026-10-19 -startScreen ${input:screen}",
+      "dependsOn": ["iOS: build para o Simulador"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Simulador: aparência (claro/escuro)",
+      "type": "shell",
+      "command": "xcrun simctl ui booted appearance ${input:appearance}",
+      "problemMatcher": []
+    },
+    {
+      "label": "Simulador: tamanho do texto (Dynamic Type)",
+      "type": "shell",
+      "command": "xcrun simctl ui booted content_size ${input:contentSize}",
+      "problemMatcher": []
+    },
+    {
+      "label": "Simulador: captura de tela",
+      "type": "shell",
+      "command": "mkdir -p Docs/screenshots && xcrun simctl io booted screenshot \"Docs/screenshots/$(date +%Y%m%d-%H%M%S).png\" && echo 'Salvo em Docs/screenshots/'",
+      "problemMatcher": []
+    },
+    {
+      "label": "Simulador: capturas completas (3 iPhones, claro/escuro, texto normal/grande)",
+      "type": "shell",
+      "command": "./FinanceApp/scripts/capture-screenshots.sh",
+      "problemMatcher": []
+    },
+    {
+      "label": "Testes de UI: extrair capturas do .xcresult",
+      "type": "shell",
+      "command": "./FinanceApp/scripts/extract-screenshots.sh build/Test.xcresult Docs/screenshots/ui-tests",
+      "problemMatcher": []
+    }
+  ]
+}

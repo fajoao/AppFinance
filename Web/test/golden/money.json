@@ -1,0 +1,773 @@
+{
+  "cases" : [
+    {
+      "expected" : "R$ 0,00",
+      "input" : {
+        "value" : "0"
+      },
+      "kind" : "money.format",
+      "name" : "format 0"
+    },
+    {
+      "expected" : "0,00",
+      "input" : {
+        "value" : "0"
+      },
+      "kind" : "money.plain",
+      "name" : "plain 0"
+    },
+    {
+      "expected" : "R$ 5,00",
+      "input" : {
+        "value" : "5"
+      },
+      "kind" : "money.format",
+      "name" : "format 5"
+    },
+    {
+      "expected" : "5,00",
+      "input" : {
+        "value" : "5"
+      },
+      "kind" : "money.plain",
+      "name" : "plain 5"
+    },
+    {
+      "expected" : "R$ 1,50",
+      "input" : {
+        "value" : "1.5"
+      },
+      "kind" : "money.format",
+      "name" : "format 1.5"
+    },
+    {
+      "expected" : "1,50",
+      "input" : {
+        "value" : "1.5"
+      },
+      "kind" : "money.plain",
+      "name" : "plain 1.5"
+    },
+    {
+      "expected" : "R$ 100,01",
+      "input" : {
+        "value" : "100.01"
+      },
+      "kind" : "money.format",
+      "name" : "format 100.01"
+    },
+    {
+      "expected" : "100,01",
+      "input" : {
+        "value" : "100.01"
+      },
+      "kind" : "money.plain",
+      "name" : "plain 100.01"
+    },
+    {
+      "expected" : "R$ 1.234,56",
+      "input" : {
+        "value" : "1234.56"
+      },
+      "kind" : "money.format",
+      "name" : "format 1234.56"
+    },
+    {
+      "expected" : "1234,56",
+      "input" : {
+        "value" : "1234.56"
+      },
+      "kind" : "money.plain",
+      "name" : "plain 1234.56"
+    },
+    {
+      "expected" : "-R$ 45,90",
+      "input" : {
+        "value" : "-45.9"
+      },
+      "kind" : "money.format",
+      "name" : "format -45.9"
+    },
+    {
+      "expected" : "-45,90",
+      "input" : {
+        "value" : "-45.9"
+      },
+      "kind" : "money.plain",
+      "name" : "plain -45.9"
+    },
+    {
+      "expected" : "R$ 1.234.567,89",
+      "input" : {
+        "value" : "1234567.891"
+      },
+      "kind" : "money.format",
+      "name" : "format 1234567.891"
+    },
+    {
+      "expected" : "1234567,89",
+      "input" : {
+        "value" : "1234567.891"
+      },
+      "kind" : "money.plain",
+      "name" : "plain 1234567.891"
+    },
+    {
+      "expected" : "R$ 0,00",
+      "input" : {
+        "value" : "-0.004"
+      },
+      "kind" : "money.format",
+      "name" : "format -0.004"
+    },
+    {
+      "expected" : "0,00",
+      "input" : {
+        "value" : "-0.004"
+      },
+      "kind" : "money.plain",
+      "name" : "plain -0.004"
+    },
+    {
+      "expected" : "R$ 0,01",
+      "input" : {
+        "value" : "0.005"
+      },
+      "kind" : "money.format",
+      "name" : "format 0.005"
+    },
+    {
+      "expected" : "0,01",
+      "input" : {
+        "value" : "0.005"
+      },
+      "kind" : "money.plain",
+      "name" : "plain 0.005"
+    },
+    {
+      "expected" : "-R$ 0,01",
+      "input" : {
+        "value" : "-0.005"
+      },
+      "kind" : "money.format",
+      "name" : "format -0.005"
+    },
+    {
+      "expected" : "-0,01",
+      "input" : {
+        "value" : "-0.005"
+      },
+      "kind" : "money.plain",
+      "name" : "plain -0.005"
+    },
+    {
+      "expected" : "R$ 1.000.000,00",
+      "input" : {
+        "value" : "999999.995"
+      },
+      "kind" : "money.format",
+      "name" : "format 999999.995"
+    },
+    {
+      "expected" : "1000000,00",
+      "input" : {
+        "value" : "999999.995"
+      },
+      "kind" : "money.plain",
+      "name" : "plain 999999.995"
+    },
+    {
+      "expected" : "R$ 12.345.678.901.234,56",
+      "input" : {
+        "value" : "12345678901234.56"
+      },
+      "kind" : "money.format",
+      "name" : "format 12345678901234.56"
+    },
+    {
+      "expected" : "12345678901234,56",
+      "input" : {
+        "value" : "12345678901234.56"
+      },
+      "kind" : "money.plain",
+      "name" : "plain 12345678901234.56"
+    },
+    {
+      "expected" : "1234.56",
+      "input" : {
+        "raw" : "R$ 1.234,56",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse 'R$ 1.234,56'"
+    },
+    {
+      "expected" : "1234.56",
+      "input" : {
+        "raw" : "R$ 1.234,56",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse 'R$ 1.234,56'"
+    },
+    {
+      "expected" : "-1234.56",
+      "input" : {
+        "raw" : "-1234.56",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse '-1234.56'"
+    },
+    {
+      "expected" : "-123.45",
+      "input" : {
+        "raw" : "(123,45)",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse '(123,45)'"
+    },
+    {
+      "expected" : "1234",
+      "input" : {
+        "raw" : "1.234",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse '1.234'"
+    },
+    {
+      "expected" : "12.5",
+      "input" : {
+        "raw" : "12,5",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse '12,5'"
+    },
+    {
+      "expected" : "1234567",
+      "input" : {
+        "raw" : "1.234.567",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse '1.234.567'"
+    },
+    {
+      "expected" : "1234.56",
+      "input" : {
+        "raw" : "1,234.56",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse '1,234.56'"
+    },
+    {
+      "expected" : "1234.5",
+      "input" : {
+        "raw" : "1.234,5",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse '1.234,5'"
+    },
+    {
+      "expected" : "0.99",
+      "input" : {
+        "raw" : "0,99",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse '0,99'"
+    },
+    {
+      "expected" : null,
+      "input" : {
+        "raw" : "abc",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse 'abc'"
+    },
+    {
+      "expected" : null,
+      "input" : {
+        "raw" : "",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse ''"
+    },
+    {
+      "expected" : null,
+      "input" : {
+        "raw" : "  ",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse '  '"
+    },
+    {
+      "expected" : null,
+      "input" : {
+        "raw" : "-",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse '-'"
+    },
+    {
+      "expected" : null,
+      "input" : {
+        "raw" : "12,",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse '12,'"
+    },
+    {
+      "expected" : null,
+      "input" : {
+        "raw" : "1,2,3",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse '1,2,3'"
+    },
+    {
+      "expected" : "50",
+      "input" : {
+        "raw" : "+50",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse '+50'"
+    },
+    {
+      "expected" : "-100",
+      "input" : {
+        "raw" : "100-",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse '100-'"
+    },
+    {
+      "expected" : "1.5",
+      "input" : {
+        "raw" : "1.5",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse '1.5'"
+    },
+    {
+      "expected" : "1.5",
+      "input" : {
+        "raw" : "1.50",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse '1.50'"
+    },
+    {
+      "expected" : "12345",
+      "input" : {
+        "raw" : "12.345",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse '12.345'"
+    },
+    {
+      "expected" : "-10",
+      "input" : {
+        "raw" : "R$ -10,00",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse 'R$ -10,00'"
+    },
+    {
+      "expected" : null,
+      "input" : {
+        "raw" : "--5",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse '--5'"
+    },
+    {
+      "expected" : null,
+      "input" : {
+        "raw" : "1e5",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse '1e5'"
+    },
+    {
+      "expected" : null,
+      "input" : {
+        "raw" : "٣",
+        "style" : "auto"
+      },
+      "kind" : "money.parse",
+      "name" : "parse '٣'"
+    },
+    {
+      "expected" : "1234",
+      "input" : {
+        "raw" : "1.234",
+        "style" : "comma"
+      },
+      "kind" : "money.parse",
+      "name" : "parse styled 1.234 comma"
+    },
+    {
+      "expected" : "1.234",
+      "input" : {
+        "raw" : "1.234",
+        "style" : "dot"
+      },
+      "kind" : "money.parse",
+      "name" : "parse styled 1.234 dot"
+    },
+    {
+      "expected" : "1234",
+      "input" : {
+        "raw" : "1,234",
+        "style" : "dot"
+      },
+      "kind" : "money.parse",
+      "name" : "parse styled 1,234 dot"
+    },
+    {
+      "expected" : "12.5",
+      "input" : {
+        "raw" : "12,5",
+        "style" : "comma"
+      },
+      "kind" : "money.parse",
+      "name" : "parse styled 12,5 comma"
+    },
+    {
+      "expected" : [
+        "10",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10.01"
+      ],
+      "input" : {
+        "count" : 10,
+        "total" : "100.01"
+      },
+      "kind" : "money.split",
+      "name" : "split 100.01\/10"
+    },
+    {
+      "expected" : [
+        "33.33",
+        "33.33",
+        "33.35"
+      ],
+      "input" : {
+        "count" : 3,
+        "total" : "100.01"
+      },
+      "kind" : "money.split",
+      "name" : "split 100.01\/3"
+    },
+    {
+      "expected" : [
+        "0",
+        "0",
+        "0.01"
+      ],
+      "input" : {
+        "count" : 3,
+        "total" : "0.01"
+      },
+      "kind" : "money.split",
+      "name" : "split 0.01\/3"
+    },
+    {
+      "expected" : [
+        "333.33",
+        "333.33",
+        "333.34"
+      ],
+      "input" : {
+        "count" : 3,
+        "total" : "1000"
+      },
+      "kind" : "money.split",
+      "name" : "split 1000\/3"
+    },
+    {
+      "expected" : [
+        "-33.33",
+        "-33.33",
+        "-33.35"
+      ],
+      "input" : {
+        "count" : 3,
+        "total" : "-100.01"
+      },
+      "kind" : "money.split",
+      "name" : "split -100.01\/3"
+    },
+    {
+      "expected" : [
+        "10"
+      ],
+      "input" : {
+        "count" : 1,
+        "total" : "10"
+      },
+      "kind" : "money.split",
+      "name" : "split 10\/1"
+    },
+    {
+      "expected" : [
+        "14.28",
+        "14.28",
+        "14.28",
+        "14.28",
+        "14.28",
+        "14.28",
+        "14.31"
+      ],
+      "input" : {
+        "count" : 7,
+        "total" : "99.99"
+      },
+      "kind" : "money.split",
+      "name" : "split 99.99\/7"
+    },
+    {
+      "expected" : [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "input" : {
+        "count" : 4,
+        "total" : "0"
+      },
+      "kind" : "money.split",
+      "name" : "split 0\/4"
+    },
+    {
+      "expected" : [
+        "33.33",
+        "33.33",
+        "33.35"
+      ],
+      "input" : {
+        "count" : 3,
+        "total" : "100.005"
+      },
+      "kind" : "money.split",
+      "name" : "split 100.005\/3"
+    },
+    {
+      "expected" : [
+        "102.88",
+        "102.88",
+        "102.88",
+        "102.88",
+        "102.88",
+        "102.88",
+        "102.88",
+        "102.88",
+        "102.88",
+        "102.88",
+        "102.88",
+        "102.89"
+      ],
+      "input" : {
+        "count" : 12,
+        "total" : "1234.57"
+      },
+      "kind" : "money.split",
+      "name" : "split 1234.57\/12"
+    },
+    {
+      "expected" : [
+        "33.33",
+        "33.33",
+        "33.34"
+      ],
+      "input" : {
+        "total" : "100",
+        "weights" : [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      "kind" : "money.allocate",
+      "name" : "allocate 100 [\"1\", \"1\", \"1\"]"
+    },
+    {
+      "expected" : [
+        "50.01",
+        "30",
+        "20"
+      ],
+      "input" : {
+        "total" : "100.01",
+        "weights" : [
+          "50",
+          "30",
+          "20"
+        ]
+      },
+      "kind" : "money.allocate",
+      "name" : "allocate 100.01 [\"50\", \"30\", \"20\"]"
+    },
+    {
+      "expected" : [
+        "0.03",
+        "0.02"
+      ],
+      "input" : {
+        "total" : "0.05",
+        "weights" : [
+          "1",
+          "1"
+        ]
+      },
+      "kind" : "money.allocate",
+      "name" : "allocate 0.05 [\"1\", \"1\"]"
+    },
+    {
+      "expected" : [
+        "50",
+        "50"
+      ],
+      "input" : {
+        "total" : "100",
+        "weights" : [
+          "0",
+          "0"
+        ]
+      },
+      "kind" : "money.allocate",
+      "name" : "allocate 100 [\"0\", \"0\"]"
+    },
+    {
+      "expected" : [
+        "111.1",
+        "111.1",
+        "111.13"
+      ],
+      "input" : {
+        "total" : "333.33",
+        "weights" : [
+          "33.33",
+          "33.33",
+          "33.34"
+        ]
+      },
+      "kind" : "money.allocate",
+      "name" : "allocate 333.33 [\"33.33\", \"33.33\", \"33.34\"]"
+    },
+    {
+      "expected" : [
+        "-30",
+        "-60"
+      ],
+      "input" : {
+        "total" : "-90",
+        "weights" : [
+          "1",
+          "2"
+        ]
+      },
+      "kind" : "money.allocate",
+      "name" : "allocate -90 [\"1\", \"2\"]"
+    },
+    {
+      "expected" : "2.35",
+      "input" : {
+        "mode" : "plain",
+        "scale" : 2,
+        "value" : "2.345"
+      },
+      "kind" : "money.round",
+      "name" : "round 2.345 2 plain"
+    },
+    {
+      "expected" : "-2.35",
+      "input" : {
+        "mode" : "plain",
+        "scale" : 2,
+        "value" : "-2.345"
+      },
+      "kind" : "money.round",
+      "name" : "round -2.345 2 plain"
+    },
+    {
+      "expected" : "2.34",
+      "input" : {
+        "mode" : "down",
+        "scale" : 2,
+        "value" : "2.345"
+      },
+      "kind" : "money.round",
+      "name" : "round 2.345 2 down"
+    },
+    {
+      "expected" : "2.35",
+      "input" : {
+        "mode" : "up",
+        "scale" : 2,
+        "value" : "2.341"
+      },
+      "kind" : "money.round",
+      "name" : "round 2.341 2 up"
+    },
+    {
+      "expected" : "1",
+      "input" : {
+        "mode" : "plain",
+        "scale" : 0,
+        "value" : "0.5"
+      },
+      "kind" : "money.round",
+      "name" : "round 0.5 0 plain"
+    },
+    {
+      "expected" : "1.0001",
+      "input" : {
+        "mode" : "plain",
+        "scale" : 4,
+        "value" : "1.00005"
+      },
+      "kind" : "money.round",
+      "name" : "round 1.00005 4 plain"
+    },
+    {
+      "expected" : "-1",
+      "input" : {
+        "mode" : "plain",
+        "scale" : 0,
+        "value" : "-0.5"
+      },
+      "kind" : "money.round",
+      "name" : "round -0.5 0 plain"
+    }
+  ],
+  "suite" : "money"
+}

@@ -1,0 +1,99 @@
+# App Finanças: Postgres + API (+ Web + túnel Cloudflare).
+#   Subir:            docker compose up -d --build db api          (e `web` quando Web/ existir)
+#   Túnel rápido:     docker compose --profile tunnel up tunnel
+#   Testes:           docker compose --profile test run --rm --build api-test
+# Segredos vêm do arquivo .env (não versionado). Veja .env.example e docs/backend.md.
+
+name: appfinance
+
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-finance}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?defina POSTGRES_PASSWORD no .env}
+      POSTGRES_DB: ${POSTGRES_DB:-finance}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    # Somente loopback do host (administração local: psql -h 127.0.0.1). Nunca 0.0.0.0.
+    ports:
+      - "127.0.0.1:${DB_HOST_PORT:-5432}:5432"
+    networks: [backend]
+
+  api:
+    build:
+      context: ./Backend
+      dockerfile: api/Dockerfile
+      target: runtime
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgres://${POSTGRES_USER:-finance}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-finance}
+      JWT_SECRET: ${JWT_SECRET:?defina JWT_SECRET no .env}
+      CORS_ORIGINS: ${CORS_ORIGINS:-}
+      TRUST_PROXY: ${TRUST_PROXY:-true}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+    # Loopback do host para testes com curl; o acesso pela internet é via túnel (HTTPS).
+    ports:
+      - "127.0.0.1:${API_HOST_PORT:-3000}:3000"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    networks: [backend, edge]
+
+  web:
+    build: ./Web          # Web/Dockerfile: estáticos na porta 80 + proxy de /api para http://api:3000
+    restart: unless-stopped
+    depends_on: [api]
+    ports:
+      - "127.0.0.1:8080:80"
+    networks: [edge]
+
+  # Túnel rápido (sem conta): URL https://*.trycloudflare.com NOVA a cada subida.
+  tunnel:
+    profiles: [tunnel]
+    image: cloudflare/cloudflared:latest
+    restart: unless-stopped
+    command: tunnel --no-autoupdate --url ${TUNNEL_TARGET:-http://api:3000}
+    depends_on: [api]
+    networks: [edge]
+
+  # Túnel nomeado (URL estável, domínio próprio na Cloudflare). Requer TUNNEL_TOKEN no .env.
+  tunnel-named:
+    profiles: [tunnel-named]
+    image: cloudflare/cloudflared:latest
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run
+    environment:
+      TUNNEL_TOKEN: ${TUNNEL_TOKEN:-}
+    depends_on: [api]
+    networks: [edge]
+
+  # Testes de integração contra o Postgres real (usa o banco finance_test, criado automaticamente).
+  api-test:
+    profiles: [test]
+    build:
+      context: ./Backend
+      dockerfile: api/Dockerfile
+      target: test
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgres://${POSTGRES_USER:-finance}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-finance}
+    networks: [backend]
+
+networks:
+  backend: {}   # db <-> api (o Postgres não fica na rede edge)
+  edge: {}      # api <-> web <-> tunnel
+
+volumes:
+  pgdata: {}

@@ -1,0 +1,1603 @@
+{
+  "cases" : [
+    {
+      "expected" : {
+        "balance" : "2513.59",
+        "comparison" : {
+          "expenseChangePercent" : "42.29",
+          "expenseDelta" : "976.91",
+          "incomeChangePercent" : "45.01",
+          "incomeDelta" : "1800.5",
+          "previousExpense" : "2310",
+          "previousIncome" : "4000"
+        },
+        "expense" : "3286.91",
+        "expensesByCategory" : [
+          {
+            "amount" : "1500",
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "percent" : "45.64"
+          },
+          {
+            "amount" : "1170",
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "percent" : "35.6"
+          },
+          {
+            "amount" : "300.25",
+            "categoryId" : "00000000-0000-0000-0000-000000000007",
+            "percent" : "9.13"
+          },
+          {
+            "amount" : "216.67",
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "percent" : "6.59"
+          },
+          {
+            "amount" : "99.99",
+            "categoryId" : null,
+            "percent" : "3.04"
+          }
+        ],
+        "income" : "5800.5",
+        "incomeByCategory" : [
+          {
+            "amount" : "5000",
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "percent" : "86.2"
+          },
+          {
+            "amount" : "800.5",
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "percent" : "13.8"
+          }
+        ]
+      },
+      "input" : {
+        "month" : {
+          "month" : 10,
+          "year" : 2026
+        },
+        "onlyPaid" : false,
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 5000,
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "createdAt" : 800000001,
+            "date" : 812894400,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 800.5,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000002,
+            "date" : 814190400,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Freela",
+            "type" : "income",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1500,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000003,
+            "date" : 812980800,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 300.25,
+            "categoryId" : "00000000-0000-0000-0000-000000000007",
+            "createdAt" : 800000004,
+            "date" : 813067200,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Condomínio",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 820,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000005,
+            "date" : 813153600,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 150,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000006,
+            "date" : 813240000,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Cinema",
+            "type" : "expense",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 99.989999999999995,
+            "createdAt" : 800000007,
+            "date" : 813326400,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Sem categoria",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1000,
+            "createdAt" : 800000008,
+            "date" : 813412800,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Transf",
+            "type" : "transfer",
+            "updatedAt" : 800000008
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 700,
+            "createdAt" : 800000009,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 813499200,
+            "id" : "00000000-0000-0000-0000-000000000009",
+            "invoiceId" : "00000000-0000-0000-0000-000000000500",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Pagamento fatura",
+            "type" : "transfer",
+            "updatedAt" : 800000009
+          },
+          {
+            "amount" : 400,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000010,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 813585600,
+            "id" : "00000000-0000-0000-0000-000000000010",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Compra cartão mercado",
+            "type" : "expense",
+            "updatedAt" : 800000010
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : -50,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000011,
+            "date" : 813672000,
+            "id" : "00000000-0000-0000-0000-000000000011",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Estorno mercado",
+            "type" : "expense",
+            "updatedAt" : 800000011
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 4000,
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "createdAt" : 800000012,
+            "date" : 810302400,
+            "id" : "00000000-0000-0000-0000-000000000012",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário set",
+            "type" : "income",
+            "updatedAt" : 800000012
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1800,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000013,
+            "date" : 810388800,
+            "id" : "00000000-0000-0000-0000-000000000013",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel set",
+            "type" : "expense",
+            "updatedAt" : 800000013
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 500,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000014,
+            "date" : 810561600,
+            "id" : "00000000-0000-0000-0000-000000000014",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado set",
+            "type" : "expense",
+            "updatedAt" : 800000014
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000015,
+            "date" : 812462400,
+            "id" : "00000000-0000-0000-0000-000000000015",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Lazer set",
+            "type" : "expense",
+            "updatedAt" : 800000015
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 33.329999999999998,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000016,
+            "date" : 815140800,
+            "id" : "00000000-0000-0000-0000-000000000016",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Fim do mês",
+            "type" : "expense",
+            "updatedAt" : 800000016
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 33.340000000000003,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000017,
+            "date" : 812548800,
+            "id" : "00000000-0000-0000-0000-000000000017",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Início do mês",
+            "type" : "expense",
+            "updatedAt" : 800000017
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "createdAt" : 800000018,
+            "date" : 807278400,
+            "id" : "00000000-0000-0000-0000-000000000018",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Ago",
+            "type" : "income",
+            "updatedAt" : 800000018
+          }
+        ]
+      },
+      "kind" : "summary.month",
+      "name" : "summary 10\/2026 paid=false"
+    },
+    {
+      "expected" : {
+        "balance" : "2663.59",
+        "comparison" : {
+          "expenseChangePercent" : "35.8",
+          "expenseDelta" : "826.91",
+          "incomeChangePercent" : "45.01",
+          "incomeDelta" : "1800.5",
+          "previousExpense" : "2310",
+          "previousIncome" : "4000"
+        },
+        "expense" : "3136.91",
+        "expensesByCategory" : [
+          {
+            "amount" : "1500",
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "percent" : "47.82"
+          },
+          {
+            "amount" : "1170",
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "percent" : "37.3"
+          },
+          {
+            "amount" : "300.25",
+            "categoryId" : "00000000-0000-0000-0000-000000000007",
+            "percent" : "9.57"
+          },
+          {
+            "amount" : "99.99",
+            "categoryId" : null,
+            "percent" : "3.19"
+          },
+          {
+            "amount" : "66.67",
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "percent" : "2.13"
+          }
+        ],
+        "income" : "5800.5",
+        "incomeByCategory" : [
+          {
+            "amount" : "5000",
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "percent" : "86.2"
+          },
+          {
+            "amount" : "800.5",
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "percent" : "13.8"
+          }
+        ]
+      },
+      "input" : {
+        "month" : {
+          "month" : 10,
+          "year" : 2026
+        },
+        "onlyPaid" : true,
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 5000,
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "createdAt" : 800000001,
+            "date" : 812894400,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 800.5,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000002,
+            "date" : 814190400,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Freela",
+            "type" : "income",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1500,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000003,
+            "date" : 812980800,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 300.25,
+            "categoryId" : "00000000-0000-0000-0000-000000000007",
+            "createdAt" : 800000004,
+            "date" : 813067200,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Condomínio",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 820,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000005,
+            "date" : 813153600,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 150,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000006,
+            "date" : 813240000,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Cinema",
+            "type" : "expense",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 99.989999999999995,
+            "createdAt" : 800000007,
+            "date" : 813326400,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Sem categoria",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1000,
+            "createdAt" : 800000008,
+            "date" : 813412800,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Transf",
+            "type" : "transfer",
+            "updatedAt" : 800000008
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 700,
+            "createdAt" : 800000009,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 813499200,
+            "id" : "00000000-0000-0000-0000-000000000009",
+            "invoiceId" : "00000000-0000-0000-0000-000000000500",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Pagamento fatura",
+            "type" : "transfer",
+            "updatedAt" : 800000009
+          },
+          {
+            "amount" : 400,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000010,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 813585600,
+            "id" : "00000000-0000-0000-0000-000000000010",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Compra cartão mercado",
+            "type" : "expense",
+            "updatedAt" : 800000010
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : -50,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000011,
+            "date" : 813672000,
+            "id" : "00000000-0000-0000-0000-000000000011",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Estorno mercado",
+            "type" : "expense",
+            "updatedAt" : 800000011
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 4000,
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "createdAt" : 800000012,
+            "date" : 810302400,
+            "id" : "00000000-0000-0000-0000-000000000012",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário set",
+            "type" : "income",
+            "updatedAt" : 800000012
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1800,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000013,
+            "date" : 810388800,
+            "id" : "00000000-0000-0000-0000-000000000013",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel set",
+            "type" : "expense",
+            "updatedAt" : 800000013
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 500,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000014,
+            "date" : 810561600,
+            "id" : "00000000-0000-0000-0000-000000000014",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado set",
+            "type" : "expense",
+            "updatedAt" : 800000014
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000015,
+            "date" : 812462400,
+            "id" : "00000000-0000-0000-0000-000000000015",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Lazer set",
+            "type" : "expense",
+            "updatedAt" : 800000015
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 33.329999999999998,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000016,
+            "date" : 815140800,
+            "id" : "00000000-0000-0000-0000-000000000016",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Fim do mês",
+            "type" : "expense",
+            "updatedAt" : 800000016
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 33.340000000000003,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000017,
+            "date" : 812548800,
+            "id" : "00000000-0000-0000-0000-000000000017",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Início do mês",
+            "type" : "expense",
+            "updatedAt" : 800000017
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "createdAt" : 800000018,
+            "date" : 807278400,
+            "id" : "00000000-0000-0000-0000-000000000018",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Ago",
+            "type" : "income",
+            "updatedAt" : 800000018
+          }
+        ]
+      },
+      "kind" : "summary.month",
+      "name" : "summary 10\/2026 paid=true"
+    },
+    {
+      "expected" : {
+        "balance" : "1690",
+        "comparison" : {
+          "expenseChangePercent" : null,
+          "expenseDelta" : "2310",
+          "incomeChangePercent" : "39900",
+          "incomeDelta" : "3990",
+          "previousExpense" : "0",
+          "previousIncome" : "10"
+        },
+        "expense" : "2310",
+        "expensesByCategory" : [
+          {
+            "amount" : "1800",
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "percent" : "77.92"
+          },
+          {
+            "amount" : "500",
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "percent" : "21.65"
+          },
+          {
+            "amount" : "10",
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "percent" : "0.43"
+          }
+        ],
+        "income" : "4000",
+        "incomeByCategory" : [
+          {
+            "amount" : "4000",
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "percent" : "100"
+          }
+        ]
+      },
+      "input" : {
+        "month" : {
+          "month" : 9,
+          "year" : 2026
+        },
+        "onlyPaid" : false,
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 5000,
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "createdAt" : 800000001,
+            "date" : 812894400,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 800.5,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000002,
+            "date" : 814190400,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Freela",
+            "type" : "income",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1500,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000003,
+            "date" : 812980800,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 300.25,
+            "categoryId" : "00000000-0000-0000-0000-000000000007",
+            "createdAt" : 800000004,
+            "date" : 813067200,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Condomínio",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 820,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000005,
+            "date" : 813153600,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 150,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000006,
+            "date" : 813240000,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Cinema",
+            "type" : "expense",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 99.989999999999995,
+            "createdAt" : 800000007,
+            "date" : 813326400,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Sem categoria",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1000,
+            "createdAt" : 800000008,
+            "date" : 813412800,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Transf",
+            "type" : "transfer",
+            "updatedAt" : 800000008
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 700,
+            "createdAt" : 800000009,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 813499200,
+            "id" : "00000000-0000-0000-0000-000000000009",
+            "invoiceId" : "00000000-0000-0000-0000-000000000500",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Pagamento fatura",
+            "type" : "transfer",
+            "updatedAt" : 800000009
+          },
+          {
+            "amount" : 400,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000010,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 813585600,
+            "id" : "00000000-0000-0000-0000-000000000010",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Compra cartão mercado",
+            "type" : "expense",
+            "updatedAt" : 800000010
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : -50,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000011,
+            "date" : 813672000,
+            "id" : "00000000-0000-0000-0000-000000000011",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Estorno mercado",
+            "type" : "expense",
+            "updatedAt" : 800000011
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 4000,
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "createdAt" : 800000012,
+            "date" : 810302400,
+            "id" : "00000000-0000-0000-0000-000000000012",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário set",
+            "type" : "income",
+            "updatedAt" : 800000012
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1800,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000013,
+            "date" : 810388800,
+            "id" : "00000000-0000-0000-0000-000000000013",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel set",
+            "type" : "expense",
+            "updatedAt" : 800000013
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 500,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000014,
+            "date" : 810561600,
+            "id" : "00000000-0000-0000-0000-000000000014",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado set",
+            "type" : "expense",
+            "updatedAt" : 800000014
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000015,
+            "date" : 812462400,
+            "id" : "00000000-0000-0000-0000-000000000015",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Lazer set",
+            "type" : "expense",
+            "updatedAt" : 800000015
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 33.329999999999998,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000016,
+            "date" : 815140800,
+            "id" : "00000000-0000-0000-0000-000000000016",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Fim do mês",
+            "type" : "expense",
+            "updatedAt" : 800000016
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 33.340000000000003,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000017,
+            "date" : 812548800,
+            "id" : "00000000-0000-0000-0000-000000000017",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Início do mês",
+            "type" : "expense",
+            "updatedAt" : 800000017
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "createdAt" : 800000018,
+            "date" : 807278400,
+            "id" : "00000000-0000-0000-0000-000000000018",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Ago",
+            "type" : "income",
+            "updatedAt" : 800000018
+          }
+        ]
+      },
+      "kind" : "summary.month",
+      "name" : "summary 09\/2026 paid=false"
+    },
+    {
+      "expected" : {
+        "balance" : "10",
+        "comparison" : {
+          "expenseChangePercent" : null,
+          "expenseDelta" : "0",
+          "incomeChangePercent" : null,
+          "incomeDelta" : "10",
+          "previousExpense" : "0",
+          "previousIncome" : "0"
+        },
+        "expense" : "0",
+        "expensesByCategory" : [
+
+        ],
+        "income" : "10",
+        "incomeByCategory" : [
+          {
+            "amount" : "10",
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "percent" : "100"
+          }
+        ]
+      },
+      "input" : {
+        "month" : {
+          "month" : 8,
+          "year" : 2026
+        },
+        "onlyPaid" : false,
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 5000,
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "createdAt" : 800000001,
+            "date" : 812894400,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 800.5,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000002,
+            "date" : 814190400,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Freela",
+            "type" : "income",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1500,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000003,
+            "date" : 812980800,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 300.25,
+            "categoryId" : "00000000-0000-0000-0000-000000000007",
+            "createdAt" : 800000004,
+            "date" : 813067200,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Condomínio",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 820,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000005,
+            "date" : 813153600,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 150,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000006,
+            "date" : 813240000,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Cinema",
+            "type" : "expense",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 99.989999999999995,
+            "createdAt" : 800000007,
+            "date" : 813326400,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Sem categoria",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1000,
+            "createdAt" : 800000008,
+            "date" : 813412800,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Transf",
+            "type" : "transfer",
+            "updatedAt" : 800000008
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 700,
+            "createdAt" : 800000009,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 813499200,
+            "id" : "00000000-0000-0000-0000-000000000009",
+            "invoiceId" : "00000000-0000-0000-0000-000000000500",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Pagamento fatura",
+            "type" : "transfer",
+            "updatedAt" : 800000009
+          },
+          {
+            "amount" : 400,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000010,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 813585600,
+            "id" : "00000000-0000-0000-0000-000000000010",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Compra cartão mercado",
+            "type" : "expense",
+            "updatedAt" : 800000010
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : -50,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000011,
+            "date" : 813672000,
+            "id" : "00000000-0000-0000-0000-000000000011",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Estorno mercado",
+            "type" : "expense",
+            "updatedAt" : 800000011
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 4000,
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "createdAt" : 800000012,
+            "date" : 810302400,
+            "id" : "00000000-0000-0000-0000-000000000012",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário set",
+            "type" : "income",
+            "updatedAt" : 800000012
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1800,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000013,
+            "date" : 810388800,
+            "id" : "00000000-0000-0000-0000-000000000013",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel set",
+            "type" : "expense",
+            "updatedAt" : 800000013
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 500,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000014,
+            "date" : 810561600,
+            "id" : "00000000-0000-0000-0000-000000000014",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado set",
+            "type" : "expense",
+            "updatedAt" : 800000014
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000015,
+            "date" : 812462400,
+            "id" : "00000000-0000-0000-0000-000000000015",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Lazer set",
+            "type" : "expense",
+            "updatedAt" : 800000015
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 33.329999999999998,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000016,
+            "date" : 815140800,
+            "id" : "00000000-0000-0000-0000-000000000016",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Fim do mês",
+            "type" : "expense",
+            "updatedAt" : 800000016
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 33.340000000000003,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000017,
+            "date" : 812548800,
+            "id" : "00000000-0000-0000-0000-000000000017",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Início do mês",
+            "type" : "expense",
+            "updatedAt" : 800000017
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "createdAt" : 800000018,
+            "date" : 807278400,
+            "id" : "00000000-0000-0000-0000-000000000018",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Ago",
+            "type" : "income",
+            "updatedAt" : 800000018
+          }
+        ]
+      },
+      "kind" : "summary.month",
+      "name" : "summary 08\/2026 paid=false"
+    },
+    {
+      "expected" : {
+        "balance" : "0",
+        "comparison" : {
+          "expenseChangePercent" : null,
+          "expenseDelta" : "0",
+          "incomeChangePercent" : null,
+          "incomeDelta" : "0",
+          "previousExpense" : "0",
+          "previousIncome" : "0"
+        },
+        "expense" : "0",
+        "expensesByCategory" : [
+
+        ],
+        "income" : "0",
+        "incomeByCategory" : [
+
+        ]
+      },
+      "input" : {
+        "month" : {
+          "month" : 1,
+          "year" : 2026
+        },
+        "onlyPaid" : false,
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 5000,
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "createdAt" : 800000001,
+            "date" : 812894400,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 800.5,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000002,
+            "date" : 814190400,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Freela",
+            "type" : "income",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1500,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000003,
+            "date" : 812980800,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 300.25,
+            "categoryId" : "00000000-0000-0000-0000-000000000007",
+            "createdAt" : 800000004,
+            "date" : 813067200,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Condomínio",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 820,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000005,
+            "date" : 813153600,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 150,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000006,
+            "date" : 813240000,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Cinema",
+            "type" : "expense",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 99.989999999999995,
+            "createdAt" : 800000007,
+            "date" : 813326400,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Sem categoria",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1000,
+            "createdAt" : 800000008,
+            "date" : 813412800,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Transf",
+            "type" : "transfer",
+            "updatedAt" : 800000008
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 700,
+            "createdAt" : 800000009,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 813499200,
+            "id" : "00000000-0000-0000-0000-000000000009",
+            "invoiceId" : "00000000-0000-0000-0000-000000000500",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Pagamento fatura",
+            "type" : "transfer",
+            "updatedAt" : 800000009
+          },
+          {
+            "amount" : 400,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000010,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 813585600,
+            "id" : "00000000-0000-0000-0000-000000000010",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Compra cartão mercado",
+            "type" : "expense",
+            "updatedAt" : 800000010
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : -50,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000011,
+            "date" : 813672000,
+            "id" : "00000000-0000-0000-0000-000000000011",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Estorno mercado",
+            "type" : "expense",
+            "updatedAt" : 800000011
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 4000,
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "createdAt" : 800000012,
+            "date" : 810302400,
+            "id" : "00000000-0000-0000-0000-000000000012",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário set",
+            "type" : "income",
+            "updatedAt" : 800000012
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1800,
+            "categoryId" : "00000000-0000-0000-0000-000000000002",
+            "createdAt" : 800000013,
+            "date" : 810388800,
+            "id" : "00000000-0000-0000-0000-000000000013",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel set",
+            "type" : "expense",
+            "updatedAt" : 800000013
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 500,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000014,
+            "date" : 810561600,
+            "id" : "00000000-0000-0000-0000-000000000014",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado set",
+            "type" : "expense",
+            "updatedAt" : 800000014
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000015,
+            "date" : 812462400,
+            "id" : "00000000-0000-0000-0000-000000000015",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Lazer set",
+            "type" : "expense",
+            "updatedAt" : 800000015
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 33.329999999999998,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000016,
+            "date" : 815140800,
+            "id" : "00000000-0000-0000-0000-000000000016",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Fim do mês",
+            "type" : "expense",
+            "updatedAt" : 800000016
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 33.340000000000003,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000017,
+            "date" : 812548800,
+            "id" : "00000000-0000-0000-0000-000000000017",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Início do mês",
+            "type" : "expense",
+            "updatedAt" : 800000017
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "createdAt" : 800000018,
+            "date" : 807278400,
+            "id" : "00000000-0000-0000-0000-000000000018",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Ago",
+            "type" : "income",
+            "updatedAt" : 800000018
+          }
+        ]
+      },
+      "kind" : "summary.month",
+      "name" : "summary 01\/2026 paid=false"
+    }
+  ],
+  "suite" : "summary"
+}

@@ -1,0 +1,243 @@
+openapi: 3.0.3
+info:
+  title: App Finanças API
+  version: 1.0.0
+  description: |
+    API de sincronização e contas do App Finanças (iOS + web). Local-first: o cliente guarda tudo localmente
+    e usa `/api/sync` para trocar documentos (uma linha por entidade do Core) com o servidor.
+
+    Convenções
+    - Autenticação: `Authorization: Bearer <accessToken>` (JWT HS256, 15 min). Renove com `/api/auth/refresh`.
+    - `updatedAt` do envelope é ISO 8601 UTC (ex. `2026-10-20T12:00:00.000Z`). Dentro de `data` o conteúdo é o
+      documento Codable do Core, sem alteração (o Swift usa `deferredToDate`: segundos desde 2001-01-01 UTC).
+      O cliente precisa converter o `updatedAt` do Core (Date) para ISO 8601 no envelope.
+    - IDs são UUID; o servidor normaliza para minúsculas (o Swift envia maiúsculas; ambos são aceitos).
+    - Erros: `{ "error": "<codigo>", "message": "<texto pt-BR>" }` (validação inclui `issues`).
+    - Regra de conflito: vence o maior `updatedAt`; empate: exclusão vence edição; empate restante: desempate
+      determinístico pelo JSON canônico (chaves ordenadas), igual ao SyncEngine do Core.
+servers:
+  - url: http://127.0.0.1:3000
+    description: Local (docker compose)
+  - url: https://SEU-TUNEL.trycloudflare.com
+    description: Quick tunnel (muda a cada subida) ou domínio próprio
+security:
+  - bearerAuth: []
+paths:
+  /api/health:
+    get:
+      summary: Saúde da API e do banco
+      security: []
+      responses:
+        '200': { description: ok, content: { application/json: { schema: { $ref: '#/components/schemas/Health' } } } }
+        '503': { description: banco indisponível }
+  /api/auth/register:
+    post:
+      summary: Cria usuário + household (o usuário vira admin) e já devolve os tokens
+      security: []
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/RegisterRequest' } } }
+      responses:
+        '201': { description: criado, content: { application/json: { schema: { $ref: '#/components/schemas/RegisterResponse' } } } }
+        '400': { $ref: '#/components/responses/ValidationError' }
+        '409': { description: 'e-mail já cadastrado (error=email_in_use)', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+        '429': { $ref: '#/components/responses/RateLimited' }
+  /api/auth/login:
+    post:
+      summary: Login. Bloqueio progressivo após 5 falhas (429 + Retry-After)
+      security: []
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/LoginRequest' } } }
+      responses:
+        '200': { description: ok, content: { application/json: { schema: { $ref: '#/components/schemas/TokenPair' } } } }
+        '401': { description: 'credenciais inválidas (error=invalid_credentials)', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+        '429': { $ref: '#/components/responses/RateLimited' }
+  /api/auth/refresh:
+    post:
+      summary: Troca o refresh token por um novo par (rotação; reuso do antigo revoga a sessão)
+      security: []
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/RefreshRequest' } } }
+      responses:
+        '200': { description: ok, content: { application/json: { schema: { $ref: '#/components/schemas/TokenPair' } } } }
+        '401': { description: 'refresh inválido/expirado/reutilizado (error=invalid_refresh)', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+  /api/auth/logout:
+    post:
+      summary: Revoga a sessão (família do refresh token). Sempre 204.
+      security: []
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/RefreshRequest' } } }
+      responses:
+        '204': { description: sem conteúdo }
+  /api/me:
+    get:
+      summary: Usuário, household e membros
+      responses:
+        '200': { description: ok, content: { application/json: { schema: { $ref: '#/components/schemas/Me' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+  /api/sync:
+    get:
+      summary: Pull incremental do household
+      description: |
+        Devolve os registros com `server_seq > since`, em ordem. Guarde o `token` retornado e use-o como `since`
+        na próxima chamada. Se `hasMore` for true, repita imediatamente com o novo token. Exclusões chegam como
+        `deleted: true` (tombstone).
+      parameters:
+        - { name: since, in: query, schema: { type: integer, minimum: 0, default: 0 }, description: '0 = tudo' }
+        - { name: limit, in: query, schema: { type: integer, minimum: 1, maximum: 5000, default: 1000 } }
+      responses:
+        '200': { description: ok, content: { application/json: { schema: { $ref: '#/components/schemas/PullResponse' } } } }
+        '400': { $ref: '#/components/responses/ValidationError' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+    post:
+      summary: Push de mudanças locais (até 500 registros, 64 KB por registro, 2 MB por corpo)
+      description: |
+        Aplica a regra de conflito registro a registro. `accepted` lista os ids gravados (ou já idênticos);
+        `rejected` traz o motivo (`stale`, `tie_lost`, `forbidden_role`) e o `serverRecord` vencedor, para o cliente
+        mesclar localmente. O `token` da resposta é só o "head" do household: NÃO o use como `since`; mantenha o
+        token do GET (senão mudanças de outros dispositivos podem ser puladas).
+        Papel `dependent` não grava Household, FamilyMember nem Allowance.
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/PushRequest' } } }
+      responses:
+        '200': { description: ok, content: { application/json: { schema: { $ref: '#/components/schemas/PushResponse' } } } }
+        '400': { $ref: '#/components/responses/ValidationError' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '413': { description: registro ou corpo grande demais }
+        '429': { $ref: '#/components/responses/RateLimited' }
+  /api/households/invite:
+    post:
+      summary: Cria convite de uso único, válido por 48 h (somente admin)
+      requestBody:
+        content: { application/json: { schema: { type: object, additionalProperties: false, properties: { role: { type: string, enum: [member, dependent], default: member } } } } }
+      responses:
+        '201': { description: criado, content: { application/json: { schema: { $ref: '#/components/schemas/InviteResponse' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { description: não é admin }
+  /api/households/join:
+    post:
+      summary: Entra no household do convite (o usuário troca de casa se a atual estiver vazia)
+      requestBody:
+        required: true
+        content: { application/json: { schema: { type: object, required: [code], additionalProperties: false, properties: { code: { type: string, example: 'K7QM-X2PD' } } } } }
+      responses:
+        '200': { description: ok, content: { application/json: { schema: { $ref: '#/components/schemas/JoinResponse' } } } }
+        '404': { description: 'código inválido, usado ou expirado (error=invalid_code)' }
+        '409': { description: 'already_member | household_not_empty | last_admin' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+components:
+  securitySchemes:
+    bearerAuth: { type: http, scheme: bearer, bearerFormat: JWT }
+  responses:
+    Unauthorized: { description: token ausente/inválido, content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+    ValidationError: { description: validação (zod), content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+    RateLimited: { description: 'limite de requisições (Retry-After)', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+  schemas:
+    Error:
+      type: object
+      properties:
+        error: { type: string }
+        message: { type: string }
+        issues: { type: array, items: { type: object, properties: { path: { type: string }, message: { type: string } } } }
+        retryAfter: { type: integer }
+    Health:
+      type: object
+      properties: { status: { type: string, example: ok }, db: { type: string, example: up } }
+    RegisterRequest:
+      type: object
+      required: [email, password, name]
+      additionalProperties: false
+      properties:
+        email: { type: string, format: email, maxLength: 254 }
+        password: { type: string, minLength: 10, maxLength: 128 }
+        name: { type: string, minLength: 1, maxLength: 80 }
+    LoginRequest:
+      type: object
+      required: [email, password]
+      additionalProperties: false
+      properties: { email: { type: string, format: email }, password: { type: string } }
+    RefreshRequest:
+      type: object
+      required: [refreshToken]
+      additionalProperties: false
+      properties: { refreshToken: { type: string } }
+    TokenPair:
+      type: object
+      properties:
+        accessToken: { type: string, description: "JWT HS256 (15 min)" }
+        refreshToken: { type: string, description: "opaco; 30 dias; rotativo" }
+        expiresIn: { type: integer, example: 900 }
+        tokenType: { type: string, example: Bearer }
+    RegisterResponse:
+      allOf:
+        - $ref: '#/components/schemas/TokenPair'
+        - type: object
+          properties:
+            user: { $ref: '#/components/schemas/User' }
+            household: { $ref: '#/components/schemas/HouseholdRef' }
+    User:
+      type: object
+      properties: { id: { type: string, format: uuid }, email: { type: string }, name: { type: string } }
+    HouseholdRef:
+      type: object
+      properties:
+        id: { type: string, format: uuid }
+        name: { type: string }
+        role: { type: string, enum: [admin, member, dependent] }
+    Me:
+      type: object
+      properties:
+        user: { $ref: '#/components/schemas/User' }
+        household: { $ref: '#/components/schemas/HouseholdRef' }
+        members:
+          type: array
+          items:
+            type: object
+            properties: { userId: { type: string, format: uuid }, name: { type: string }, email: { type: string }, role: { type: string } }
+    RecordType:
+      type: string
+      enum: [Account, Category, Tag, Transaction, CreditCard, Invoice, Budget, Goal, GoalContribution, Debt, Investment, NetWorthSnapshot, Household, FamilyMember, ExpenseSplit, SplitSettlement, Allowance, ApprovalRequest, Tombstone]
+    SyncRecord:
+      type: object
+      required: [type, id, updatedAt]
+      additionalProperties: false
+      properties:
+        type: { $ref: '#/components/schemas/RecordType' }
+        id: { type: string, format: uuid }
+        data: { type: object, additionalProperties: true, description: "documento da entidade como no Core (max 64 KB)" }
+        updatedAt: { type: string, format: date-time }
+        deleted: { type: boolean, default: false }
+    PullResponse:
+      type: object
+      properties:
+        records: { type: array, items: { $ref: '#/components/schemas/SyncRecord' } }
+        token: { type: integer, description: "use como since na próxima chamada" }
+        hasMore: { type: boolean }
+    PushRequest:
+      type: object
+      required: [records]
+      additionalProperties: false
+      properties: { records: { type: array, maxItems: 500, items: { $ref: '#/components/schemas/SyncRecord' } } }
+    PushResponse:
+      type: object
+      properties:
+        accepted: { type: array, items: { type: string, format: uuid } }
+        rejected:
+          type: array
+          items:
+            type: object
+            properties:
+              id: { type: string, format: uuid }
+              reason: { type: string, enum: [stale, tie_lost, forbidden_role] }
+              serverRecord: { nullable: true, allOf: [{ $ref: '#/components/schemas/SyncRecord' }] }
+        token: { type: integer, description: "head atual do household (informativo)" }
+    InviteResponse:
+      type: object
+      properties: { code: { type: string, example: 'K7QM-X2PD' }, role: { type: string }, expiresAt: { type: string, format: date-time } }
+    JoinResponse:
+      type: object
+      properties: { household: { $ref: '#/components/schemas/HouseholdRef' } }

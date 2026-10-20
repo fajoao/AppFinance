@@ -1,0 +1,1021 @@
+{
+  "cases" : [
+    {
+      "expected" : {
+        "candidates" : [
+          {
+            "amount" : "-123.45",
+            "date" : "2026-10-05",
+            "externalId" : null,
+            "isDuplicate" : false,
+            "title" : "Mercado Extra"
+          },
+          {
+            "amount" : "5000",
+            "date" : "2026-10-06",
+            "externalId" : null,
+            "isDuplicate" : false,
+            "title" : "Salário"
+          }
+        ],
+        "issues" : [
+
+        ]
+      },
+      "input" : {
+        "text" : "Data;Descrição;Valor\n05\/10\/2026;Mercado Extra;-123,45\n06\/10\/2026;Salário;5.000,00\n"
+      },
+      "kind" : "import.csv",
+      "name" : "cabeçalho pt ;"
+    },
+    {
+      "expected" : {
+        "candidates" : [
+          {
+            "amount" : "-12.5",
+            "date" : "2026-10-01",
+            "externalId" : null,
+            "isDuplicate" : false,
+            "title" : "Padaria"
+          },
+          {
+            "amount" : "300",
+            "date" : "2026-10-02",
+            "externalId" : null,
+            "isDuplicate" : false,
+            "title" : "Pix recebido"
+          }
+        ],
+        "issues" : [
+
+        ]
+      },
+      "input" : {
+        "text" : "Data;Histórico;Débito;Crédito\n01\/10\/2026;Padaria;12,50;\n02\/10\/2026;Pix recebido;;300,00\n"
+      },
+      "kind" : "import.csv",
+      "name" : "cabeçalho débito\/crédito"
+    },
+    {
+      "expected" : {
+        "candidates" : [
+          {
+            "amount" : "-8.9",
+            "date" : "2026-10-05",
+            "externalId" : null,
+            "isDuplicate" : false,
+            "title" : "Café"
+          },
+          {
+            "amount" : "8.9",
+            "date" : "2026-10-06",
+            "externalId" : null,
+            "isDuplicate" : false,
+            "title" : "Estorno"
+          }
+        ],
+        "issues" : [
+
+        ]
+      },
+      "input" : {
+        "text" : "05\/10\/2026;Café;-8,90\n06\/10\/2026;Estorno;8,90\n"
+      },
+      "kind" : "import.csv",
+      "name" : "sem cabeçalho"
+    },
+    {
+      "expected" : {
+        "candidates" : [
+          {
+            "amount" : "-99.9",
+            "date" : "2026-10-05",
+            "externalId" : null,
+            "isDuplicate" : false,
+            "title" : "Loja, filial 2"
+          },
+          {
+            "amount" : "10",
+            "date" : "2026-10-06",
+            "externalId" : null,
+            "isDuplicate" : false,
+            "title" : "Com \"aspas\""
+          }
+        ],
+        "issues" : [
+
+        ]
+      },
+      "input" : {
+        "text" : "date,description,amount\n2026-10-05,\"Loja, filial 2\",-99.90\n2026-10-06,\"Com \"\"aspas\"\"\",10.00\n"
+      },
+      "kind" : "import.csv",
+      "name" : "vírgula e aspas"
+    },
+    {
+      "expected" : {
+        "candidates" : [
+          {
+            "amount" : "-23.1",
+            "date" : "2026-10-05",
+            "externalId" : "ABC123",
+            "isDuplicate" : false,
+            "title" : "Uber"
+          }
+        ],
+        "issues" : [
+
+        ]
+      },
+      "input" : {
+        "text" : "Data\tDescricao\tValor\tIdentificador\n05\/10\/2026\tUber\t-23,10\tABC123\n"
+      },
+      "kind" : "import.csv",
+      "name" : "tab com id"
+    },
+    {
+      "expected" : {
+        "candidates" : [
+          {
+            "amount" : "1",
+            "date" : "2026-10-06",
+            "externalId" : null,
+            "isDuplicate" : false,
+            "title" : "Ok"
+          }
+        ],
+        "issues" : [
+          {
+            "line" : 2,
+            "message" : "Data inválida"
+          },
+          {
+            "line" : 3,
+            "message" : "Valor inválido"
+          }
+        ]
+      },
+      "input" : {
+        "text" : "Data;Descrição;Valor\n32\/10\/2026;Ruim;10\n05\/10\/2026;Sem valor;abc\n06\/10\/2026;Ok;1,00\n"
+      },
+      "kind" : "import.csv",
+      "name" : "linhas inválidas"
+    },
+    {
+      "expected" : {
+        "candidates" : [
+
+        ],
+        "issues" : [
+          {
+            "line" : 1,
+            "message" : "Coluna de data não encontrada"
+          }
+        ]
+      },
+      "input" : {
+        "text" : "Foo;Bar\n1;2\n"
+      },
+      "kind" : "import.csv",
+      "name" : "sem coluna data"
+    },
+    {
+      "expected" : {
+        "candidates" : [
+
+        ],
+        "issues" : [
+          {
+            "line" : 1,
+            "message" : "Coluna de valor não encontrada"
+          }
+        ]
+      },
+      "input" : {
+        "text" : "Data;Descrição\n05\/10\/2026;x\n"
+      },
+      "kind" : "import.csv",
+      "name" : "sem coluna valor"
+    },
+    {
+      "expected" : {
+        "candidates" : [
+          {
+            "amount" : "-1",
+            "date" : "2026-10-05",
+            "externalId" : null,
+            "isDuplicate" : false,
+            "title" : "Linha"
+          },
+          {
+            "amount" : "2",
+            "date" : "2026-10-06",
+            "externalId" : null,
+            "isDuplicate" : false,
+            "title" : "Outra"
+          }
+        ],
+        "issues" : [
+
+        ]
+      },
+      "input" : {
+        "text" : "﻿Data;Descrição;Valor\r\n05\/10\/2026;Linha;-1,00\r\n\r\n06\/10\/2026;Outra;2,00\r\n"
+      },
+      "kind" : "import.csv",
+      "name" : "crlf e bom"
+    },
+    {
+      "expected" : {
+        "candidates" : [
+
+        ],
+        "issues" : [
+
+        ]
+      },
+      "input" : {
+        "text" : ""
+      },
+      "kind" : "import.csv",
+      "name" : "vazio"
+    },
+    {
+      "expected" : {
+        "candidates" : [
+          {
+            "amount" : "-5",
+            "date" : "2026-10-05",
+            "externalId" : null,
+            "isDuplicate" : false,
+            "title" : "Linha 1\nLinha 2"
+          }
+        ],
+        "issues" : [
+
+        ]
+      },
+      "input" : {
+        "text" : "Data;Descrição;Valor\n05\/10\/2026;\"Linha 1\nLinha 2\";-5,00\n"
+      },
+      "kind" : "import.csv",
+      "name" : "quebra dentro de aspas"
+    },
+    {
+      "expected" : {
+        "candidates" : [
+          {
+            "amount" : "-5",
+            "date" : "2026-10-05",
+            "externalId" : null,
+            "isDuplicate" : false,
+            "title" : "Curto"
+          }
+        ],
+        "issues" : [
+
+        ]
+      },
+      "input" : {
+        "text" : "Data;Descrição;Valor\n05\/10\/26;Curto;-5,00\n"
+      },
+      "kind" : "import.csv",
+      "name" : "data yy"
+    },
+    {
+      "expected" : {
+        "candidates" : [
+          {
+            "amount" : "-123.45",
+            "date" : "2026-10-05",
+            "externalId" : "2026100501",
+            "isDuplicate" : false,
+            "title" : "MERCADO EXTRA - COMPRA DEBITO"
+          },
+          {
+            "amount" : "5000",
+            "date" : "2026-10-06",
+            "externalId" : "2026100602",
+            "isDuplicate" : false,
+            "title" : "SALARIO"
+          },
+          {
+            "amount" : "-1234.56",
+            "date" : "2026-10-07",
+            "externalId" : "2026100703",
+            "isDuplicate" : false,
+            "title" : "LOJA & CIA"
+          }
+        ],
+        "issues" : [
+          {
+            "line" : 4,
+            "message" : "Data inválida na transação 4"
+          },
+          {
+            "line" : 5,
+            "message" : "Valor inválido na transação 5"
+          }
+        ]
+      },
+      "input" : {
+        "text" : "OFXHEADER:100\nDATA:OFXSGML\nVERSION:102\n\n<OFX>\n<BANKMSGSRSV1><STMTTRNRS><STMTRS>\n<BANKTRANLIST>\n<STMTTRN>\n<TRNTYPE>DEBIT\n<DTPOSTED>20261005120000[-3:BRT]\n<TRNAMT>-123.45\n<FITID>2026100501\n<NAME>MERCADO EXTRA\n<MEMO>COMPRA DEBITO\n<\/STMTTRN>\n<STMTTRN>\n<TRNTYPE>CREDIT\n<DTPOSTED>20261006\n<TRNAMT>5000.00\n<FITID>2026100602\n<NAME>SALARIO\n<\/STMTTRN>\n<STMTTRN>\n<TRNTYPE>DEBIT\n<DTPOSTED>20261007\n<TRNAMT>-1.234,56\n<FITID>2026100703\n<MEMO>LOJA &amp; CIA\n<\/STMTTRN>\n<STMTTRN>\n<DTPOSTED>2026100\n<TRNAMT>-10.00\n<FITID>bad\n<\/STMTTRN>\n<STMTTRN>\n<DTPOSTED>20261008\n<TRNAMT>xx\n<FITID>bad2\n<\/STMTTRN>\n<\/BANKTRANLIST>\n<\/STMTRS><\/STMTTRNRS><\/BANKMSGSRSV1>\n<\/OFX>"
+      },
+      "kind" : "import.ofx",
+      "name" : "sgml"
+    },
+    {
+      "expected" : {
+        "candidates" : [
+          {
+            "amount" : "-50",
+            "date" : "2026-11-01",
+            "externalId" : "X1",
+            "isDuplicate" : false,
+            "title" : "Padaria"
+          }
+        ],
+        "issues" : [
+
+        ]
+      },
+      "input" : {
+        "text" : "<?xml version=\"1.0\"?><OFX><BANKTRANLIST><STMTTRN><DTPOSTED>20261101<\/DTPOSTED><TRNAMT>-50,00<\/TRNAMT><FITID>X1<\/FITID><NAME>Padaria<\/NAME><MEMO>Padaria<\/MEMO><\/STMTTRN><\/BANKTRANLIST><\/OFX>"
+      },
+      "kind" : "import.ofx",
+      "name" : "xml"
+    },
+    {
+      "expected" : {
+        "candidates" : [
+
+        ],
+        "issues" : [
+          {
+            "line" : 0,
+            "message" : "Não parece um arquivo OFX"
+          }
+        ]
+      },
+      "input" : {
+        "text" : "hello"
+      },
+      "kind" : "import.ofx",
+      "name" : "não é ofx"
+    },
+    {
+      "expected" : {
+        "candidates" : [
+
+        ],
+        "issues" : [
+          {
+            "line" : 0,
+            "message" : "Não parece um arquivo OFX"
+          }
+        ]
+      },
+      "input" : {
+        "text" : ""
+      },
+      "kind" : "import.ofx",
+      "name" : "vazio"
+    },
+    {
+      "expected" : [
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "input" : {
+        "accountId" : "00000000-0000-0000-0000-000000000001",
+        "candidates" : [
+          {
+            "amount" : "-123.45",
+            "date" : "2026-10-05",
+            "externalId" : "2026100501",
+            "title" : "MERCADO EXTRA"
+          },
+          {
+            "amount" : "5000",
+            "date" : "2026-10-06",
+            "externalId" : null,
+            "title" : "SALARIO"
+          },
+          {
+            "amount" : "-10",
+            "date" : "2026-10-08",
+            "externalId" : null,
+            "title" : "café"
+          },
+          {
+            "amount" : "-10",
+            "date" : "2026-10-08",
+            "externalId" : null,
+            "title" : "Café"
+          },
+          {
+            "amount" : "10",
+            "date" : "2026-10-09",
+            "externalId" : null,
+            "title" : "Cafe"
+          },
+          {
+            "amount" : "-300",
+            "date" : "2026-10-10",
+            "externalId" : null,
+            "title" : "Entre contas"
+          },
+          {
+            "amount" : "-77",
+            "date" : "2026-10-11",
+            "externalId" : null,
+            "title" : "Outra conta"
+          }
+        ],
+        "existing" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 123.45,
+            "createdAt" : 800000001,
+            "date" : 812894400,
+            "externalId" : "2026100501",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado Extra compra",
+            "type" : "expense",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 5000,
+            "createdAt" : 800000002,
+            "date" : 812980800,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "createdAt" : 800000003,
+            "date" : 813153600,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Café",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "createdAt" : 800000004,
+            "date" : 813240000,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Café",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 300,
+            "createdAt" : 800000005,
+            "date" : 813326400,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Entre contas",
+            "type" : "transfer",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : 77,
+            "createdAt" : 800000006,
+            "date" : 813412800,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Outra conta",
+            "type" : "expense",
+            "updatedAt" : 800000006
+          }
+        ]
+      },
+      "kind" : "import.duplicates",
+      "name" : "duplicatas conta 1"
+    },
+    {
+      "expected" : [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "input" : {
+        "accountId" : "00000000-0000-0000-0000-000000000002",
+        "candidates" : [
+          {
+            "amount" : "-123.45",
+            "date" : "2026-10-05",
+            "externalId" : "2026100501",
+            "title" : "MERCADO EXTRA"
+          },
+          {
+            "amount" : "5000",
+            "date" : "2026-10-06",
+            "externalId" : null,
+            "title" : "SALARIO"
+          },
+          {
+            "amount" : "-10",
+            "date" : "2026-10-08",
+            "externalId" : null,
+            "title" : "café"
+          },
+          {
+            "amount" : "-10",
+            "date" : "2026-10-08",
+            "externalId" : null,
+            "title" : "Café"
+          },
+          {
+            "amount" : "10",
+            "date" : "2026-10-09",
+            "externalId" : null,
+            "title" : "Cafe"
+          },
+          {
+            "amount" : "-300",
+            "date" : "2026-10-10",
+            "externalId" : null,
+            "title" : "Entre contas"
+          },
+          {
+            "amount" : "-77",
+            "date" : "2026-10-11",
+            "externalId" : null,
+            "title" : "Outra conta"
+          }
+        ],
+        "existing" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 123.45,
+            "createdAt" : 800000001,
+            "date" : 812894400,
+            "externalId" : "2026100501",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado Extra compra",
+            "type" : "expense",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 5000,
+            "createdAt" : 800000002,
+            "date" : 812980800,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "createdAt" : 800000003,
+            "date" : 813153600,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Café",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "createdAt" : 800000004,
+            "date" : 813240000,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Café",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 300,
+            "createdAt" : 800000005,
+            "date" : 813326400,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Entre contas",
+            "type" : "transfer",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : 77,
+            "createdAt" : 800000006,
+            "date" : 813412800,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Outra conta",
+            "type" : "expense",
+            "updatedAt" : 800000006
+          }
+        ]
+      },
+      "kind" : "import.duplicates",
+      "name" : "duplicatas conta 2"
+    },
+    {
+      "expected" : [
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "input" : {
+        "accountId" : null,
+        "candidates" : [
+          {
+            "amount" : "-123.45",
+            "date" : "2026-10-05",
+            "externalId" : "2026100501",
+            "title" : "MERCADO EXTRA"
+          },
+          {
+            "amount" : "5000",
+            "date" : "2026-10-06",
+            "externalId" : null,
+            "title" : "SALARIO"
+          },
+          {
+            "amount" : "-10",
+            "date" : "2026-10-08",
+            "externalId" : null,
+            "title" : "café"
+          },
+          {
+            "amount" : "-10",
+            "date" : "2026-10-08",
+            "externalId" : null,
+            "title" : "Café"
+          },
+          {
+            "amount" : "10",
+            "date" : "2026-10-09",
+            "externalId" : null,
+            "title" : "Cafe"
+          },
+          {
+            "amount" : "-300",
+            "date" : "2026-10-10",
+            "externalId" : null,
+            "title" : "Entre contas"
+          },
+          {
+            "amount" : "-77",
+            "date" : "2026-10-11",
+            "externalId" : null,
+            "title" : "Outra conta"
+          }
+        ],
+        "existing" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 123.45,
+            "createdAt" : 800000001,
+            "date" : 812894400,
+            "externalId" : "2026100501",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado Extra compra",
+            "type" : "expense",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 5000,
+            "createdAt" : 800000002,
+            "date" : 812980800,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "createdAt" : 800000003,
+            "date" : 813153600,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Café",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "createdAt" : 800000004,
+            "date" : 813240000,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Café",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 300,
+            "createdAt" : 800000005,
+            "date" : 813326400,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Entre contas",
+            "type" : "transfer",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000002",
+            "amount" : 77,
+            "createdAt" : 800000006,
+            "date" : 813412800,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Outra conta",
+            "type" : "expense",
+            "updatedAt" : 800000006
+          }
+        ]
+      },
+      "kind" : "import.duplicates",
+      "name" : "duplicatas conta nil"
+    },
+    {
+      "expected" : [
+        "00000000-0000-0000-0000-000000000003",
+        "00000000-0000-0000-0000-000000000003",
+        "00000000-0000-0000-0000-000000000004",
+        "00000000-0000-0000-0000-000000000005",
+        "00000000-0000-0000-0000-000000000006",
+        "00000000-0000-0000-0000-000000000008",
+        "00000000-0000-0000-0000-000000000007",
+        null,
+        null,
+        null,
+        "00000000-0000-0000-0000-000000000004",
+        "00000000-0000-0000-0000-000000000004"
+      ],
+      "input" : {
+        "history" : [
+          {
+            "amount" : 30,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000001,
+            "date" : 809956800,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Padaria Pão Quente",
+            "type" : "expense",
+            "updatedAt" : 800000001
+          },
+          {
+            "amount" : 35,
+            "categoryId" : "00000000-0000-0000-0000-000000000003",
+            "createdAt" : 800000002,
+            "date" : 810561600,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Padaria Pão Quente",
+            "type" : "expense",
+            "updatedAt" : 800000002
+          },
+          {
+            "amount" : 90,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000003,
+            "date" : 810648000,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado Extra Centro",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "amount" : 80,
+            "categoryId" : "00000000-0000-0000-0000-000000000004",
+            "createdAt" : 800000004,
+            "date" : 810907200,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Mercado Pão de Açúcar",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "amount" : 25,
+            "categoryId" : "00000000-0000-0000-0000-000000000005",
+            "createdAt" : 800000005,
+            "date" : 810993600,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Uber trip",
+            "type" : "expense",
+            "updatedAt" : 800000005
+          },
+          {
+            "amount" : 100,
+            "categoryId" : "00000000-0000-0000-0000-000000000006",
+            "createdAt" : 800000006,
+            "date" : 811080000,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Uber reembolso",
+            "type" : "income",
+            "updatedAt" : 800000006
+          },
+          {
+            "amount" : 60,
+            "categoryId" : "00000000-0000-0000-0000-000000000007",
+            "createdAt" : 800000007,
+            "date" : 811166400,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Cinema Centro",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "createdAt" : 800000008,
+            "date" : 811252800,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Transferência",
+            "type" : "transfer",
+            "updatedAt" : 800000008
+          }
+        ],
+        "keywords" : {
+          "00000000-0000-0000-0000-000000000008" : [
+            "farmácia",
+            "drogaria"
+          ]
+        },
+        "queries" : [
+          {
+            "title" : "Padaria Pão Quente",
+            "type" : "expense"
+          },
+          {
+            "title" : "padaria PAO quente",
+            "type" : "expense"
+          },
+          {
+            "title" : "Mercado Centro",
+            "type" : "expense"
+          },
+          {
+            "title" : "Uber",
+            "type" : "expense"
+          },
+          {
+            "title" : "Uber",
+            "type" : "income"
+          },
+          {
+            "title" : "Drogaria São Paulo",
+            "type" : "expense"
+          },
+          {
+            "title" : "Cinema",
+            "type" : "expense"
+          },
+          {
+            "title" : "Loja desconhecida",
+            "type" : "expense"
+          },
+          {
+            "title" : "",
+            "type" : "expense"
+          },
+          {
+            "title" : "pix pagamento",
+            "type" : "expense"
+          },
+          {
+            "title" : "Extra",
+            "type" : "expense"
+          },
+          {
+            "title" : "Centro",
+            "type" : "expense"
+          }
+        ]
+      },
+      "kind" : "import.suggest",
+      "name" : "suggest"
+    }
+  ],
+  "suite" : "import"
+}

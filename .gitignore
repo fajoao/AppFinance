@@ -1,0 +1,29 @@
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+backups/
+*.log
+.DS_Store
+
+# Artefatos gerados (reproduzíveis)
+build/
+DerivedData/
+*.xcresult
+FinanceApp/FinanceApp.xcodeproj/
+FinanceApp/build/
+Web/e2e/node_modules/
+Web/node_modules/
+Web/dist/
+Backend/api/node_modules/
+Backend/api/dist/
+*.dump
+*.xcuserstate
+xcuserdata/
+
+# Evidência visual pesada de depuração (121 MB); fica só local
+docs/screenshots/refresh-bug/
+
+# Cópia local dos skills/agentes pessoais (vêm de ~/.claude)
+.claude/

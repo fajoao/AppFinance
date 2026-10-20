@@ -1,0 +1,291 @@
+{
+  "cases" : [
+    {
+      "expected" : {
+        "accountsAssets" : "1600.75",
+        "assets" : "22813.08",
+        "cardBalances" : "700",
+        "debts" : "2000",
+        "investmentsValue" : "21212.33",
+        "liabilities" : "2700",
+        "netWorth" : "20113.08",
+        "overdraft" : "0"
+      },
+      "input" : {
+        "accounts" : [
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "initialBalance" : -200,
+            "isArchived" : false,
+            "name" : "Corrente",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "initialBalance" : 1500.75,
+            "isArchived" : false,
+            "name" : "Poupança",
+            "type" : "savings",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          },
+          {
+            "createdAt" : 800000000,
+            "currency" : "BRL",
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "initialBalance" : 999,
+            "isArchived" : true,
+            "name" : "Arq",
+            "type" : "checking",
+            "updatedAt" : 800000000,
+            "visibility" : "shared"
+          }
+        ],
+        "cards" : [
+          {
+            "closingDay" : 5,
+            "createdAt" : 800000000,
+            "dueDay" : 15,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "isArchived" : false,
+            "limit" : 5000,
+            "name" : "Roxo",
+            "updatedAt" : 800000000
+          }
+        ],
+        "debts" : [
+          {
+            "balance" : 2000,
+            "createdAt" : 814193656.58551002,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "minimumPayment" : 100,
+            "monthlyInterestRate" : 0.02,
+            "name" : "Empréstimo",
+            "updatedAt" : 814193656.58551002
+          },
+          {
+            "balance" : 0,
+            "createdAt" : 814193656.58552098,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "minimumPayment" : 100,
+            "monthlyInterestRate" : 0.02,
+            "name" : "Quitada",
+            "updatedAt" : 814193656.58552098
+          }
+        ],
+        "investments" : [
+          {
+            "assetClass" : "stock",
+            "averagePrice" : 30.5,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "name" : "PETR4",
+            "quantity" : 100,
+            "quote" : 35.25,
+            "realizedProfit" : 0,
+            "updatedAt" : 800000000
+          },
+          {
+            "assetClass" : "fixedIncome",
+            "averagePrice" : 10000,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "name" : "CDB",
+            "quantity" : 1,
+            "quote" : 10450.33,
+            "realizedProfit" : 0,
+            "updatedAt" : 800000000
+          },
+          {
+            "assetClass" : "reit",
+            "averagePrice" : 160.33000000000001,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "name" : "HGLG11",
+            "quantity" : 10,
+            "realizedProfit" : 0,
+            "updatedAt" : 800000000
+          },
+          {
+            "assetClass" : "crypto",
+            "averagePrice" : 250000,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "name" : "BTC",
+            "quantity" : 0.0123,
+            "quote" : 300000,
+            "realizedProfit" : 0,
+            "updatedAt" : 800000000
+          },
+          {
+            "assetClass" : "stock",
+            "averagePrice" : 61.122999999999998,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "name" : "VALE3",
+            "quantity" : 33,
+            "quote" : 58.899999999999999,
+            "realizedProfit" : 0,
+            "updatedAt" : 800000000
+          },
+          {
+            "assetClass" : "stock",
+            "averagePrice" : 0,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "name" : "Zerado",
+            "quantity" : 0,
+            "realizedProfit" : 0,
+            "updatedAt" : 800000000
+          }
+        ],
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 300,
+            "createdAt" : 800000001,
+            "date" : 812548800,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "x",
+            "type" : "income",
+            "updatedAt" : 800000001
+          },
+          {
+            "amount" : 600,
+            "createdAt" : 800000002,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 812721600,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Cartão",
+            "type" : "expense",
+            "updatedAt" : 800000002
+          },
+          {
+            "amount" : 100,
+            "createdAt" : 800000003,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 812721600,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Cartão2",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          }
+        ]
+      },
+      "kind" : "networth.compute",
+      "name" : "networth"
+    },
+    {
+      "expected" : {
+        "change" : "4000",
+        "points" : [
+          {
+            "month" : {
+              "month" : 5,
+              "year" : 2026
+            },
+            "netWorth" : null
+          },
+          {
+            "month" : {
+              "month" : 6,
+              "year" : 2026
+            },
+            "netWorth" : "8000"
+          },
+          {
+            "month" : {
+              "month" : 7,
+              "year" : 2026
+            },
+            "netWorth" : null
+          },
+          {
+            "month" : {
+              "month" : 8,
+              "year" : 2026
+            },
+            "netWorth" : "10500"
+          },
+          {
+            "month" : {
+              "month" : 9,
+              "year" : 2026
+            },
+            "netWorth" : null
+          },
+          {
+            "month" : {
+              "month" : 10,
+              "year" : 2026
+            },
+            "netWorth" : "12000"
+          }
+        ]
+      },
+      "input" : {
+        "endingAt" : {
+          "month" : 10,
+          "year" : 2026
+        },
+        "months" : 6,
+        "snapshots" : [
+          {
+            "assets" : 10000,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "liabilities" : 2000,
+            "month" : {
+              "month" : 6,
+              "year" : 2026
+            },
+            "updatedAt" : 800000000
+          },
+          {
+            "assets" : 12000,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "liabilities" : 1500,
+            "month" : {
+              "month" : 8,
+              "year" : 2026
+            },
+            "updatedAt" : 800000000
+          },
+          {
+            "assets" : 13000,
+            "createdAt" : 800000000,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "liabilities" : 1000,
+            "month" : {
+              "month" : 10,
+              "year" : 2026
+            },
+            "updatedAt" : 800000000
+          }
+        ]
+      },
+      "kind" : "networth.evolution",
+      "name" : "evolution"
+    }
+  ],
+  "suite" : "networth"
+}

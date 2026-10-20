@@ -1,0 +1,141 @@
+{
+  "cases" : [
+    {
+      "expected" : "2026-01-31",
+      "input" : {
+        "raw" : "31\/01\/2026"
+      },
+      "kind" : "date.parse",
+      "name" : "parse date 31\/01\/2026"
+    },
+    {
+      "expected" : null,
+      "input" : {
+        "raw" : "31\/02\/2026"
+      },
+      "kind" : "date.parse",
+      "name" : "parse date 31\/02\/2026"
+    },
+    {
+      "expected" : "2024-02-29",
+      "input" : {
+        "raw" : "29\/02\/2024"
+      },
+      "kind" : "date.parse",
+      "name" : "parse date 29\/02\/2024"
+    },
+    {
+      "expected" : null,
+      "input" : {
+        "raw" : "29\/02\/2025"
+      },
+      "kind" : "date.parse",
+      "name" : "parse date 29\/02\/2025"
+    },
+    {
+      "expected" : "2026-01-01",
+      "input" : {
+        "raw" : "1\/1\/26"
+      },
+      "kind" : "date.parse",
+      "name" : "parse date 1\/1\/26"
+    },
+    {
+      "expected" : "2026-10-05",
+      "input" : {
+        "raw" : "2026-10-05"
+      },
+      "kind" : "date.parse",
+      "name" : "parse date 2026-10-05"
+    },
+    {
+      "expected" : "2026-10-05",
+      "input" : {
+        "raw" : "2026\/10\/05"
+      },
+      "kind" : "date.parse",
+      "name" : "parse date 2026\/10\/05"
+    },
+    {
+      "expected" : "2026-10-05",
+      "input" : {
+        "raw" : "05-10-2026"
+      },
+      "kind" : "date.parse",
+      "name" : "parse date 05-10-2026"
+    },
+    {
+      "expected" : "2026-10-05",
+      "input" : {
+        "raw" : "05.10.2026"
+      },
+      "kind" : "date.parse",
+      "name" : "parse date 05.10.2026"
+    },
+    {
+      "expected" : "2099-10-05",
+      "input" : {
+        "raw" : "5\/10\/99"
+      },
+      "kind" : "date.parse",
+      "name" : "parse date 5\/10\/99"
+    },
+    {
+      "expected" : null,
+      "input" : {
+        "raw" : "13\/13\/2026"
+      },
+      "kind" : "date.parse",
+      "name" : "parse date 13\/13\/2026"
+    },
+    {
+      "expected" : null,
+      "input" : {
+        "raw" : "00\/10\/2026"
+      },
+      "kind" : "date.parse",
+      "name" : "parse date 00\/10\/2026"
+    },
+    {
+      "expected" : null,
+      "input" : {
+        "raw" : "abc"
+      },
+      "kind" : "date.parse",
+      "name" : "parse date abc"
+    },
+    {
+      "expected" : "2026-01-05",
+      "input" : {
+        "raw" : "2026-1-5"
+      },
+      "kind" : "date.parse",
+      "name" : "parse date 2026-1-5"
+    },
+    {
+      "expected" : null,
+      "input" : {
+        "raw" : "10\/2026"
+      },
+      "kind" : "date.parse",
+      "name" : "parse date 10\/2026"
+    },
+    {
+      "expected" : null,
+      "input" : {
+        "raw" : "32\/01\/2026"
+      },
+      "kind" : "date.parse",
+      "name" : "parse date 32\/01\/2026"
+    },
+    {
+      "expected" : null,
+      "input" : {
+        "raw" : "01\/01\/12345"
+      },
+      "kind" : "date.parse",
+      "name" : "parse date 01\/01\/12345"
+    }
+  ],
+  "suite" : "date"
+}

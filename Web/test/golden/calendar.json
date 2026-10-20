@@ -1,0 +1,113 @@
+{
+  "cases" : [
+    {
+      "expected" : "2026-02-28",
+      "input" : {
+        "date" : "2026-01-31",
+        "n" : 1
+      },
+      "kind" : "calendar.addMonths",
+      "name" : "addMonths 2026-01-31 1"
+    },
+    {
+      "expected" : "2027-02-28",
+      "input" : {
+        "date" : "2026-01-31",
+        "n" : 13
+      },
+      "kind" : "calendar.addMonths",
+      "name" : "addMonths 2026-01-31 13"
+    },
+    {
+      "expected" : "2024-02-29",
+      "input" : {
+        "date" : "2024-01-31",
+        "n" : 1
+      },
+      "kind" : "calendar.addMonths",
+      "name" : "addMonths 2024-01-31 1"
+    },
+    {
+      "expected" : "2026-02-28",
+      "input" : {
+        "date" : "2026-03-31",
+        "n" : -1
+      },
+      "kind" : "calendar.addMonths",
+      "name" : "addMonths 2026-03-31 -1"
+    },
+    {
+      "expected" : "2027-02-28",
+      "input" : {
+        "date" : "2026-12-31",
+        "n" : 2
+      },
+      "kind" : "calendar.addMonths",
+      "name" : "addMonths 2026-12-31 2"
+    },
+    {
+      "expected" : "2025-11-15",
+      "input" : {
+        "date" : "2026-10-15",
+        "n" : -11
+      },
+      "kind" : "calendar.addMonths",
+      "name" : "addMonths 2026-10-15 -11"
+    },
+    {
+      "expected" : "2025-02-28",
+      "input" : {
+        "date" : "2024-02-29",
+        "n" : 1
+      },
+      "kind" : "calendar.addYears",
+      "name" : "addYears 2024-02-29 1"
+    },
+    {
+      "expected" : "2028-02-29",
+      "input" : {
+        "date" : "2024-02-29",
+        "n" : 4
+      },
+      "kind" : "calendar.addYears",
+      "name" : "addYears 2024-02-29 4"
+    },
+    {
+      "expected" : "2024-06-15",
+      "input" : {
+        "date" : "2026-06-15",
+        "n" : -2
+      },
+      "kind" : "calendar.addYears",
+      "name" : "addYears 2026-06-15 -2"
+    },
+    {
+      "expected" : 364,
+      "input" : {
+        "a" : "2026-01-01",
+        "b" : "2026-12-31"
+      },
+      "kind" : "calendar.daysBetween",
+      "name" : "daysBetween 2026-01-01 2026-12-31"
+    },
+    {
+      "expected" : -28,
+      "input" : {
+        "a" : "2026-03-01",
+        "b" : "2026-02-01"
+      },
+      "kind" : "calendar.daysBetween",
+      "name" : "daysBetween 2026-03-01 2026-02-01"
+    },
+    {
+      "expected" : 2,
+      "input" : {
+        "a" : "2024-02-28",
+        "b" : "2024-03-01"
+      },
+      "kind" : "calendar.daysBetween",
+      "name" : "daysBetween 2024-02-28 2024-03-01"
+    }
+  ],
+  "suite" : "calendar"
+}

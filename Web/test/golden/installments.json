@@ -1,0 +1,775 @@
+{
+  "cases" : [
+    {
+      "expected" : [
+        {
+          "amount" : "10",
+          "date" : "2026-01-31",
+          "number" : 1,
+          "status" : "paid",
+          "title" : "Geladeira (1\/10)",
+          "total" : 10
+        },
+        {
+          "amount" : "10",
+          "date" : "2026-02-28",
+          "number" : 2,
+          "status" : "pending",
+          "title" : "Geladeira (2\/10)",
+          "total" : 10
+        },
+        {
+          "amount" : "10",
+          "date" : "2026-03-31",
+          "number" : 3,
+          "status" : "pending",
+          "title" : "Geladeira (3\/10)",
+          "total" : 10
+        },
+        {
+          "amount" : "10",
+          "date" : "2026-04-30",
+          "number" : 4,
+          "status" : "pending",
+          "title" : "Geladeira (4\/10)",
+          "total" : 10
+        },
+        {
+          "amount" : "10",
+          "date" : "2026-05-31",
+          "number" : 5,
+          "status" : "pending",
+          "title" : "Geladeira (5\/10)",
+          "total" : 10
+        },
+        {
+          "amount" : "10",
+          "date" : "2026-06-30",
+          "number" : 6,
+          "status" : "pending",
+          "title" : "Geladeira (6\/10)",
+          "total" : 10
+        },
+        {
+          "amount" : "10",
+          "date" : "2026-07-31",
+          "number" : 7,
+          "status" : "pending",
+          "title" : "Geladeira (7\/10)",
+          "total" : 10
+        },
+        {
+          "amount" : "10",
+          "date" : "2026-08-31",
+          "number" : 8,
+          "status" : "pending",
+          "title" : "Geladeira (8\/10)",
+          "total" : 10
+        },
+        {
+          "amount" : "10",
+          "date" : "2026-09-30",
+          "number" : 9,
+          "status" : "pending",
+          "title" : "Geladeira (9\/10)",
+          "total" : 10
+        },
+        {
+          "amount" : "10.01",
+          "date" : "2026-10-31",
+          "number" : 10,
+          "status" : "pending",
+          "title" : "Geladeira (10\/10)",
+          "total" : 10
+        }
+      ],
+      "input" : {
+        "count" : 10,
+        "template" : {
+          "accountId" : "00000000-0000-0000-0000-000000000001",
+          "amount" : 100.01000000000001,
+          "categoryId" : "00000000-0000-0000-0000-000000000004",
+          "createdAt" : 800000001,
+          "date" : 791553600,
+          "id" : "00000000-0000-0000-0000-000000000001",
+          "status" : "paid",
+          "tagIds" : [
+
+          ],
+          "title" : "Geladeira",
+          "type" : "expense",
+          "updatedAt" : 800000001
+        }
+      },
+      "kind" : "installments.make",
+      "name" : "installments 100.01 in 10 card=false"
+    },
+    {
+      "expected" : [
+        {
+          "amount" : "333.33",
+          "date" : "2026-08-15",
+          "number" : 1,
+          "status" : "paid",
+          "title" : "Geladeira (1\/3)",
+          "total" : 3
+        },
+        {
+          "amount" : "333.33",
+          "date" : "2026-09-15",
+          "number" : 2,
+          "status" : "pending",
+          "title" : "Geladeira (2\/3)",
+          "total" : 3
+        },
+        {
+          "amount" : "333.34",
+          "date" : "2026-10-15",
+          "number" : 3,
+          "status" : "pending",
+          "title" : "Geladeira (3\/3)",
+          "total" : 3
+        }
+      ],
+      "input" : {
+        "count" : 3,
+        "template" : {
+          "accountId" : "00000000-0000-0000-0000-000000000001",
+          "amount" : 1000,
+          "categoryId" : "00000000-0000-0000-0000-000000000004",
+          "createdAt" : 800000001,
+          "date" : 808488000,
+          "id" : "00000000-0000-0000-0000-000000000001",
+          "status" : "paid",
+          "tagIds" : [
+
+          ],
+          "title" : "Geladeira",
+          "type" : "expense",
+          "updatedAt" : 800000001
+        }
+      },
+      "kind" : "installments.make",
+      "name" : "installments 1000 in 3 card=false"
+    },
+    {
+      "expected" : [
+        {
+          "amount" : "10",
+          "date" : "2026-01-31",
+          "number" : 1,
+          "status" : "paid",
+          "title" : "Geladeira (1\/10)",
+          "total" : 10
+        },
+        {
+          "amount" : "10",
+          "date" : "2026-02-28",
+          "number" : 2,
+          "status" : "paid",
+          "title" : "Geladeira (2\/10)",
+          "total" : 10
+        },
+        {
+          "amount" : "10",
+          "date" : "2026-03-31",
+          "number" : 3,
+          "status" : "paid",
+          "title" : "Geladeira (3\/10)",
+          "total" : 10
+        },
+        {
+          "amount" : "10",
+          "date" : "2026-04-30",
+          "number" : 4,
+          "status" : "paid",
+          "title" : "Geladeira (4\/10)",
+          "total" : 10
+        },
+        {
+          "amount" : "10",
+          "date" : "2026-05-31",
+          "number" : 5,
+          "status" : "paid",
+          "title" : "Geladeira (5\/10)",
+          "total" : 10
+        },
+        {
+          "amount" : "10",
+          "date" : "2026-06-30",
+          "number" : 6,
+          "status" : "paid",
+          "title" : "Geladeira (6\/10)",
+          "total" : 10
+        },
+        {
+          "amount" : "10",
+          "date" : "2026-07-31",
+          "number" : 7,
+          "status" : "paid",
+          "title" : "Geladeira (7\/10)",
+          "total" : 10
+        },
+        {
+          "amount" : "10",
+          "date" : "2026-08-31",
+          "number" : 8,
+          "status" : "paid",
+          "title" : "Geladeira (8\/10)",
+          "total" : 10
+        },
+        {
+          "amount" : "10",
+          "date" : "2026-09-30",
+          "number" : 9,
+          "status" : "paid",
+          "title" : "Geladeira (9\/10)",
+          "total" : 10
+        },
+        {
+          "amount" : "10.01",
+          "date" : "2026-10-31",
+          "number" : 10,
+          "status" : "paid",
+          "title" : "Geladeira (10\/10)",
+          "total" : 10
+        }
+      ],
+      "input" : {
+        "count" : 10,
+        "template" : {
+          "amount" : 100.01000000000001,
+          "categoryId" : "00000000-0000-0000-0000-000000000004",
+          "createdAt" : 800000001,
+          "creditCardId" : "00000000-0000-0000-0000-000000000007",
+          "date" : 791553600,
+          "id" : "00000000-0000-0000-0000-000000000001",
+          "status" : "paid",
+          "tagIds" : [
+
+          ],
+          "title" : "Geladeira",
+          "type" : "expense",
+          "updatedAt" : 800000001
+        }
+      },
+      "kind" : "installments.make",
+      "name" : "installments 100.01 in 10 card=true"
+    },
+    {
+      "expected" : [
+        {
+          "amount" : "4.99",
+          "date" : "2026-10-30",
+          "number" : 1,
+          "status" : "paid",
+          "title" : "Geladeira (1\/12)",
+          "total" : 12
+        },
+        {
+          "amount" : "4.99",
+          "date" : "2026-11-30",
+          "number" : 2,
+          "status" : "paid",
+          "title" : "Geladeira (2\/12)",
+          "total" : 12
+        },
+        {
+          "amount" : "4.99",
+          "date" : "2026-12-30",
+          "number" : 3,
+          "status" : "paid",
+          "title" : "Geladeira (3\/12)",
+          "total" : 12
+        },
+        {
+          "amount" : "4.99",
+          "date" : "2027-01-30",
+          "number" : 4,
+          "status" : "paid",
+          "title" : "Geladeira (4\/12)",
+          "total" : 12
+        },
+        {
+          "amount" : "4.99",
+          "date" : "2027-02-28",
+          "number" : 5,
+          "status" : "paid",
+          "title" : "Geladeira (5\/12)",
+          "total" : 12
+        },
+        {
+          "amount" : "4.99",
+          "date" : "2027-03-30",
+          "number" : 6,
+          "status" : "paid",
+          "title" : "Geladeira (6\/12)",
+          "total" : 12
+        },
+        {
+          "amount" : "4.99",
+          "date" : "2027-04-30",
+          "number" : 7,
+          "status" : "paid",
+          "title" : "Geladeira (7\/12)",
+          "total" : 12
+        },
+        {
+          "amount" : "4.99",
+          "date" : "2027-05-30",
+          "number" : 8,
+          "status" : "paid",
+          "title" : "Geladeira (8\/12)",
+          "total" : 12
+        },
+        {
+          "amount" : "4.99",
+          "date" : "2027-06-30",
+          "number" : 9,
+          "status" : "paid",
+          "title" : "Geladeira (9\/12)",
+          "total" : 12
+        },
+        {
+          "amount" : "4.99",
+          "date" : "2027-07-30",
+          "number" : 10,
+          "status" : "paid",
+          "title" : "Geladeira (10\/12)",
+          "total" : 12
+        },
+        {
+          "amount" : "4.99",
+          "date" : "2027-08-30",
+          "number" : 11,
+          "status" : "paid",
+          "title" : "Geladeira (11\/12)",
+          "total" : 12
+        },
+        {
+          "amount" : "5.01",
+          "date" : "2027-09-30",
+          "number" : 12,
+          "status" : "paid",
+          "title" : "Geladeira (12\/12)",
+          "total" : 12
+        }
+      ],
+      "input" : {
+        "count" : 12,
+        "template" : {
+          "amount" : 59.899999999999999,
+          "categoryId" : "00000000-0000-0000-0000-000000000004",
+          "createdAt" : 800000001,
+          "creditCardId" : "00000000-0000-0000-0000-000000000007",
+          "date" : 815054400,
+          "id" : "00000000-0000-0000-0000-000000000001",
+          "status" : "paid",
+          "tagIds" : [
+
+          ],
+          "title" : "Geladeira",
+          "type" : "expense",
+          "updatedAt" : 800000001
+        }
+      },
+      "kind" : "installments.make",
+      "name" : "installments 59.9 in 12 card=true"
+    },
+    {
+      "expected" : [
+        {
+          "amount" : "0.03",
+          "date" : "2026-05-31",
+          "number" : 1,
+          "status" : "paid",
+          "title" : "Geladeira (1\/3)",
+          "total" : 3
+        },
+        {
+          "amount" : "0.03",
+          "date" : "2026-06-30",
+          "number" : 2,
+          "status" : "pending",
+          "title" : "Geladeira (2\/3)",
+          "total" : 3
+        },
+        {
+          "amount" : "0.04",
+          "date" : "2026-07-31",
+          "number" : 3,
+          "status" : "pending",
+          "title" : "Geladeira (3\/3)",
+          "total" : 3
+        }
+      ],
+      "input" : {
+        "count" : 3,
+        "template" : {
+          "accountId" : "00000000-0000-0000-0000-000000000001",
+          "amount" : 0.10000000000000001,
+          "categoryId" : "00000000-0000-0000-0000-000000000004",
+          "createdAt" : 800000001,
+          "date" : 801921600,
+          "id" : "00000000-0000-0000-0000-000000000001",
+          "status" : "paid",
+          "tagIds" : [
+
+          ],
+          "title" : "Geladeira",
+          "type" : "expense",
+          "updatedAt" : 800000001
+        }
+      },
+      "kind" : "installments.make",
+      "name" : "installments 0.10 in 3 card=false"
+    },
+    {
+      "expected" : [
+        {
+          "amount" : "1",
+          "date" : "2026-05-01",
+          "number" : 1,
+          "status" : "paid",
+          "title" : "Geladeira (1\/1)",
+          "total" : 1
+        }
+      ],
+      "input" : {
+        "count" : 1,
+        "template" : {
+          "accountId" : "00000000-0000-0000-0000-000000000001",
+          "amount" : 1,
+          "categoryId" : "00000000-0000-0000-0000-000000000004",
+          "createdAt" : 800000001,
+          "date" : 799329600,
+          "id" : "00000000-0000-0000-0000-000000000001",
+          "status" : "paid",
+          "tagIds" : [
+
+          ],
+          "title" : "Geladeira",
+          "type" : "expense",
+          "updatedAt" : 800000001
+        }
+      },
+      "kind" : "installments.make",
+      "name" : "installments 1 in 1 card=false"
+    },
+    {
+      "expected" : [
+        1
+      ],
+      "input" : {
+        "scope" : "thisOnly",
+        "targetIndex" : 1,
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 75,
+            "createdAt" : 814193656.51248002,
+            "date" : 794836800,
+            "id" : "374403B3-131E-4307-ABD8-82460924C692",
+            "installment" : {
+              "groupId" : "668003D5-DB83-4CC4-9A37-DBB564C943FC",
+              "number" : 1,
+              "total" : 4
+            },
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "TV (1\/4)",
+            "type" : "expense",
+            "updatedAt" : 814193656.51248002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 75,
+            "createdAt" : 814193656.51248395,
+            "date" : 797515200,
+            "id" : "BDC23AA9-AC60-424B-962C-95BE32875900",
+            "installment" : {
+              "groupId" : "668003D5-DB83-4CC4-9A37-DBB564C943FC",
+              "number" : 2,
+              "total" : 4
+            },
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "TV (2\/4)",
+            "type" : "expense",
+            "updatedAt" : 814193656.51248395
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 75,
+            "createdAt" : 814193656.51248598,
+            "date" : 800107200,
+            "id" : "30BC98FC-37C5-42F5-A0A5-A4C870440B42",
+            "installment" : {
+              "groupId" : "668003D5-DB83-4CC4-9A37-DBB564C943FC",
+              "number" : 3,
+              "total" : 4
+            },
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "TV (3\/4)",
+            "type" : "expense",
+            "updatedAt" : 814193656.51248598
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 75,
+            "createdAt" : 814193656.51248801,
+            "date" : 802785600,
+            "id" : "FF9D5B56-B054-465C-8A70-AA9F1C7C3DF6",
+            "installment" : {
+              "groupId" : "668003D5-DB83-4CC4-9A37-DBB564C943FC",
+              "number" : 4,
+              "total" : 4
+            },
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "TV (4\/4)",
+            "type" : "expense",
+            "updatedAt" : 814193656.51248801
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "createdAt" : 800000050,
+            "date" : 794836800,
+            "id" : "00000000-0000-0000-0000-000000000050",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Outra",
+            "type" : "expense",
+            "updatedAt" : 800000050
+          }
+        ]
+      },
+      "kind" : "installments.delete",
+      "name" : "delete scope thisOnly"
+    },
+    {
+      "expected" : [
+        1,
+        2,
+        3
+      ],
+      "input" : {
+        "scope" : "thisAndFuture",
+        "targetIndex" : 1,
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 75,
+            "createdAt" : 814193656.51248002,
+            "date" : 794836800,
+            "id" : "374403B3-131E-4307-ABD8-82460924C692",
+            "installment" : {
+              "groupId" : "668003D5-DB83-4CC4-9A37-DBB564C943FC",
+              "number" : 1,
+              "total" : 4
+            },
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "TV (1\/4)",
+            "type" : "expense",
+            "updatedAt" : 814193656.51248002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 75,
+            "createdAt" : 814193656.51248395,
+            "date" : 797515200,
+            "id" : "BDC23AA9-AC60-424B-962C-95BE32875900",
+            "installment" : {
+              "groupId" : "668003D5-DB83-4CC4-9A37-DBB564C943FC",
+              "number" : 2,
+              "total" : 4
+            },
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "TV (2\/4)",
+            "type" : "expense",
+            "updatedAt" : 814193656.51248395
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 75,
+            "createdAt" : 814193656.51248598,
+            "date" : 800107200,
+            "id" : "30BC98FC-37C5-42F5-A0A5-A4C870440B42",
+            "installment" : {
+              "groupId" : "668003D5-DB83-4CC4-9A37-DBB564C943FC",
+              "number" : 3,
+              "total" : 4
+            },
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "TV (3\/4)",
+            "type" : "expense",
+            "updatedAt" : 814193656.51248598
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 75,
+            "createdAt" : 814193656.51248801,
+            "date" : 802785600,
+            "id" : "FF9D5B56-B054-465C-8A70-AA9F1C7C3DF6",
+            "installment" : {
+              "groupId" : "668003D5-DB83-4CC4-9A37-DBB564C943FC",
+              "number" : 4,
+              "total" : 4
+            },
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "TV (4\/4)",
+            "type" : "expense",
+            "updatedAt" : 814193656.51248801
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "createdAt" : 800000050,
+            "date" : 794836800,
+            "id" : "00000000-0000-0000-0000-000000000050",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Outra",
+            "type" : "expense",
+            "updatedAt" : 800000050
+          }
+        ]
+      },
+      "kind" : "installments.delete",
+      "name" : "delete scope thisAndFuture"
+    },
+    {
+      "expected" : [
+        0,
+        1,
+        2,
+        3
+      ],
+      "input" : {
+        "scope" : "all",
+        "targetIndex" : 1,
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 75,
+            "createdAt" : 814193656.51248002,
+            "date" : 794836800,
+            "id" : "374403B3-131E-4307-ABD8-82460924C692",
+            "installment" : {
+              "groupId" : "668003D5-DB83-4CC4-9A37-DBB564C943FC",
+              "number" : 1,
+              "total" : 4
+            },
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "TV (1\/4)",
+            "type" : "expense",
+            "updatedAt" : 814193656.51248002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 75,
+            "createdAt" : 814193656.51248395,
+            "date" : 797515200,
+            "id" : "BDC23AA9-AC60-424B-962C-95BE32875900",
+            "installment" : {
+              "groupId" : "668003D5-DB83-4CC4-9A37-DBB564C943FC",
+              "number" : 2,
+              "total" : 4
+            },
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "TV (2\/4)",
+            "type" : "expense",
+            "updatedAt" : 814193656.51248395
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 75,
+            "createdAt" : 814193656.51248598,
+            "date" : 800107200,
+            "id" : "30BC98FC-37C5-42F5-A0A5-A4C870440B42",
+            "installment" : {
+              "groupId" : "668003D5-DB83-4CC4-9A37-DBB564C943FC",
+              "number" : 3,
+              "total" : 4
+            },
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "TV (3\/4)",
+            "type" : "expense",
+            "updatedAt" : 814193656.51248598
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 75,
+            "createdAt" : 814193656.51248801,
+            "date" : 802785600,
+            "id" : "FF9D5B56-B054-465C-8A70-AA9F1C7C3DF6",
+            "installment" : {
+              "groupId" : "668003D5-DB83-4CC4-9A37-DBB564C943FC",
+              "number" : 4,
+              "total" : 4
+            },
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "TV (4\/4)",
+            "type" : "expense",
+            "updatedAt" : 814193656.51248801
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 10,
+            "createdAt" : 800000050,
+            "date" : 794836800,
+            "id" : "00000000-0000-0000-0000-000000000050",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Outra",
+            "type" : "expense",
+            "updatedAt" : 800000050
+          }
+        ]
+      },
+      "kind" : "installments.delete",
+      "name" : "delete scope all"
+    }
+  ],
+  "suite" : "installments"
+}

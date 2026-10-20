@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Painel de Agentes</title>
+<style>
+:root{
+  --bg:#EEF2EF;--surface:#FFFFFF;--sunken:#E3EAE6;--border:#D3DDD8;
+  --text:#14201D;--text2:#4A5B56;--brand:#0D5C63;--brand-soft:#D6EBEC;
+  --ok:#176E3C;--ok-soft:#DDF1E4;--warn:#8A5A00;--warn-soft:#FBEBC8;--bad:#B42318;--bad-soft:#FCE0DC;
+  --run:#0D5C63;--run-soft:#D6EBEC;--idle:#5A6763;--idle-soft:#E3EAE6;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0E1513;--surface:#16201D;--sunken:#0B110F;--border:#26332F;
+  --text:#E6EFEB;--text2:#9DB0AA;--brand:#5CC2C6;--brand-soft:#173537;
+  --ok:#57C98A;--ok-soft:#14301F;--warn:#E3B04B;--warn-soft:#352A10;--bad:#FF8B7E;--bad-soft:#3A1A17;
+  --run:#5CC2C6;--run-soft:#173537;--idle:#9DB0AA;--idle-soft:#1D2926;}}
+:root[data-theme="dark"]{
+  --bg:#0E1513;--surface:#16201D;--sunken:#0B110F;--border:#26332F;
+  --text:#E6EFEB;--text2:#9DB0AA;--brand:#5CC2C6;--brand-soft:#173537;
+  --ok:#57C98A;--ok-soft:#14301F;--warn:#E3B04B;--warn-soft:#352A10;--bad:#FF8B7E;--bad-soft:#3A1A17;
+  --run:#5CC2C6;--run-soft:#173537;--idle:#9DB0AA;--idle-soft:#1D2926;}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font:15px/1.45 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",system-ui,sans-serif}
+header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.bar{max-width:1200px;margin:0 auto;padding:14px 16px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+h1{font-size:19px;margin:0;letter-spacing:-.01em}
+.sub{color:var(--text2);font-size:13px}
+.sp{flex:1}
+.live{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--text2)}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--ok)}
+.dot.off{background:var(--bad)}
+.dot.pulse{animation:p 1.6s ease-in-out infinite}
+@keyframes p{50%{opacity:.35}}
+#refresh{display:inline-flex;align-items:center;gap:6px;background:var(--brand);color:#fff;border-color:var(--brand)}
+:root[data-theme="dark"] #refresh{color:#06201f}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) #refresh{color:#06201f}}
+#refresh[disabled]{opacity:.7;cursor:progress}
+#refresh.spin svg{animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+button,select{font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:6px 14px;cursor:pointer}
+button:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+label.chk{display:inline-flex;gap:6px;align-items:center;font-size:13px;color:var(--text2);cursor:pointer}
+main{max-width:1200px;margin:0 auto;padding:16px}
+.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:16px}
+.tile{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:12px 14px}
+.tile b{display:block;font-size:26px;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.tile span{font-size:12.5px;color:var(--text2)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,520px),1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.card.running{border-color:var(--run)}
+.head{display:flex;gap:10px;align-items:flex-start}
+.head h2{font-size:16px;margin:0;line-height:1.3;flex:1;overflow-wrap:anywhere}
+.type{font-size:12px;color:var(--text2)}
+.pill{font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;white-space:nowrap}
+.pill.running,.pill.working{background:var(--run-soft);color:var(--run)}
+.pill.done{background:var(--ok-soft);color:var(--ok)}
+.pill.failed{background:var(--bad-soft);color:var(--bad)}
+.pill.stale{background:var(--warn-soft);color:var(--warn)}
+.now{background:var(--sunken);border-radius:12px;padding:10px 12px;font-size:13.5px;overflow-wrap:anywhere}
+.now small{color:var(--text2);display:block}
+.bar2{height:5px;border-radius:3px;background:var(--sunken);overflow:hidden;margin-top:8px}
+.bar2 i{display:block;height:100%;width:35%;background:var(--brand);border-radius:3px;animation:slide 1.8s ease-in-out infinite}
+@keyframes slide{0%{margin-left:-35%}100%{margin-left:100%}}
+.facts{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;color:var(--text2)}
+.facts b{color:var(--text);font-variant-numeric:tabular-nums}
+.badges{display:flex;flex-wrap:wrap;gap:6px}
+.badge{font-size:12px;padding:3px 9px;border-radius:8px;background:var(--ok-soft);color:var(--ok)}
+.badge.bad{background:var(--bad-soft);color:var(--bad)}
+details{border-top:1px solid var(--border);padding-top:10px}
+summary{cursor:pointer;font-weight:600;font-size:13.5px}
+ol.log{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:2px;max-height:340px;overflow:auto;font-size:12.5px}
+ol.log li{display:grid;grid-template-columns:62px 118px 1fr;gap:8px;padding:4px 6px;border-radius:6px}
+ol.log li:nth-child(odd){background:var(--sunken)}
+ol.log .t{color:var(--text2);font-variant-numeric:tabular-nums}
+ol.log .k{font-weight:600}
+ol.log .err .k{color:var(--bad)}
+ol.log .pend .k{color:var(--run)}
+ol.log .d{overflow-wrap:anywhere;color:var(--text2)}
+ol.log .txt .d{color:var(--text)}
+.files{font-size:12px;color:var(--text2);overflow-wrap:anywhere}
+.report{font-size:13px;white-space:pre-wrap;background:var(--sunken);padding:10px 12px;border-radius:12px}
+.docker{margin-top:18px}
+.docker h3{font-size:14px;margin:0 0 8px}
+table{width:100%;border-collapse:collapse;font-size:13px;background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--border)}
+th{color:var(--text2);font-weight:600;font-size:12px}
+.empty{color:var(--text2);text-align:center;padding:40px 0}
+@media (max-width:560px){ol.log li{grid-template-columns:54px 1fr}ol.log .k{display:none}}
+@media (prefers-reduced-motion:reduce){.dot.pulse,.bar2 i,#refresh.spin svg{animation:none}}
+</style>
+</head>
+<body>
+<header><div class="bar">
+  <div><h1>Painel de Agentes</h1><div class="sub" id="proj">App Finanças · acompanhamento em tempo real</div></div>
+  <div class="sp"></div>
+  <span class="live" id="live"><i class="dot pulse"></i><span id="liveTxt">conectando…</span></span>
+  <label class="chk"><input type="checkbox" id="showDone" checked> concluídos</label>
+  <label class="chk"><input type="checkbox" id="auto" checked> automático</label>
+  <button id="refresh" type="button" aria-label="Atualizar agora" title="Atualizar agora (R)"><svg id="rIcon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/></svg><span>Atualizar</span></button>
+  <button id="theme" type="button" aria-label="Alternar tema">Tema</button>
+</div></header>
+<main>
+  <section class="summary" id="summary" aria-live="polite"></section>
+  <p class="sub" id="tokNote">Tokens estimados a partir das transcrições dos agentes (entrada nova + escrita em cache + saída). Podem diferir do total que o Claude Code informa ao fim de cada agente e não representam custo.</p>
+  <section class="grid" id="grid"></section>
+  <section class="docker" id="docker"></section>
+</main>
+<script>
+(() => {
+'use strict';
+const $ = (s) => document.querySelector(s);
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+const fmtTime = (iso) => iso ? new Date(iso).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', second: '2-digit' }) : '–';
+const fmtDur = (ms) => { if (ms == null || isNaN(ms)) return ''; const s = Math.round(ms / 1000); if (s < 60) return s + 's'; const m = Math.floor(s / 60); if (m < 60) return m + 'min ' + (s % 60) + 's'; return Math.floor(m / 60) + 'h ' + (m % 60) + 'min'; };
+const fmtTok = (n) => n >= 1e6 ? (n / 1e6).toFixed(2).replace('.', ',') + ' M' : n >= 1e4 ? (n / 1e3).toFixed(1).replace('.', ',') + ' mil' : String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+const ago = (iso, now) => iso ? fmtDur(Date.parse(now) - Date.parse(iso)) + ' atrás' : '–';
+
+// tema
+try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch {}
+$('#theme').addEventListener('click', () => {
+  const cur = document.documentElement.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  const next = cur === 'dark' ? 'light' : 'dark';
+  document.documentElement.dataset.theme = next;
+  try { localStorage.setItem('theme', next); } catch {}
+});
+let showDone = true;
+try { showDone = localStorage.getItem('showDone') !== '0'; } catch {}
+$('#showDone').checked = showDone;
+$('#showDone').addEventListener('change', (e) => { showDone = e.target.checked; try { localStorage.setItem('showDone', showDone ? '1' : '0'); } catch {} render(); });
+
+const openState = new Set(); // quais logs o usuário abriu (preserva ao atualizar)
+let data = null, docker = null;
+
+function tile(num, label) { const t = el('div', 'tile'); t.append(el('b', null, String(num)), el('span', null, label)); return t; }
+
+function renderSummary() {
+  const box = $('#summary'); box.replaceChildren();
+  if (!data) return;
+  const c = (code) => data.agents.filter((a) => a.status.code === code).length;
+  box.append(
+    tile(c('running') + c('working'), 'trabalhando agora'),
+    tile(c('done'), 'concluídos / aguardando'),
+    tile(c('failed') + c('stale'), 'interrompidos ou parados'),
+    tile(data.agents.reduce((n, a) => n + a.toolCalls, 0), 'ações executadas'),
+    tile(data.agents.reduce((n, a) => n + a.filesTouched, 0), 'arquivos criados/editados'),
+    tile(fmtTok(data.totalUsage.fresh), 'tokens consumidos (entrada nova + saída)'),
+    tile(fmtTok(data.totalUsage.output), 'tokens de saída (gerados)'),
+    tile(fmtTok(data.totalUsage.cacheRead), 'tokens lidos do cache'),
+    tile(fmtTok(data.totalUsage.last5min), 'tokens nos últimos 5 min'),
+  );
+}
+
+function eventRow(e, now) {
+  const li = el('li', e.kind === 'text' ? 'txt' : e.error ? 'err' : (!e.done ? 'pend' : ''));
+  li.append(el('span', 't', fmtTime(e.ts)));
+  const label = e.kind === 'text' ? 'Agente' : e.title + (e.done ? (e.error ? ' ✗' : ' ✓') : ' …');
+  li.append(el('span', 'k', label));
+  const d = el('span', 'd', e.detail + (e.ms > 3000 ? '  (' + fmtDur(e.ms) + ')' : ''));
+  li.append(d);
+  return li;
+}
+
+function renderCard(a, now) {
+  const card = el('article', 'card ' + a.status.code);
+  const head = el('div', 'head');
+  const title = el('div'); title.style.flex = '1';
+  title.append(el('h2', null, a.description), el('div', 'type', (a.agentType || 'agente') + ' · iniciou ' + fmtTime(a.startedAt) + ' · ativo há ' + fmtDur(Date.parse(a.lastActivity) - Date.parse(a.startedAt))));
+  head.append(title, el('span', 'pill ' + a.status.code, a.status.label.split(':')[0]));
+  card.append(head);
+
+  const now_ = el('div', 'now');
+  if (a.status.code === 'running') {
+    now_.append(el('small', null, a.status.label + (a.status.runningFor ? ' · há ' + fmtDur(a.status.runningFor * 1000) : '')), document.createTextNode(a.status.detail || ''));
+    const b = el('div', 'bar2'); b.append(el('i')); now_.append(b);
+  } else if (a.status.code === 'working') {
+    now_.append(el('small', null, 'Última atividade ' + ago(a.lastActivity, data.now)), document.createTextNode(a.lastText || 'Processando…'));
+    const b = el('div', 'bar2'); b.append(el('i')); now_.append(b);
+  } else {
+    now_.append(el('small', null, 'Última atividade ' + ago(a.lastActivity, data.now)), document.createTextNode(a.lastText || '—'));
+  }
+  card.append(now_);
+
+  const facts = el('div', 'facts');
+  const f = (n, l) => { const s = el('span'); s.append(el('b', null, String(n)), document.createTextNode(' ' + l)); return s; };
+  facts.append(f(a.toolCalls, 'ações'), f(a.filesTouched, 'arquivos'), f(a.errors, 'erros de ferramenta'));
+  const top = Object.entries(a.tools).sort((x, y) => y[1] - x[1]).slice(0, 4).map(([k, v]) => k + ' ' + v).join(' · ');
+  if (top) facts.append(el('span', null, top));
+  card.append(facts);
+
+  const u = a.usage;
+  const tk = el('div', 'facts');
+  const g = (n, l) => { const s = el('span'); s.append(el('b', null, fmtTok(n)), document.createTextNode(' ' + l)); return s; };
+  tk.append(g(u.fresh, 'tokens consumidos'), g(u.input + u.cacheWrite, 'entrada'), g(u.output, 'saída'), g(u.cacheRead, 'cache lido'), g(u.calls, 'chamadas ao modelo'));
+  tk.title = 'Consumidos = entrada nova (inclui escrita em cache) + saída. Cache lido é contexto reaproveitado e não entra na soma.';
+  card.append(tk);
+
+  const bs = Object.entries(a.badges);
+  if (bs.length) {
+    const wrap = el('div', 'badges');
+    for (const [k, v] of bs) wrap.append(el('span', 'badge' + (v.ok ? '' : ' bad'), k + ': ' + v.text));
+    card.append(wrap);
+  }
+  if (a.recentFiles.length) card.append(el('div', 'files', 'Últimos arquivos: ' + a.recentFiles.map((p) => p.split('/').slice(-3).join('/')).join(' · ')));
+  if (a.finalReport) { const d = el('details'); d.append(el('summary', null, 'Relatório final (resumo)'), el('div', 'report', a.finalReport)); card.append(d); }
+
+  const det = el('details'); det.open = openState.has(a.id);
+  det.addEventListener('toggle', () => { det.open ? openState.add(a.id) : openState.delete(a.id); });
+  det.append(el('summary', null, 'Linha do tempo (últimas ' + a.events.length + ')'));
+  const ol = el('ol', 'log');
+  for (const e of a.events.slice().reverse()) ol.append(eventRow(e, now));
+  det.append(ol);
+  card.append(det);
+  return card;
+}
+
+function renderDocker() {
+  const box = $('#docker'); box.replaceChildren();
+  if (!docker) return;
+  box.append(el('h3', null, 'Contêineres Docker' + (docker.ok ? '' : ' — ' + docker.error)));
+  if (!docker.ok || !docker.containers.length) { if (docker.ok) box.append(el('div', 'sub', 'Nenhum contêiner criado ainda.')); return; }
+  const t = el('table'); const hr = el('tr');
+  for (const h of ['Nome', 'Imagem', 'Estado', 'Portas']) hr.append(el('th', null, h));
+  t.append(hr);
+  for (const c of docker.containers) {
+    const r = el('tr');
+    r.append(el('td', null, c.name), el('td', null, c.image), el('td', null, c.status), el('td', null, c.ports || '—'));
+    t.append(r);
+  }
+  box.append(t);
+}
+
+function render() {
+  renderSummary();
+  const grid = $('#grid');
+  const keepScroll = new Map();
+  grid.querySelectorAll('ol.log').forEach((o, i) => keepScroll.set(i, o.scrollTop));
+  grid.replaceChildren();
+  if (!data) return;
+  const list = data.agents.filter((a) => showDone || !['done'].includes(a.status.code));
+  if (!list.length) { grid.append(el('div', 'empty', 'Nenhum agente para mostrar.')); }
+  const order = { running: 0, working: 1, failed: 2, stale: 3, done: 4 };
+  list.sort((x, y) => (order[x.status.code] - order[y.status.code]) || (Date.parse(y.lastActivity) - Date.parse(x.lastActivity)));
+  for (const a of list) grid.append(renderCard(a, data.now));
+  grid.querySelectorAll('ol.log').forEach((o, i) => { if (keepScroll.has(i)) o.scrollTop = keepScroll.get(i); });
+  renderDocker();
+}
+
+let fails = 0, busy = false;
+async function tick(manual) {
+  if (busy) return;
+  busy = true;
+  const btn = $('#refresh');
+  if (manual) { btn.disabled = true; btn.classList.add('spin'); }
+  try {
+    const [r1, r2] = await Promise.all([fetch('/api/agents', { cache: 'no-store' }), fetch('/api/docker', { cache: 'no-store' })]);
+    if (!r1.ok) throw new Error(r1.status);
+    data = await r1.json(); docker = await r2.json();
+    fails = 0;
+    $('#live .dot').className = 'dot pulse';
+    $('#liveTxt').textContent = 'ao vivo · atualizado ' + fmtTime(data.now);
+    render();
+  } catch (e) {
+    fails++;
+    $('#live .dot').className = 'dot off';
+    $('#liveTxt').textContent = 'sem conexão com o servidor local' + (fails > 1 ? ' (' + fails + ')' : '');
+  } finally {
+    busy = false;
+    if (manual) setTimeout(() => { btn.disabled = false; btn.classList.remove('spin'); }, 400);
+  }
+}
+$('#refresh').addEventListener('click', () => tick(true));
+let autoOn = true;
+try { autoOn = localStorage.getItem('auto') !== '0'; } catch {}
+$('#auto').checked = autoOn;
+$('#auto').addEventListener('change', (e) => { autoOn = e.target.checked; try { localStorage.setItem('auto', autoOn ? '1' : '0'); } catch {} });
+document.addEventListener('keydown', (e) => {
+  if ((e.key === 'r' || e.key === 'R') && !e.metaKey && !e.ctrlKey && !e.altKey && !/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName)) { e.preventDefault(); tick(true); }
+});
+tick();
+setInterval(() => { if (autoOn) tick(); }, 2000);
+})();
+</script>
+</body>
+</html>

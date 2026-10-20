@@ -1,0 +1,1963 @@
+{
+  "cases" : [
+    {
+      "expected" : {
+        "ending" : "6150.35",
+        "goesNegative" : false,
+        "items" : [
+          {
+            "amount" : "-1500",
+            "date" : "2026-10-25",
+            "label" : "Aluguel"
+          },
+          {
+            "amount" : "5000",
+            "date" : "2026-11-05",
+            "label" : "Salário"
+          },
+          {
+            "amount" : "250",
+            "date" : "2026-11-05",
+            "label" : "Aluguel recebido"
+          },
+          {
+            "amount" : "-650.4",
+            "date" : "2026-11-08",
+            "label" : "Fatura Roxo 11\/2026"
+          },
+          {
+            "amount" : "-700",
+            "date" : "2026-11-15",
+            "label" : "Pagamento fatura"
+          },
+          {
+            "amount" : "250",
+            "date" : "2026-11-19",
+            "label" : "Aluguel recebido"
+          }
+        ],
+        "lowest" : "2000.75",
+        "lowestDate" : "2026-10-25",
+        "pointCount" : 30,
+        "points" : [
+          {
+            "balance" : "3500.75",
+            "change" : "0",
+            "date" : "2026-10-21"
+          },
+          {
+            "balance" : "3500.75",
+            "change" : "0",
+            "date" : "2026-10-22"
+          },
+          {
+            "balance" : "3500.75",
+            "change" : "0",
+            "date" : "2026-10-23"
+          },
+          {
+            "balance" : "3500.75",
+            "change" : "0",
+            "date" : "2026-10-24"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "-1500",
+            "date" : "2026-10-25"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-10-26"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-10-27"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-10-28"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-10-29"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-10-30"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-10-31"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-11-01"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-11-02"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-11-03"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-11-04"
+          },
+          {
+            "balance" : "7250.75",
+            "change" : "5250",
+            "date" : "2026-11-05"
+          },
+          {
+            "balance" : "7250.75",
+            "change" : "0",
+            "date" : "2026-11-06"
+          },
+          {
+            "balance" : "7250.75",
+            "change" : "0",
+            "date" : "2026-11-07"
+          },
+          {
+            "balance" : "6600.35",
+            "change" : "-650.4",
+            "date" : "2026-11-08"
+          },
+          {
+            "balance" : "6600.35",
+            "change" : "0",
+            "date" : "2026-11-09"
+          },
+          {
+            "balance" : "6600.35",
+            "change" : "0",
+            "date" : "2026-11-10"
+          },
+          {
+            "balance" : "6600.35",
+            "change" : "0",
+            "date" : "2026-11-11"
+          },
+          {
+            "balance" : "6600.35",
+            "change" : "0",
+            "date" : "2026-11-12"
+          },
+          {
+            "balance" : "6600.35",
+            "change" : "0",
+            "date" : "2026-11-13"
+          },
+          {
+            "balance" : "6600.35",
+            "change" : "0",
+            "date" : "2026-11-14"
+          },
+          {
+            "balance" : "5900.35",
+            "change" : "-700",
+            "date" : "2026-11-15"
+          },
+          {
+            "balance" : "5900.35",
+            "change" : "0",
+            "date" : "2026-11-16"
+          },
+          {
+            "balance" : "5900.35",
+            "change" : "0",
+            "date" : "2026-11-17"
+          },
+          {
+            "balance" : "5900.35",
+            "change" : "0",
+            "date" : "2026-11-18"
+          },
+          {
+            "balance" : "6150.35",
+            "change" : "250",
+            "date" : "2026-11-19"
+          }
+        ],
+        "totalIn" : "5500",
+        "totalOut" : "2850.4"
+      },
+      "input" : {
+        "days" : 30,
+        "from" : "2026-10-20",
+        "invoiceDues" : [
+          {
+            "amount" : "-650.4",
+            "date" : "2026-11-08",
+            "label" : "Fatura Roxo 11\/2026"
+          },
+          {
+            "amount" : "-1",
+            "date" : "2027-06-01",
+            "label" : "Longe demais"
+          }
+        ],
+        "startingBalance" : "3500.75",
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1500,
+            "createdAt" : 800000001,
+            "date" : 814622400,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel",
+            "type" : "expense",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 5000,
+            "createdAt" : 800000002,
+            "date" : 815572800,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 200,
+            "createdAt" : 800000003,
+            "date" : 814190400,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Hoje (fora da janela)",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "amount" : 300,
+            "createdAt" : 800000004,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 816004800,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Compra cartão pendente",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 700,
+            "createdAt" : 800000005,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 816436800,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "invoiceId" : "00000000-0000-0000-0000-000000000500",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Pagamento fatura",
+            "type" : "transfer",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 100,
+            "createdAt" : 800000006,
+            "date" : 816523200,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Entre contas",
+            "type" : "transfer",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 99.900000000000006,
+            "createdAt" : 800000007,
+            "date" : 815140800,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "recurrence" : {
+              "frequency" : "monthly",
+              "interval" : 1
+            },
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Assinatura",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 250,
+            "createdAt" : 800000008,
+            "date" : 814363200,
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "recurrence" : {
+              "frequency" : "weekly",
+              "interval" : 2
+            },
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel recebido",
+            "type" : "income",
+            "updatedAt" : 800000008
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 50,
+            "createdAt" : 800000009,
+            "date" : 821707200,
+            "id" : "00000000-0000-0000-0000-000000000009",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Longe",
+            "type" : "expense",
+            "updatedAt" : 800000009
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 99.900000000000006,
+            "createdAt" : 800000010,
+            "date" : 817732800,
+            "id" : "00000000-0000-0000-0000-000000000010",
+            "recurrenceParentId" : "00000000-0000-0000-0000-000000000007",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Assinatura",
+            "type" : "expense",
+            "updatedAt" : 800000010
+          }
+        ]
+      },
+      "kind" : "cashflow.project",
+      "name" : "cashflow 30d"
+    },
+    {
+      "expected" : {
+        "ending" : "6550.45",
+        "goesNegative" : false,
+        "items" : [
+          {
+            "amount" : "-1500",
+            "date" : "2026-10-25",
+            "label" : "Aluguel"
+          },
+          {
+            "amount" : "5000",
+            "date" : "2026-11-05",
+            "label" : "Salário"
+          },
+          {
+            "amount" : "250",
+            "date" : "2026-11-05",
+            "label" : "Aluguel recebido"
+          },
+          {
+            "amount" : "-650.4",
+            "date" : "2026-11-08",
+            "label" : "Fatura Roxo 11\/2026"
+          },
+          {
+            "amount" : "-700",
+            "date" : "2026-11-15",
+            "label" : "Pagamento fatura"
+          },
+          {
+            "amount" : "250",
+            "date" : "2026-11-19",
+            "label" : "Aluguel recebido"
+          },
+          {
+            "amount" : "-99.9",
+            "date" : "2026-11-30",
+            "label" : "Assinatura"
+          },
+          {
+            "amount" : "250",
+            "date" : "2026-12-03",
+            "label" : "Aluguel recebido"
+          },
+          {
+            "amount" : "250",
+            "date" : "2026-12-17",
+            "label" : "Aluguel recebido"
+          }
+        ],
+        "lowest" : "2000.75",
+        "lowestDate" : "2026-10-25",
+        "pointCount" : 60,
+        "points" : [
+          {
+            "balance" : "3500.75",
+            "change" : "0",
+            "date" : "2026-10-21"
+          },
+          {
+            "balance" : "3500.75",
+            "change" : "0",
+            "date" : "2026-10-22"
+          },
+          {
+            "balance" : "3500.75",
+            "change" : "0",
+            "date" : "2026-10-23"
+          },
+          {
+            "balance" : "3500.75",
+            "change" : "0",
+            "date" : "2026-10-24"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "-1500",
+            "date" : "2026-10-25"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-10-26"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-10-27"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-10-28"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-10-29"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-10-30"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-10-31"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-11-01"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-11-02"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-11-03"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-11-04"
+          },
+          {
+            "balance" : "7250.75",
+            "change" : "5250",
+            "date" : "2026-11-05"
+          },
+          {
+            "balance" : "7250.75",
+            "change" : "0",
+            "date" : "2026-11-06"
+          },
+          {
+            "balance" : "7250.75",
+            "change" : "0",
+            "date" : "2026-11-07"
+          },
+          {
+            "balance" : "6600.35",
+            "change" : "-650.4",
+            "date" : "2026-11-08"
+          },
+          {
+            "balance" : "6600.35",
+            "change" : "0",
+            "date" : "2026-11-09"
+          },
+          {
+            "balance" : "6600.35",
+            "change" : "0",
+            "date" : "2026-11-10"
+          },
+          {
+            "balance" : "6600.35",
+            "change" : "0",
+            "date" : "2026-11-11"
+          },
+          {
+            "balance" : "6600.35",
+            "change" : "0",
+            "date" : "2026-11-12"
+          },
+          {
+            "balance" : "6600.35",
+            "change" : "0",
+            "date" : "2026-11-13"
+          },
+          {
+            "balance" : "6600.35",
+            "change" : "0",
+            "date" : "2026-11-14"
+          },
+          {
+            "balance" : "5900.35",
+            "change" : "-700",
+            "date" : "2026-11-15"
+          },
+          {
+            "balance" : "5900.35",
+            "change" : "0",
+            "date" : "2026-11-16"
+          },
+          {
+            "balance" : "5900.35",
+            "change" : "0",
+            "date" : "2026-11-17"
+          },
+          {
+            "balance" : "5900.35",
+            "change" : "0",
+            "date" : "2026-11-18"
+          },
+          {
+            "balance" : "6150.35",
+            "change" : "250",
+            "date" : "2026-11-19"
+          },
+          {
+            "balance" : "6150.35",
+            "change" : "0",
+            "date" : "2026-11-20"
+          },
+          {
+            "balance" : "6150.35",
+            "change" : "0",
+            "date" : "2026-11-21"
+          },
+          {
+            "balance" : "6150.35",
+            "change" : "0",
+            "date" : "2026-11-22"
+          },
+          {
+            "balance" : "6150.35",
+            "change" : "0",
+            "date" : "2026-11-23"
+          },
+          {
+            "balance" : "6150.35",
+            "change" : "0",
+            "date" : "2026-11-24"
+          },
+          {
+            "balance" : "6150.35",
+            "change" : "0",
+            "date" : "2026-11-25"
+          },
+          {
+            "balance" : "6150.35",
+            "change" : "0",
+            "date" : "2026-11-26"
+          },
+          {
+            "balance" : "6150.35",
+            "change" : "0",
+            "date" : "2026-11-27"
+          },
+          {
+            "balance" : "6150.35",
+            "change" : "0",
+            "date" : "2026-11-28"
+          },
+          {
+            "balance" : "6150.35",
+            "change" : "0",
+            "date" : "2026-11-29"
+          },
+          {
+            "balance" : "6050.45",
+            "change" : "-99.9",
+            "date" : "2026-11-30"
+          },
+          {
+            "balance" : "6050.45",
+            "change" : "0",
+            "date" : "2026-12-01"
+          },
+          {
+            "balance" : "6050.45",
+            "change" : "0",
+            "date" : "2026-12-02"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "250",
+            "date" : "2026-12-03"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-04"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-05"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-06"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-07"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-08"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-09"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-10"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-11"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-12"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-13"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-14"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-15"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-16"
+          },
+          {
+            "balance" : "6550.45",
+            "change" : "250",
+            "date" : "2026-12-17"
+          },
+          {
+            "balance" : "6550.45",
+            "change" : "0",
+            "date" : "2026-12-18"
+          },
+          {
+            "balance" : "6550.45",
+            "change" : "0",
+            "date" : "2026-12-19"
+          }
+        ],
+        "totalIn" : "6000",
+        "totalOut" : "2950.3"
+      },
+      "input" : {
+        "days" : 60,
+        "from" : "2026-10-20",
+        "invoiceDues" : [
+          {
+            "amount" : "-650.4",
+            "date" : "2026-11-08",
+            "label" : "Fatura Roxo 11\/2026"
+          },
+          {
+            "amount" : "-1",
+            "date" : "2027-06-01",
+            "label" : "Longe demais"
+          }
+        ],
+        "startingBalance" : "3500.75",
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1500,
+            "createdAt" : 800000001,
+            "date" : 814622400,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel",
+            "type" : "expense",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 5000,
+            "createdAt" : 800000002,
+            "date" : 815572800,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 200,
+            "createdAt" : 800000003,
+            "date" : 814190400,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Hoje (fora da janela)",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "amount" : 300,
+            "createdAt" : 800000004,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 816004800,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Compra cartão pendente",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 700,
+            "createdAt" : 800000005,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 816436800,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "invoiceId" : "00000000-0000-0000-0000-000000000500",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Pagamento fatura",
+            "type" : "transfer",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 100,
+            "createdAt" : 800000006,
+            "date" : 816523200,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Entre contas",
+            "type" : "transfer",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 99.900000000000006,
+            "createdAt" : 800000007,
+            "date" : 815140800,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "recurrence" : {
+              "frequency" : "monthly",
+              "interval" : 1
+            },
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Assinatura",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 250,
+            "createdAt" : 800000008,
+            "date" : 814363200,
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "recurrence" : {
+              "frequency" : "weekly",
+              "interval" : 2
+            },
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel recebido",
+            "type" : "income",
+            "updatedAt" : 800000008
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 50,
+            "createdAt" : 800000009,
+            "date" : 821707200,
+            "id" : "00000000-0000-0000-0000-000000000009",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Longe",
+            "type" : "expense",
+            "updatedAt" : 800000009
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 99.900000000000006,
+            "createdAt" : 800000010,
+            "date" : 817732800,
+            "id" : "00000000-0000-0000-0000-000000000010",
+            "recurrenceParentId" : "00000000-0000-0000-0000-000000000007",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Assinatura",
+            "type" : "expense",
+            "updatedAt" : 800000010
+          }
+        ]
+      },
+      "kind" : "cashflow.project",
+      "name" : "cashflow 60d"
+    },
+    {
+      "expected" : {
+        "ending" : "6900.55",
+        "goesNegative" : false,
+        "items" : [
+          {
+            "amount" : "-1500",
+            "date" : "2026-10-25",
+            "label" : "Aluguel"
+          },
+          {
+            "amount" : "5000",
+            "date" : "2026-11-05",
+            "label" : "Salário"
+          },
+          {
+            "amount" : "250",
+            "date" : "2026-11-05",
+            "label" : "Aluguel recebido"
+          },
+          {
+            "amount" : "-650.4",
+            "date" : "2026-11-08",
+            "label" : "Fatura Roxo 11\/2026"
+          },
+          {
+            "amount" : "-700",
+            "date" : "2026-11-15",
+            "label" : "Pagamento fatura"
+          },
+          {
+            "amount" : "250",
+            "date" : "2026-11-19",
+            "label" : "Aluguel recebido"
+          },
+          {
+            "amount" : "-99.9",
+            "date" : "2026-11-30",
+            "label" : "Assinatura"
+          },
+          {
+            "amount" : "250",
+            "date" : "2026-12-03",
+            "label" : "Aluguel recebido"
+          },
+          {
+            "amount" : "250",
+            "date" : "2026-12-17",
+            "label" : "Aluguel recebido"
+          },
+          {
+            "amount" : "-99.9",
+            "date" : "2026-12-31",
+            "label" : "Assinatura"
+          },
+          {
+            "amount" : "250",
+            "date" : "2026-12-31",
+            "label" : "Aluguel recebido"
+          },
+          {
+            "amount" : "250",
+            "date" : "2027-01-14",
+            "label" : "Aluguel recebido"
+          },
+          {
+            "amount" : "-50",
+            "date" : "2027-01-15",
+            "label" : "Longe"
+          }
+        ],
+        "lowest" : "2000.75",
+        "lowestDate" : "2026-10-25",
+        "pointCount" : 90,
+        "points" : [
+          {
+            "balance" : "3500.75",
+            "change" : "0",
+            "date" : "2026-10-21"
+          },
+          {
+            "balance" : "3500.75",
+            "change" : "0",
+            "date" : "2026-10-22"
+          },
+          {
+            "balance" : "3500.75",
+            "change" : "0",
+            "date" : "2026-10-23"
+          },
+          {
+            "balance" : "3500.75",
+            "change" : "0",
+            "date" : "2026-10-24"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "-1500",
+            "date" : "2026-10-25"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-10-26"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-10-27"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-10-28"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-10-29"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-10-30"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-10-31"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-11-01"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-11-02"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-11-03"
+          },
+          {
+            "balance" : "2000.75",
+            "change" : "0",
+            "date" : "2026-11-04"
+          },
+          {
+            "balance" : "7250.75",
+            "change" : "5250",
+            "date" : "2026-11-05"
+          },
+          {
+            "balance" : "7250.75",
+            "change" : "0",
+            "date" : "2026-11-06"
+          },
+          {
+            "balance" : "7250.75",
+            "change" : "0",
+            "date" : "2026-11-07"
+          },
+          {
+            "balance" : "6600.35",
+            "change" : "-650.4",
+            "date" : "2026-11-08"
+          },
+          {
+            "balance" : "6600.35",
+            "change" : "0",
+            "date" : "2026-11-09"
+          },
+          {
+            "balance" : "6600.35",
+            "change" : "0",
+            "date" : "2026-11-10"
+          },
+          {
+            "balance" : "6600.35",
+            "change" : "0",
+            "date" : "2026-11-11"
+          },
+          {
+            "balance" : "6600.35",
+            "change" : "0",
+            "date" : "2026-11-12"
+          },
+          {
+            "balance" : "6600.35",
+            "change" : "0",
+            "date" : "2026-11-13"
+          },
+          {
+            "balance" : "6600.35",
+            "change" : "0",
+            "date" : "2026-11-14"
+          },
+          {
+            "balance" : "5900.35",
+            "change" : "-700",
+            "date" : "2026-11-15"
+          },
+          {
+            "balance" : "5900.35",
+            "change" : "0",
+            "date" : "2026-11-16"
+          },
+          {
+            "balance" : "5900.35",
+            "change" : "0",
+            "date" : "2026-11-17"
+          },
+          {
+            "balance" : "5900.35",
+            "change" : "0",
+            "date" : "2026-11-18"
+          },
+          {
+            "balance" : "6150.35",
+            "change" : "250",
+            "date" : "2026-11-19"
+          },
+          {
+            "balance" : "6150.35",
+            "change" : "0",
+            "date" : "2026-11-20"
+          },
+          {
+            "balance" : "6150.35",
+            "change" : "0",
+            "date" : "2026-11-21"
+          },
+          {
+            "balance" : "6150.35",
+            "change" : "0",
+            "date" : "2026-11-22"
+          },
+          {
+            "balance" : "6150.35",
+            "change" : "0",
+            "date" : "2026-11-23"
+          },
+          {
+            "balance" : "6150.35",
+            "change" : "0",
+            "date" : "2026-11-24"
+          },
+          {
+            "balance" : "6150.35",
+            "change" : "0",
+            "date" : "2026-11-25"
+          },
+          {
+            "balance" : "6150.35",
+            "change" : "0",
+            "date" : "2026-11-26"
+          },
+          {
+            "balance" : "6150.35",
+            "change" : "0",
+            "date" : "2026-11-27"
+          },
+          {
+            "balance" : "6150.35",
+            "change" : "0",
+            "date" : "2026-11-28"
+          },
+          {
+            "balance" : "6150.35",
+            "change" : "0",
+            "date" : "2026-11-29"
+          },
+          {
+            "balance" : "6050.45",
+            "change" : "-99.9",
+            "date" : "2026-11-30"
+          },
+          {
+            "balance" : "6050.45",
+            "change" : "0",
+            "date" : "2026-12-01"
+          },
+          {
+            "balance" : "6050.45",
+            "change" : "0",
+            "date" : "2026-12-02"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "250",
+            "date" : "2026-12-03"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-04"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-05"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-06"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-07"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-08"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-09"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-10"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-11"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-12"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-13"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-14"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-15"
+          },
+          {
+            "balance" : "6300.45",
+            "change" : "0",
+            "date" : "2026-12-16"
+          },
+          {
+            "balance" : "6550.45",
+            "change" : "250",
+            "date" : "2026-12-17"
+          },
+          {
+            "balance" : "6550.45",
+            "change" : "0",
+            "date" : "2026-12-18"
+          },
+          {
+            "balance" : "6550.45",
+            "change" : "0",
+            "date" : "2026-12-19"
+          },
+          {
+            "balance" : "6550.45",
+            "change" : "0",
+            "date" : "2026-12-20"
+          },
+          {
+            "balance" : "6550.45",
+            "change" : "0",
+            "date" : "2026-12-21"
+          },
+          {
+            "balance" : "6550.45",
+            "change" : "0",
+            "date" : "2026-12-22"
+          },
+          {
+            "balance" : "6550.45",
+            "change" : "0",
+            "date" : "2026-12-23"
+          },
+          {
+            "balance" : "6550.45",
+            "change" : "0",
+            "date" : "2026-12-24"
+          },
+          {
+            "balance" : "6550.45",
+            "change" : "0",
+            "date" : "2026-12-25"
+          },
+          {
+            "balance" : "6550.45",
+            "change" : "0",
+            "date" : "2026-12-26"
+          },
+          {
+            "balance" : "6550.45",
+            "change" : "0",
+            "date" : "2026-12-27"
+          },
+          {
+            "balance" : "6550.45",
+            "change" : "0",
+            "date" : "2026-12-28"
+          },
+          {
+            "balance" : "6550.45",
+            "change" : "0",
+            "date" : "2026-12-29"
+          },
+          {
+            "balance" : "6550.45",
+            "change" : "0",
+            "date" : "2026-12-30"
+          },
+          {
+            "balance" : "6700.55",
+            "change" : "150.1",
+            "date" : "2026-12-31"
+          },
+          {
+            "balance" : "6700.55",
+            "change" : "0",
+            "date" : "2027-01-01"
+          },
+          {
+            "balance" : "6700.55",
+            "change" : "0",
+            "date" : "2027-01-02"
+          },
+          {
+            "balance" : "6700.55",
+            "change" : "0",
+            "date" : "2027-01-03"
+          },
+          {
+            "balance" : "6700.55",
+            "change" : "0",
+            "date" : "2027-01-04"
+          },
+          {
+            "balance" : "6700.55",
+            "change" : "0",
+            "date" : "2027-01-05"
+          },
+          {
+            "balance" : "6700.55",
+            "change" : "0",
+            "date" : "2027-01-06"
+          },
+          {
+            "balance" : "6700.55",
+            "change" : "0",
+            "date" : "2027-01-07"
+          },
+          {
+            "balance" : "6700.55",
+            "change" : "0",
+            "date" : "2027-01-08"
+          },
+          {
+            "balance" : "6700.55",
+            "change" : "0",
+            "date" : "2027-01-09"
+          },
+          {
+            "balance" : "6700.55",
+            "change" : "0",
+            "date" : "2027-01-10"
+          },
+          {
+            "balance" : "6700.55",
+            "change" : "0",
+            "date" : "2027-01-11"
+          },
+          {
+            "balance" : "6700.55",
+            "change" : "0",
+            "date" : "2027-01-12"
+          },
+          {
+            "balance" : "6700.55",
+            "change" : "0",
+            "date" : "2027-01-13"
+          },
+          {
+            "balance" : "6950.55",
+            "change" : "250",
+            "date" : "2027-01-14"
+          },
+          {
+            "balance" : "6900.55",
+            "change" : "-50",
+            "date" : "2027-01-15"
+          },
+          {
+            "balance" : "6900.55",
+            "change" : "0",
+            "date" : "2027-01-16"
+          },
+          {
+            "balance" : "6900.55",
+            "change" : "0",
+            "date" : "2027-01-17"
+          },
+          {
+            "balance" : "6900.55",
+            "change" : "0",
+            "date" : "2027-01-18"
+          }
+        ],
+        "totalIn" : "6500",
+        "totalOut" : "3100.2"
+      },
+      "input" : {
+        "days" : 90,
+        "from" : "2026-10-20",
+        "invoiceDues" : [
+          {
+            "amount" : "-650.4",
+            "date" : "2026-11-08",
+            "label" : "Fatura Roxo 11\/2026"
+          },
+          {
+            "amount" : "-1",
+            "date" : "2027-06-01",
+            "label" : "Longe demais"
+          }
+        ],
+        "startingBalance" : "3500.75",
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1500,
+            "createdAt" : 800000001,
+            "date" : 814622400,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel",
+            "type" : "expense",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 5000,
+            "createdAt" : 800000002,
+            "date" : 815572800,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 200,
+            "createdAt" : 800000003,
+            "date" : 814190400,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Hoje (fora da janela)",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "amount" : 300,
+            "createdAt" : 800000004,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 816004800,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Compra cartão pendente",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 700,
+            "createdAt" : 800000005,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 816436800,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "invoiceId" : "00000000-0000-0000-0000-000000000500",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Pagamento fatura",
+            "type" : "transfer",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 100,
+            "createdAt" : 800000006,
+            "date" : 816523200,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Entre contas",
+            "type" : "transfer",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 99.900000000000006,
+            "createdAt" : 800000007,
+            "date" : 815140800,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "recurrence" : {
+              "frequency" : "monthly",
+              "interval" : 1
+            },
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Assinatura",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 250,
+            "createdAt" : 800000008,
+            "date" : 814363200,
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "recurrence" : {
+              "frequency" : "weekly",
+              "interval" : 2
+            },
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel recebido",
+            "type" : "income",
+            "updatedAt" : 800000008
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 50,
+            "createdAt" : 800000009,
+            "date" : 821707200,
+            "id" : "00000000-0000-0000-0000-000000000009",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Longe",
+            "type" : "expense",
+            "updatedAt" : 800000009
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 99.900000000000006,
+            "createdAt" : 800000010,
+            "date" : 817732800,
+            "id" : "00000000-0000-0000-0000-000000000010",
+            "recurrenceParentId" : "00000000-0000-0000-0000-000000000007",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Assinatura",
+            "type" : "expense",
+            "updatedAt" : 800000010
+          }
+        ]
+      },
+      "kind" : "cashflow.project",
+      "name" : "cashflow 90d"
+    },
+    {
+      "expected" : {
+        "ending" : "3400",
+        "goesNegative" : true,
+        "items" : [
+          {
+            "amount" : "-1500",
+            "date" : "2026-10-25",
+            "label" : "Aluguel"
+          },
+          {
+            "amount" : "5000",
+            "date" : "2026-11-05",
+            "label" : "Salário"
+          },
+          {
+            "amount" : "250",
+            "date" : "2026-11-05",
+            "label" : "Aluguel recebido"
+          },
+          {
+            "amount" : "-700",
+            "date" : "2026-11-15",
+            "label" : "Pagamento fatura"
+          },
+          {
+            "amount" : "250",
+            "date" : "2026-11-19",
+            "label" : "Aluguel recebido"
+          }
+        ],
+        "lowest" : "-1400",
+        "lowestDate" : "2026-10-25",
+        "pointCount" : 30,
+        "points" : [
+          {
+            "balance" : "100",
+            "change" : "0",
+            "date" : "2026-10-21"
+          },
+          {
+            "balance" : "100",
+            "change" : "0",
+            "date" : "2026-10-22"
+          },
+          {
+            "balance" : "100",
+            "change" : "0",
+            "date" : "2026-10-23"
+          },
+          {
+            "balance" : "100",
+            "change" : "0",
+            "date" : "2026-10-24"
+          },
+          {
+            "balance" : "-1400",
+            "change" : "-1500",
+            "date" : "2026-10-25"
+          },
+          {
+            "balance" : "-1400",
+            "change" : "0",
+            "date" : "2026-10-26"
+          },
+          {
+            "balance" : "-1400",
+            "change" : "0",
+            "date" : "2026-10-27"
+          },
+          {
+            "balance" : "-1400",
+            "change" : "0",
+            "date" : "2026-10-28"
+          },
+          {
+            "balance" : "-1400",
+            "change" : "0",
+            "date" : "2026-10-29"
+          },
+          {
+            "balance" : "-1400",
+            "change" : "0",
+            "date" : "2026-10-30"
+          },
+          {
+            "balance" : "-1400",
+            "change" : "0",
+            "date" : "2026-10-31"
+          },
+          {
+            "balance" : "-1400",
+            "change" : "0",
+            "date" : "2026-11-01"
+          },
+          {
+            "balance" : "-1400",
+            "change" : "0",
+            "date" : "2026-11-02"
+          },
+          {
+            "balance" : "-1400",
+            "change" : "0",
+            "date" : "2026-11-03"
+          },
+          {
+            "balance" : "-1400",
+            "change" : "0",
+            "date" : "2026-11-04"
+          },
+          {
+            "balance" : "3850",
+            "change" : "5250",
+            "date" : "2026-11-05"
+          },
+          {
+            "balance" : "3850",
+            "change" : "0",
+            "date" : "2026-11-06"
+          },
+          {
+            "balance" : "3850",
+            "change" : "0",
+            "date" : "2026-11-07"
+          },
+          {
+            "balance" : "3850",
+            "change" : "0",
+            "date" : "2026-11-08"
+          },
+          {
+            "balance" : "3850",
+            "change" : "0",
+            "date" : "2026-11-09"
+          },
+          {
+            "balance" : "3850",
+            "change" : "0",
+            "date" : "2026-11-10"
+          },
+          {
+            "balance" : "3850",
+            "change" : "0",
+            "date" : "2026-11-11"
+          },
+          {
+            "balance" : "3850",
+            "change" : "0",
+            "date" : "2026-11-12"
+          },
+          {
+            "balance" : "3850",
+            "change" : "0",
+            "date" : "2026-11-13"
+          },
+          {
+            "balance" : "3850",
+            "change" : "0",
+            "date" : "2026-11-14"
+          },
+          {
+            "balance" : "3150",
+            "change" : "-700",
+            "date" : "2026-11-15"
+          },
+          {
+            "balance" : "3150",
+            "change" : "0",
+            "date" : "2026-11-16"
+          },
+          {
+            "balance" : "3150",
+            "change" : "0",
+            "date" : "2026-11-17"
+          },
+          {
+            "balance" : "3150",
+            "change" : "0",
+            "date" : "2026-11-18"
+          },
+          {
+            "balance" : "3400",
+            "change" : "250",
+            "date" : "2026-11-19"
+          }
+        ],
+        "totalIn" : "5500",
+        "totalOut" : "2200"
+      },
+      "input" : {
+        "days" : 30,
+        "from" : "2026-10-20",
+        "invoiceDues" : [
+
+        ],
+        "startingBalance" : "100",
+        "transactions" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 1500,
+            "createdAt" : 800000001,
+            "date" : 814622400,
+            "id" : "00000000-0000-0000-0000-000000000001",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel",
+            "type" : "expense",
+            "updatedAt" : 800000001
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 5000,
+            "createdAt" : 800000002,
+            "date" : 815572800,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Salário",
+            "type" : "income",
+            "updatedAt" : 800000002
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 200,
+            "createdAt" : 800000003,
+            "date" : 814190400,
+            "id" : "00000000-0000-0000-0000-000000000003",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Hoje (fora da janela)",
+            "type" : "expense",
+            "updatedAt" : 800000003
+          },
+          {
+            "amount" : 300,
+            "createdAt" : 800000004,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 816004800,
+            "id" : "00000000-0000-0000-0000-000000000004",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Compra cartão pendente",
+            "type" : "expense",
+            "updatedAt" : 800000004
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 700,
+            "createdAt" : 800000005,
+            "creditCardId" : "00000000-0000-0000-0000-000000000001",
+            "date" : 816436800,
+            "id" : "00000000-0000-0000-0000-000000000005",
+            "invoiceId" : "00000000-0000-0000-0000-000000000500",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Pagamento fatura",
+            "type" : "transfer",
+            "updatedAt" : 800000005
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 100,
+            "createdAt" : 800000006,
+            "date" : 816523200,
+            "destinationAccountId" : "00000000-0000-0000-0000-000000000002",
+            "id" : "00000000-0000-0000-0000-000000000006",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Entre contas",
+            "type" : "transfer",
+            "updatedAt" : 800000006
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 99.900000000000006,
+            "createdAt" : 800000007,
+            "date" : 815140800,
+            "id" : "00000000-0000-0000-0000-000000000007",
+            "recurrence" : {
+              "frequency" : "monthly",
+              "interval" : 1
+            },
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Assinatura",
+            "type" : "expense",
+            "updatedAt" : 800000007
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 250,
+            "createdAt" : 800000008,
+            "date" : 814363200,
+            "id" : "00000000-0000-0000-0000-000000000008",
+            "recurrence" : {
+              "frequency" : "weekly",
+              "interval" : 2
+            },
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Aluguel recebido",
+            "type" : "income",
+            "updatedAt" : 800000008
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 50,
+            "createdAt" : 800000009,
+            "date" : 821707200,
+            "id" : "00000000-0000-0000-0000-000000000009",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Longe",
+            "type" : "expense",
+            "updatedAt" : 800000009
+          },
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 99.900000000000006,
+            "createdAt" : 800000010,
+            "date" : 817732800,
+            "id" : "00000000-0000-0000-0000-000000000010",
+            "recurrenceParentId" : "00000000-0000-0000-0000-000000000007",
+            "status" : "pending",
+            "tagIds" : [
+
+            ],
+            "title" : "Assinatura",
+            "type" : "expense",
+            "updatedAt" : 800000010
+          }
+        ]
+      },
+      "kind" : "cashflow.project",
+      "name" : "cashflow negative"
+    }
+  ],
+  "suite" : "cashflow"
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- App Finanças: dados locais por padrão, sem rastreamento, sem SDKs de terceiros.
+	     Revisão da Fase 2: o código não usa timestamps de arquivo, tempo de atividade, espaço em disco nem teclado ativo;
+	     a sincronização opcional com o iCloud grava no banco privado do usuário (não é coleta pelo desenvolvedor).
+	     Confirme com o "Privacy Report" do Xcode ao arquivar. Ver docs/app-store-checklist.md. -->
+	<key>NSPrivacyTracking</key>
+	<false/>
+	<key>NSPrivacyTrackingDomains</key>
+	<array/>
+	<key>NSPrivacyCollectedDataTypes</key>
+	<array/>
+	<key>NSPrivacyAccessedAPITypes</key>
+	<array>
+		<!-- UserDefaults: preferências do próprio app (tema, bloqueio, lembretes). Motivo CA92.1. -->
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>CA92.1</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,309 @@
+{
+  "cases" : [
+    {
+      "expected" : [
+        "2026-01-31",
+        "2026-02-28",
+        "2026-03-31",
+        "2026-04-30",
+        "2026-05-31",
+        "2026-06-30",
+        "2026-07-31",
+        "2026-08-31",
+        "2026-09-30",
+        "2026-10-31",
+        "2026-11-30",
+        "2026-12-31"
+      ],
+      "input" : {
+        "from" : "2026-01-01",
+        "rule" : {
+          "frequency" : "monthly",
+          "interval" : 1
+        },
+        "start" : "2026-01-31",
+        "to" : "2026-12-31"
+      },
+      "kind" : "recurrence.occurrences",
+      "name" : "occurrences mensal dia 31"
+    },
+    {
+      "expected" : [
+        "2026-01-31",
+        "2026-03-31",
+        "2026-05-31",
+        "2026-07-31",
+        "2026-09-30",
+        "2026-11-30",
+        "2027-01-31",
+        "2027-03-31"
+      ],
+      "input" : {
+        "from" : "2026-01-01",
+        "rule" : {
+          "frequency" : "monthly",
+          "interval" : 2
+        },
+        "start" : "2026-01-31",
+        "to" : "2027-03-31"
+      },
+      "kind" : "recurrence.occurrences",
+      "name" : "occurrences mensal dia 31 a cada 2"
+    },
+    {
+      "expected" : [
+        "2026-01-30",
+        "2026-02-28",
+        "2026-03-30",
+        "2026-04-30"
+      ],
+      "input" : {
+        "from" : "2026-01-01",
+        "rule" : {
+          "frequency" : "monthly",
+          "interval" : 1
+        },
+        "start" : "2026-01-30",
+        "to" : "2026-04-30"
+      },
+      "kind" : "recurrence.occurrences",
+      "name" : "occurrences mensal dia 30"
+    },
+    {
+      "expected" : [
+        "2026-10-15",
+        "2026-10-22",
+        "2026-10-29",
+        "2026-11-05",
+        "2026-11-12",
+        "2026-11-19"
+      ],
+      "input" : {
+        "from" : "2026-10-10",
+        "rule" : {
+          "frequency" : "weekly",
+          "interval" : 1
+        },
+        "start" : "2026-10-01",
+        "to" : "2026-11-20"
+      },
+      "kind" : "recurrence.occurrences",
+      "name" : "occurrences semanal"
+    },
+    {
+      "expected" : [
+        "2026-10-01",
+        "2026-10-15",
+        "2026-10-29",
+        "2026-11-12",
+        "2026-11-26"
+      ],
+      "input" : {
+        "from" : "2026-10-01",
+        "rule" : {
+          "frequency" : "weekly",
+          "interval" : 2
+        },
+        "start" : "2026-10-01",
+        "to" : "2026-12-01"
+      },
+      "kind" : "recurrence.occurrences",
+      "name" : "occurrences semanal a cada 2"
+    },
+    {
+      "expected" : [
+        "2024-02-29",
+        "2025-02-28",
+        "2026-02-28",
+        "2027-02-28",
+        "2028-02-29",
+        "2029-02-28"
+      ],
+      "input" : {
+        "from" : "2024-01-01",
+        "rule" : {
+          "frequency" : "yearly",
+          "interval" : 1
+        },
+        "start" : "2024-02-29",
+        "to" : "2029-12-31"
+      },
+      "kind" : "recurrence.occurrences",
+      "name" : "occurrences anual 29\/fev"
+    },
+    {
+      "expected" : [
+        "2026-01-15",
+        "2026-02-15",
+        "2026-03-15",
+        "2026-04-15",
+        "2026-05-15"
+      ],
+      "input" : {
+        "from" : "2026-01-01",
+        "rule" : {
+          "frequency" : "monthly",
+          "interval" : 1,
+          "maxOccurrences" : 5
+        },
+        "start" : "2026-01-15",
+        "to" : "2030-01-01"
+      },
+      "kind" : "recurrence.occurrences",
+      "name" : "occurrences max 5"
+    },
+    {
+      "expected" : [
+        "2026-01-15",
+        "2026-02-15",
+        "2026-03-15",
+        "2026-04-15",
+        "2026-05-15",
+        "2026-06-15"
+      ],
+      "input" : {
+        "from" : "2026-01-01",
+        "rule" : {
+          "endDate" : 803217600,
+          "frequency" : "monthly",
+          "interval" : 1
+        },
+        "start" : "2026-01-15",
+        "to" : "2030-01-01"
+      },
+      "kind" : "recurrence.occurrences",
+      "name" : "occurrences endDate"
+    },
+    {
+      "expected" : [
+        "2026-01-15",
+        "2026-02-15",
+        "2026-03-15",
+        "2026-04-15",
+        "2026-05-15"
+      ],
+      "input" : {
+        "from" : "2026-01-01",
+        "rule" : {
+          "endDate" : 803131200,
+          "frequency" : "monthly",
+          "interval" : 1
+        },
+        "start" : "2026-01-15",
+        "to" : "2030-01-01"
+      },
+      "kind" : "recurrence.occurrences",
+      "name" : "occurrences endDate dia anterior"
+    },
+    {
+      "expected" : [
+        "2026-03-31",
+        "2026-04-30",
+        "2026-05-31"
+      ],
+      "input" : {
+        "from" : "2026-03-01",
+        "rule" : {
+          "frequency" : "monthly",
+          "interval" : 1
+        },
+        "start" : "2026-01-31",
+        "to" : "2026-05-31"
+      },
+      "kind" : "recurrence.occurrences",
+      "name" : "occurrences janela no meio"
+    },
+    {
+      "expected" : [
+        "2026-01-31",
+        "2026-02-28",
+        "2026-03-31"
+      ],
+      "input" : {
+        "from" : "2026-01-01",
+        "rule" : {
+          "frequency" : "monthly",
+          "interval" : 0
+        },
+        "start" : "2026-01-31",
+        "to" : "2026-03-31"
+      },
+      "kind" : "recurrence.occurrences",
+      "name" : "occurrences interval 0"
+    },
+    {
+      "expected" : [
+        {
+          "amount" : "99.9",
+          "date" : "2026-02-28",
+          "parentIsTemplate" : true,
+          "status" : "pending",
+          "title" : "Assinatura"
+        },
+        {
+          "amount" : "99.9",
+          "date" : "2026-04-30",
+          "parentIsTemplate" : true,
+          "status" : "pending",
+          "title" : "Assinatura"
+        },
+        {
+          "amount" : "99.9",
+          "date" : "2026-05-31",
+          "parentIsTemplate" : true,
+          "status" : "pending",
+          "title" : "Assinatura"
+        },
+        {
+          "amount" : "99.9",
+          "date" : "2026-06-30",
+          "parentIsTemplate" : true,
+          "status" : "pending",
+          "title" : "Assinatura"
+        }
+      ],
+      "input" : {
+        "existing" : [
+          {
+            "accountId" : "00000000-0000-0000-0000-000000000001",
+            "amount" : 99.900000000000006,
+            "createdAt" : 800000002,
+            "date" : 796651200,
+            "id" : "00000000-0000-0000-0000-000000000002",
+            "recurrenceParentId" : "00000000-0000-0000-0000-000000000001",
+            "status" : "paid",
+            "tagIds" : [
+
+            ],
+            "title" : "Assinatura",
+            "type" : "expense",
+            "updatedAt" : 800000002
+          }
+        ],
+        "from" : "2026-01-01",
+        "template" : {
+          "accountId" : "00000000-0000-0000-0000-000000000001",
+          "amount" : 99.900000000000006,
+          "createdAt" : 800000001,
+          "date" : 791553600,
+          "id" : "00000000-0000-0000-0000-000000000001",
+          "recurrence" : {
+            "frequency" : "monthly",
+            "interval" : 1
+          },
+          "status" : "paid",
+          "tagIds" : [
+
+          ],
+          "title" : "Assinatura",
+          "type" : "expense",
+          "updatedAt" : 800000001
+        },
+        "to" : "2026-06-30"
+      },
+      "kind" : "recurrence.generate",
+      "name" : "generate with existing"
+    }
+  ],
+  "suite" : "recurrence"
+}
